@@ -1,0 +1,24 @@
+= Solder a wire to 2mm connector and PCB pad
+
+Refer to the wiring on the xref:basketball-robot-guide/electronics/test-robot.adoc[test robot page].
+
+. Find a piece of 18 AWG wire.
+. Strip about 5 mm of insulation from each end of the wire.
+. Lightly twist the strands of the wire at each end to prevent the strands from separating.
+. Add some flux to the ends.
+. Cover the ends with some solder.
+Make sure to evenly coat all around the wire.
+. Add solder into the end of the 2 mm connector.
+. Remelt the solder in the connector and at the end of the wire at the same time and push the wire into the connector.
+. Keep the wire straight until the solder solidifies.
+. Cut a piece of heatshrink that is slightly larger in diameter than the wire and the connector.
+Use red heatshrink for red wires and black for black wires.
+Heatshrink should cover all the conductive parts when the connector is connected
+and about 5 mm or more of the wire insulation.
+. Place the heatshrink onto the connector and heat it with hot air.
+Suitable temperature is around 150 - 200 degrees.
+. Add some solder to a pad on the PCB.
+. Place the end of the wire onto the pads and remelt the solder on the pad and at the end of the wire.
+. Keep the wire in place until the solder has solidified.
+
+

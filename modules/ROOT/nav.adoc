@@ -1,0 +1,40 @@
+* xref:team-documentation-requirements.adoc[Team documentation requirements]
+
+.xref:basketball-robot-guide/index.adoc[Basketball robot guide]
+** General
+*** xref:basketball-robot-guide/general/batteries.adoc[Using batteries]
+** Electronics
+*** xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
+*** xref:basketball-robot-guide/electronics/components.adoc[Components]
+*** xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
+*** xref:basketball-robot-guide/electronics/schematic.adoc[Schematic]
+*** xref:basketball-robot-guide/electronics/pcb-layout.adoc[PCB layout]
+*** xref:basketball-robot-guide/electronics/firmware.adoc[Firmware]
+*** xref:basketball-robot-guide/electronics/review-summary.adoc[Review summary]
+** Mechanics
+*** xref:basketball-robot-guide/mechanics/design.adoc[Design]
+*** xref:basketball-robot-guide/mechanics/cam.adoc[Fusion 360 CAM]
+*** xref:basketball-robot-guide/mechanics/review-summary.adoc[Review summary]
+** Software
+*** xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion]
+*** xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
+
+.xref:boot-camp-tasks/index.adoc[Boot camp tasks]
+* Electronics
+** xref:boot-camp-tasks/electronics/solder-usb.adoc[Solder USB connector with hot air]
+** xref:boot-camp-tasks/electronics/solder-wires.adoc[Solder wires with 2mm bullet connector to PCB]
+** xref:boot-camp-tasks/electronics/test-mainboard.adoc[Test mainboard with a power supply and a motor]
+** xref:boot-camp-tasks/electronics/hterm-commands.adoc[Send commands to mainboard with HTerm]
+* Mechanics
+** xref:boot-camp-tasks/mechanics/install.adoc[Install Fusion 360]
+** xref:boot-camp-tasks/mechanics/model.adoc[Model a minimal motor mount]
+** xref:boot-camp-tasks/mechanics/assemble.adoc[Assemble a motor with the motor mount]
+** xref:boot-camp-tasks/mechanics/print.adoc[3D print]
+** xref:boot-camp-tasks/mechanics/drill.adoc[Drill over a 2.5mm hole and cut an M3 thread]
+** xref:boot-camp-tasks/mechanics/connect.adoc[Connect motor to motor mount with correct length M3 screws]
+** xref:boot-camp-tasks/mechanics/attach.adoc[Attach motor with mount to test robot]
+* Software
+** xref:boot-camp-tasks/software/setup.adoc[Setup]
+** xref:boot-camp-tasks/software/commands.adoc[Send commands to mainboard to rotate motors]
+** xref:boot-camp-tasks/software/motion.adoc[Simulate rotating towards a ball with PrintingMotion]
+** xref:boot-camp-tasks/software/follow_ball.adoc[Rotate towards the ball with the test robot]

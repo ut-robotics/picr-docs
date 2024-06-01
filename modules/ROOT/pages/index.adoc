@@ -1,0 +1,9 @@
+= Project in Competitive Robotics
+
+* xref:boot-camp-tasks/index.adoc[Boot camp tasks]
+* https://utr.ee[Tasks Table]
+* xref:grading-and-tasks.adoc[Grading and tasks]
+* xref:team-documentation-requirements.adoc[Team documentation requirements]
+* xref:basketball-robot-guide/index.adoc[Basketball robot guide]
+* xref:gitlab-guide.adoc[GitLab (team repository) guide]
+* https://ut-robotics.github.io/robot-basketball-rules/[Basketball rules]

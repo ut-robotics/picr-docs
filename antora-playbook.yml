@@ -1,0 +1,17 @@
+site:
+  title: PiCR Docs
+content:
+  sources:
+    - url: .
+      branches: '2024'
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+asciidoc:
+  extensions:
+    - '@djencks/asciidoctor-mathjax'
+antora:
+  extensions:
+    - '@antora/lunr-extension'
