@@ -344,6 +344,14 @@ the opponent robot moves between basket and the ball and remains there.
 * Only 1 throw from the frontcourt is allowed.
 * Task is completed when the ball is scored from the frontcourt.
 
+==== Software documented
+
+* In team's repository `software` branch and `software/README.asciidoc` file.
+* Instructions on how to set up and run the code.
+* Used libraries and purpose of use.
+* A brief description of your game logic and overall code structure.
+* A block diagram of your game logic.
+
 === Mechanics
 
 * Design tasks are approved as a whole, not individually.
