@@ -533,6 +533,11 @@ on how to use the board.
 
 * Same requirements as for "Mainboard documented" task.
 
+==== Firmware documented
+
+* In team's repository `firmware` branch and `firmware/README.asciidoc` file.
+* Format and description of the data that can be sent to and received from mainboard.
+
 === Competitions
 
 ==== Test competition
