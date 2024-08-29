@@ -499,12 +499,13 @@ No orders will be made after that time.
 
 ==== Thrower voltage regulator attached and working
 
+* Attached either to the old robot or to the new robot.
 * Voltage regulator is connected and working between battery and thrower motor controller
 to ensure that changing battery voltage doesn't affect thrower motor speed.
 
 ==== Electronics attached to the robot and working
 
-* Attached to the robot.
+* Attached either to the old robot or to the new robot.
 ** Same requirements as for "Test robot assembled".
 * Command(s) can be sent through mainboard:
 ** To move wheel motors.
