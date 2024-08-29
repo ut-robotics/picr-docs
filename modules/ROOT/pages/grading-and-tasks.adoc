@@ -119,7 +119,6 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 * All team members must agree with the distribution.
 * Point distribution must be approved by the instructors.
 * Points can be distributed between all participants in the course, not just between members of the team.
-** Progress blog and presentation points can only be distributed among team members.
 * All points must be distributed.
 * Points must be distributed as integers.
 * Each person can receive up to the maximum of a task’s points for the same task.

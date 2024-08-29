@@ -17,7 +17,6 @@ and experience on robot building to improve overall quality of their robots.
 ** Electronics section (see below for requirements).
 ** Mechanics section (see below for requirements).
 ** Personal comments section (see below for requirements).
-** Blogs at the end.
 * *software/README.asciidoc*
 ** Instructions on how to set up and run the code.
 * *electronics/README.asciidoc*
