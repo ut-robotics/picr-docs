@@ -353,7 +353,6 @@ the opponent robot moves between basket and the ball and remains there.
 
 === Mechanics
 
-* Design tasks are approved as a whole, not individually.
 * Unfinished designs can be submitted for review at any time for early feedback.
 
 ==== Omni wheels design completed
@@ -418,6 +417,10 @@ In this case the ball can't rotate and roll away.
 so that the edge of the bottom plate touches the ball before the side of the robot.
 *** image:ball_not_stuck_extended_bottom.png[width=160]
 *** Both options push the ball below its center, which helps the ball to roll away.
+
+=== Robot design completed
+
+* Complete design approved.
 
 ==== Whole new robot fabricated
 
