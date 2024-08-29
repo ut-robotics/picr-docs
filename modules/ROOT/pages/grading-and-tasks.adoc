@@ -261,12 +261,23 @@ on how to use the board.
 * Robot correctly uses basket color from the signal's info.
 * Robot retries to connect to basketball manager if connection is lost or has not been established yet.
 
-==== Code works on new robot
+=== Code works with new mechanics
 
+* Robot uses new mechanics.
 * Robot starts from its corner of the court.
 * 60 seconds per attempt.
 * 11 balls on the court.
 * Task is completed when a ball is thrown into the opponent's basket.
+* Can be completed together with "Code works with new electronics" task.
+
+=== Code works with new electronics
+
+* Robot uses new electronics.
+* Robot starts from its corner of the court.
+* 60 seconds per attempt.
+* 11 balls on the court.
+* Task is completed when a ball is thrown into the opponent's basket.
+* Can be completed together with "Code works with new mechanics" task.
 
 ==== 3 of 11 balls in 60 seconds
 
