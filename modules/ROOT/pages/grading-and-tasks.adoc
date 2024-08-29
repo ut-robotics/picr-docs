@@ -596,9 +596,30 @@ on how to use the board.
 
 ==== Team documentation completed
 
-* Refer to xref:team-documentation-requirements.adoc[Team documentation requirements]
 * Must be reviewed and approved by instructors.
 * No grades if not completed.
+* Requirements from the "Team documentation started" task also apply here.
+* README.asciidoc sections:
+** Programming
+*** A short analysis of what was good and bad in your code and how to improve.
+** Electronics
+*** If you used something different from what was given at the start of the course
+or did something different, describe it.
+*** Photos illustrating electronics on your robot. (electronics board, cable management, etc.)
+*** A short analysis of what was good and bad in your electronics and how to improve.
+** Mechanics
+*** If you used something different from what was given at the start of the course
+or did something different, describe it.
+*** Description of the main points of interest in your ball thrower design and construction process.
+*** Photos of your robot.
+*** A short analysis of what was good and bad in your mechanics and how to improve.
+** Personal comments. Each member must write a paragraph that covers the following:
+*** On which parts of the robot did you work on?
+*** What did you learn?
+*** What would you do differently next time?
+*** What did you like/did not like about the course/building a robot?
+*** Suggestions for next year students.
+*** Suggestions for instructors.
 
 ==== Final presentation
 

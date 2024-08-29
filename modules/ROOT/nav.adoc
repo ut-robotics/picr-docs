@@ -1,4 +1,5 @@
-* xref:team-documentation-requirements.adoc[Team documentation requirements]
+* xref:grading-and-tasks.adoc[Grading and tasks]
+* xref:gitlab-guide.adoc[GitLab (team repository) guide]
 
 .xref:basketball-robot-guide/index.adoc[Basketball robot guide]
 ** General
