@@ -520,7 +520,7 @@ on how to use the board.
 ==== Mainboard documented
 
 * All documentation must be in your team's repository with electronics design files.
-* Functionality and connector pinouts described in AsciiDoc format in `electronics/README.asciidoc` file.
+* Functionality and connector pinouts described in AsciiDoc format in `electronics` branch and in `electronics/README.asciidoc` file.
 * Schematic PDF file.
 * Components BOM in TSV (tab-separated values, *.tsv) format.
 ** Columns
