@@ -313,6 +313,12 @@ looking at the balls that are outside the playing area (not on the orange carpet
 * When the robot finds the ball behind the opponent robot,
 the opponent robot moves between basket and the ball and remains there.
 * Task is completed when the ball is scored.
+* Images below illustrate the steps.
+** Robots are not required to move the same way as the arrows indicate.
+
+image:dealing_with_opponent_step_1.svg[]
+image:dealing_with_opponent_step_2.svg[]
+image:dealing_with_opponent_step_3.svg[]
 
 ==== Robot movable with remote controller
 
