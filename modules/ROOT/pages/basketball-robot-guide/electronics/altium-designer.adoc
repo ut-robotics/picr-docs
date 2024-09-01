@@ -13,7 +13,7 @@ link:https://www.altium.com/solutions/academic-programs/student-licenses[]
 === Creating a project
 
 * File -> New -> Project...
-* In *Create Project* window set project name (for example picr23-team-<your team name>-mainboard) and select project folder.
+* In *Create Project* window set project name (for example picr24-team-<your team name>-mainboard) and select project folder.
 
 === Adding schematic file
 
@@ -35,7 +35,7 @@ link:https://www.altium.com/solutions/academic-programs/student-licenses[]
 
 * Right click on *.PrjPcb -> Save
 * One option to name the files in the project is to use the projects name.
-For example if project is named picr23-team-one-mainboard.PrjPcb, then schematic would be named picr23-team-one-mainboard.SchDoc.
+For example if project is named picr24-team-one-mainboard.PrjPcb, then schematic would be named picr24-team-one-mainboard.SchDoc.
 
 == General
 

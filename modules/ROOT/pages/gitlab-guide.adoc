@@ -40,9 +40,9 @@ Instead of switching between branches, it's more convenient to clone documentati
 Example:
 [source,bash]
 ----
-git clone --single-branch --branch documentation git@gitlab.ut.ee:loti.05.023/picr2023/picr23-team-<team-name>.git picr23-team-<team-name>-documentation
+git clone --single-branch --branch documentation git@gitlab.ut.ee:loti.05.023/picr2024/picr24-team-<team-name>.git picr24-team-<team-name>-documentation
 
-git clone --single-branch --branch software git@gitlab.ut.ee:loti.05.023/picr2023/picr23-team-<team-name>.git picr23-team-<team-name>-software
+git clone --single-branch --branch software git@gitlab.ut.ee:loti.05.023/picr2024/picr24-team-<team-name>.git picr24-team-<team-name>-software
 ----
 
 ==== General documentation
