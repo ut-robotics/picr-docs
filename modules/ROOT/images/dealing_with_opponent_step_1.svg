@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px"
+     height="348px" viewBox="0 0 200 348" style="background-color: rgb(255, 255, 255);">
+    <rect fill="#ffffff" width="100%" height="100%" x="0" y="0"/>
+    <rect x="0" y="0" width="200" height="50" fill="#4d4d4d" stroke="none"/>
+    <rect x="0" y="100" width="200" height="5" fill="#4d4d4d" stroke="none"/>
+    <rect x="0" y="105" width="200" height="5" fill="#e6e6e6" stroke="none"/>
+    <rect x="0" y="50" width="200" height="50" fill="#ff9933" stroke="none"/>
+    <rect x="0" y="110" width="200" height="238" fill="#ff9933" stroke="none"/>
+    <ellipse cx="100" cy="220" rx="2.5" ry="2.5" fill="#4d9900" stroke="none"/>
+    <rect x="67" y="97" width="66" height="3" fill="#ffffff" stroke="none"/>
+    <ellipse cx="100" cy="107.5" rx="7.5" ry="7.5" fill="#dae8fc" stroke="#007fff"/>
+    <ellipse cx="100" cy="325" rx="15" ry="15" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"/>
+    <ellipse cx="100" cy="250" rx="17.5" ry="17.5" fill="#b3b3b3" stroke="rgb(0, 0, 0)"/>
+    <path d="M 50 185 L 150 275 L 50 365 Z" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10"
+          stroke-dasharray="3 3" transform="rotate(90,100,275)"/>
+    <g>
+        <path d="M 100 310 Q 105 295 120 282.5 Q 135 270 135 247.5 Q 135 225 108.79 220.97" fill="none"
+              stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 103.6 220.17 L 111.06 217.78 L 108.79 220.97 L 109.99 224.69 Z" fill="rgb(0, 0, 0)"
+              stroke="rgb(0, 0, 0)" stroke-miterlimit="10"/>
+    </g>
+</svg>

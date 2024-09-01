@@ -48,7 +48,6 @@ git clone --single-branch --branch software git@gitlab.ut.ee:loti.05.023/picr202
 ==== General documentation
 
 * `documentation` branch should be used.
-* Daily blogs should be written into README.asciidoc in root directory.
 * Merge request should be created when general documentation is ready for review.
 
 ==== Software
