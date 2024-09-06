@@ -3,7 +3,10 @@
 . Install Linux to a provided computer.
 Use the provided USB stick.
 You should choose the simple install and overwrite any existing OS-es.
-Use `robot` for both the username and password. You can use another version of Linux but consider, that a library we use `pyrealsense2` is only available on python 3.11 or older. The guide below applies for Ubuntu 22 and python 3.10.
+Use `robot` for both the username and password.
+You can use another version of Linux but consider, that a library we use `pyrealsense2`
+is only available on python 3.11 or older.
+The guide below applies for Ubuntu 22 and python 3.10.
 
 . Install `distutils` for python :
 +
