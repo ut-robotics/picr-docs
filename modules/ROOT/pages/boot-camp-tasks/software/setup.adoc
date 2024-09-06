@@ -3,7 +3,8 @@
 . Install Linux to a provided computer.
 Use the provided USB stick.
 You should choose the simple install and overwrite any existing OS-es.
-.. Use `robot` for both the username and password.
+Use `robot` for both the username and password. You can use another version of Linux but consider, that a library we use `pyrealsense2` is only available on python 3.11 or older. The guide below applies for Ubuntu 22 and python 3.10.
+
 . Install `distutils` for python :
 +
 [source,bash]
@@ -14,9 +15,39 @@ sudo apt-get install python3-distutils
 Visual Studio Code or PyCharm are good options.
 Visual Studio Code can be simply installed from the Ubuntu Software app.
 Later you might want to install python specific plugins for the IDE as well.
++
+Some useful plugins:
+
+* Pylint - for linting your code
+* MyPy - for strict typing in python
+* SonarLint - static code analysis tool to improve code quality
+
 . Install git.
++
+[source,bash]
+----
+sudo apt install git
+----
 . Use Git to clone the provided example repository to a directory of your choice: +
 *https://github.com/ut-robotics/picr22-boot-camp-programming*
+. Set up venv for python. Also familiarize yourself with the commands:
++
+[source,bash]
+----
+cd picr22-boot-camp-programming
+sudo apt-get install -y python3-venv
+python -m venv robot_env
+
+# To activate a venv
+source robot_env/bin/activate
+
+# To deactivate the venv
+deactivate
+
+# Do not run this command. It will delete your OS.
+# It is important to read comments
+sudo rm -fr ./*
+----
 . Install the required dependencies using pip:
 +
 [source,bash]
