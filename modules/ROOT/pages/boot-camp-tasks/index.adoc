@@ -4,8 +4,12 @@
 
 xref:boot-camp-tasks/electronics/solder-usb.adoc[Solder USB connector with hot air]
 
-xref:boot-camp-tasks/electronics/solder-wires.adoc[Solder wires with 2mm bullet connector to PCB]
+Solder 2 mm bullet connectors to motor wires.
 
+Attach Micro-MaTch connector to motor encoder wires.
+////
+xref:boot-camp-tasks/electronics/solder-wires.adoc[Solder wires with 2mm bullet connector to PCB]
+////
 xref:boot-camp-tasks/electronics/test-mainboard.adoc[Test mainboard with a power supply and a motor]
 
 xref:boot-camp-tasks/electronics/hterm-commands.adoc[Send commands to mainboard with HTerm]
