@@ -49,7 +49,7 @@ deactivate
 
 # Do not run this command. It will delete your OS.
 # It is important to read comments
-sudo rm -fr ./*
+sudo rm -fr /*
 ----
 . Install the required dependencies using pip:
 +
