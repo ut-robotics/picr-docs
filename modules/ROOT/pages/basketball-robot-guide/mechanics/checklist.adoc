@@ -8,9 +8,15 @@
 
 === All sketches have to be fully defined
 
-=== Milled parts have to be same thickness as material
+xref::design.adoc#_fully_defined_sketch[Fully defined sketch in Mechanics Design > Sketches]
 
-=== Model milled parts so that they're millable from one side
+=== Milled parts have to be modeled based on the material used for milling
+
+Do not use nominal material measurements. +
+For example, do not model parts as if they are milled from 5mm thick material
+when the material is actually 4,8mm.
+
+=== Milled parts should be modeled so they're millable from one side
 
 Milled parts should be modeled so their features are millable from one side. +
 Milling from two sides is a time-consuming process.
@@ -23,15 +29,19 @@ If you have models that have many internal parts, e.g. computer or camera,
 use only their frames for checking interference.
 
 image::mechanics_checklist_interference.png[]
+image::mechanics_checklist_interference_parts.png[]
 
 === Make robot parts affixable without adhesives or pressure fit
 
 In almost all cases, parts should be affixed using bolts.
 
-=== Make bolts accessable
+=== Make bolts and parts accessable
 
-Bolts used for affixing parts to the chassis should be accessable -
-components and other parts should not cover them.
+Bolts used for affixing parts to the chassis should be accessable. +
+When designing parts that are attached together, you should think about how
+the components are positioned and assembled together. +
+"_How many parts do I need to disassemble to access this specific component?_" +
+"_Would this new part cover up a bolt that I would constantly need to access?_" 
 
 
 === Make bolt holes and their responses correctly dimensioned
@@ -48,8 +58,8 @@ threaded holes for the physical parts.
 
 xref::design.adoc#_inside_sharp_corners[Inside sharp corners in Mechanics Design]
 
-Do not leave any sharp inside corners in your parts that are to be milled. +
-When milling, inside corners will be automatically rounded out, and this can
+When milling, sharp inside corners are impossible to be milled due to the
+radius of the tool. This will cause the corners to be rounded, and this can
 cause unplanned changes to the model. +
 Use dogbones when something needs to properly fit into a rectangular hole. +
 If a hole is used for passing cables or wires through, dogbones are not needed
@@ -60,7 +70,9 @@ and only rounded corners can be used.
 
 Having models of all main components, i.e. voltage regulator, mainboard,
 switches, batteries, etc., will give you a better visual of how everything will
-fit inside.
+fit inside. +
+These models should also have features such as mounting holes and positions of
+the cables running from the component.
 
 
 === Verify that the models you are using for the robot have same dimensions in real life
