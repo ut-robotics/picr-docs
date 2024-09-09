@@ -1,0 +1,79 @@
+= Remote desktop
+
+It can sometimes be difficult to set up a working remote
+desktop solution with linux and our image processing
+software. The reason is that when no display device is
+connected OpenCL related components are not loaded by the
+OS, leading to program startup failure. Below is a guide
+to set up a working remote desktop connection.
+
+Some things to note about this solution's limitations:
+
+. You should be in the same WI-FI network with your server
+and client computers. Else you can not connect.
+. This solution involves the setup of a video dummy. This
+can create a situation where the computers usual outputs
+like HDMI/DP won't output anything. Have a back-up in case
+of network issues. Back-ups include:
+.. Learning how to use linux recovery console to clear the
+display output disabling configuration
+.. Set up a known hotspot the server machine connects with
+automatically.
+.. Have a SSH terminal accessible to the machine to remove
+the configuration.
+
+== Setup
+
+. Install NoMachine on both your client and server machine.
+You can download the rpm package and install it using your
+preferred installer. One way would be:
++
+[source,bash]
+----
+sudo alien -i package --scripts
+----
+. Set up and validate that you can connect to the machine using
+NoMachine from your client machine.
+. Install linux video-dummy package:
++
+[source,bash]
+----
+sudo apt-get install xserver-xorg-video-dummy
+----
+. Configure the dummy. The config file needs to be created like so:
++
+[source,bash]
+----
+sudo touch /etc/X11/xorg.conf
+sudo nano /etc/X11/xorg.conf
+----
+. Put this configuration into the created file and save it:
++
+[source]
+----
+Section "Device"
+    Identifier  "Configured Video Device"
+    Driver      "dummy"
+    VideoRam 256000
+EndSection
+
+Section "Monitor"
+    Identifier  "Configured Monitor"
+    HorizSync 5.0 - 1000.0
+    VertRefresh 5.0 - 200.0
+    ModeLine "1920x1080" 148.50 1920 2448 2492 2640 1080 1084 1089 1125 +Hsync +Vsync
+EndSection
+
+Section "Screen"
+    Identifier  "Default Screen"
+    Monitor     "Configured Monitor"
+    Device      "Configured Video Device"
+    DefaultDepth 24
+    SubSection "Display"
+    Depth 24
+    Modes "1920x1080" "1280x800" "1024x768" "1920x1080" "1440x900"
+    EndSubSection
+EndSection
+----
+. Restart the machine and unplug the display.
+. Try to connect with NoMachine and try to run config_colors.py.
