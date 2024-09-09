@@ -1,0 +1,137 @@
+:toc:
+:toclevels: 2
+:toc-title: Table of contents
+
+= Mechanics checklist
+
+== General
+
+=== All sketches have to be fully defined
+
+xref::design.adoc#_fully_defined_sketch[Fully defined sketch in Mechanics Design > Sketches]
+
+=== Milled parts have to be modeled based on the material used for milling
+
+Do not use nominal material measurements. +
+For example, do not model parts as if they are milled from 5mm thick material
+when the material is actually 4,8mm.
+
+=== Milled parts should be modeled so they're millable from one side
+
+Milled parts should be modeled so their features are millable from one side. +
+Milling from two sides is a time-consuming process.
+
+=== Check interference between parts
+
+Use the Interference tool to check if any parts are misaligned. +
+The volume between two interfering parts will be shown. +
+If you have models that have many internal parts, e.g. computer or camera,
+use only their frames for checking interference.
+
+image::mechanics_checklist_interference.png[]
+image::mechanics_checklist_interference_parts.png[]
+
+=== Make robot parts affixable without adhesives or pressure fit
+
+In almost all cases, parts should be affixed using bolts.
+
+=== Make bolts and parts accessable
+
+Bolts used for affixing parts to the chassis should be accessable. +
+When designing parts that are attached together, you should think about how
+the components are positioned and assembled together. +
+"_How many parts do I need to disassemble to access this specific component?_" +
+"_Would this new part cover up a bolt that I would constantly need to access?_" 
+
+
+=== Make bolt holes and their responses correctly dimensioned
+
+xref::design.adoc#_fasteners[Fasterners in Mechanics Design]
+
+When a bolt goes through multiple parts, only the last part should have a
+threaded hole. +
+Having the correct responses modeled will be a good reference when making
+threaded holes for the physical parts.
+
+
+=== Make inside corners with dogbones
+
+xref::design.adoc#_inside_sharp_corners[Inside sharp corners in Mechanics Design]
+
+When milling, sharp inside corners are impossible to be milled due to the
+radius of the tool. This will cause the corners to be rounded, and this can
+cause unplanned changes to the model. +
+Use dogbones when something needs to properly fit into a rectangular hole. +
+If a hole is used for passing cables or wires through, dogbones are not needed
+and only rounded corners can be used.
+
+
+=== Add models of components to the robot model
+
+Having models of all main components, i.e. voltage regulator, mainboard,
+switches, batteries, etc., will give you a better visual of how everything will
+fit inside. +
+These models should also have features such as mounting holes and positions of
+the cables running from the component.
+
+
+=== Verify that the models you are using for the robot have same dimensions in real life
+
+Verify the actual dimensions of the models you are using in your robot. +
+Verify the dimensions of mounting holes on the components.
+
+
+=== Think about cables and wiring
+
+Cables and wiring take up some space, consider their path when they route
+between components. +
+Cable plugs take up a lot of space, leave room for them to be pluggable-
+unpluggable.
+
+
+=== Make sure that batteries don't move horizontally
+
+The robots experience lots of horizontal forces. +
+Batteries should be attached-mounted so they have limited horizontal movement.
+
+
+=== Round out sharp outside corners
+
+The robot will be safer to handle if there aren't any sharp corners protruding
+from the robot.
+
+image::mechanics_checklist_rounded_corner.png[]
+
+== Camera
+
+xref::design.adoc#_camera[Camera in Mechanics Design]
+
+=== Center the RGB sensor of the camera to the center of the thrower
+
+Having the camera's RGB sensor centered on the thrower will make it easier to
+program and handle throwing balls.
+
+image::mechanics_checklist_rgb_center.png[]
+
+
+=== Add an FOV pyramid of the RGB sensor to the model
+
+The cone will show which parts of the robot might possibly interfere with the
+view of the camera.
+
+image::mechanics_checklist_fov_pyramid.png[]
+
+== Thrower
+
+=== Mount thrower motor so the wires are outside of the path of travel
+
+The thrower motor should be mounted so the wires of the motors don't go inside,
+toward the ramp. +
+The wires should exit the thrower as far away as possible from the path the ball
+will travel through the thrower.
+
+
+=== Add support for thrower ramp
+
+The thrower ramps can bend outward when the ball goes through the thrower. +
+Add supporting pieces, i.e. spacers, to minimize the movement of the ramps.
