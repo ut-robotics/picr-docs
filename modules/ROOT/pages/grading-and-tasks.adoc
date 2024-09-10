@@ -268,7 +268,7 @@ on how to use the board.
 * Robot correctly uses basket color from the signal's info.
 * Robot retries to connect to basketball manager if connection is lost or has not been established yet.
 
-=== Code works with new mechanics
+==== Code works with new mechanics
 
 * Robot uses new mechanics.
 * Robot starts from its corner of the court.
@@ -277,7 +277,7 @@ on how to use the board.
 * Task is completed when a ball is thrown into the opponent's basket.
 * Can be completed together with "Code works with new electronics" task.
 
-=== Code works with new electronics
+==== Code works with new electronics
 
 * Robot uses new electronics.
 * Robot starts from its corner of the court.
@@ -432,7 +432,7 @@ so that the edge of the bottom plate touches the ball before the side of the rob
 *** image:ball_not_stuck_extended_bottom.png[width=160]
 *** Both options push the ball below its center, which helps the ball to roll away.
 
-=== Robot design completed
+==== Robot design completed
 
 * Complete design approved.
 
