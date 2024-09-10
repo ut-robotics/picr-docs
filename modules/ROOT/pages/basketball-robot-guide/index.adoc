@@ -34,7 +34,14 @@ xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion]
 
 xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
+xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup]
+
+
 == Changelog
+
+=== 2024-08-09
+
+. Created remote desktop guide page.
 
 === 2022-10-16
 
