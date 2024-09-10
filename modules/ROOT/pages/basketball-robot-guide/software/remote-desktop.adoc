@@ -1,46 +1,40 @@
 = Remote desktop
 
-It can sometimes be difficult to set up a working remote
-desktop solution with linux and our image processing
-software. The reason is that when no display device is
-connected OpenCL related components are not loaded by the
-OS, leading to program startup failure. Below is a guide
-to set up a working remote desktop connection.
+It can sometimes be difficult to set up a working remote desktop solution with linux and our image processing software.
+The reason is that when no display device is connected OpenCL related components are not loaded by the OS, leading to program startup failure.
+Below is a guide to set up a working remote desktop connection.
 
 Some things to note about this solution's limitations:
 
-. You should be in the same WI-FI network with your server
-and client computers. Else you can not connect.
-. This solution involves the setup of a video dummy. This
-can create a situation where the computers usual outputs
-like HDMI/DP won't output anything. Have a back-up in case
-of network issues. Back-ups include:
-.. Learning how to use linux recovery console to clear the
-display output disabling configuration
-.. Set up a known hotspot the server machine connects with
-automatically.
-.. Have a SSH terminal accessible to the machine to remove
-the configuration.
+. You should be in the same WI-FI network with your server and client computers.
+Else you can not connect.
+. This solution involves the setup of a video dummy.
+This can create a situation where the computers usual outputs like HDMI/DP won't output anything.
+Have a back-up in case of network issues.
+Back-ups include:
+.. Learning how to use linux recovery console to clear the display output disabling configuration
+.. Set up a known hotspot the server machine connects with automatically.
+.. Have a SSH terminal accessible to the machine to remove the configuration.
 
 == Setup
 
 . Install NoMachine on both your client and server machine.
-You can download the rpm package and install it using your
-preferred installer. One way would be:
+You can download the rpm package and install it using your preferred installer.
+One way would be:
 +
 [source,bash]
 ----
 sudo alien -i package --scripts
 ----
-. Set up and validate that you can connect to the machine using
-NoMachine from your client machine.
+. Set up and validate that you can connect to the machine using NoMachine from your client machine.
 . Install linux video-dummy package:
 +
 [source,bash]
 ----
 sudo apt-get install xserver-xorg-video-dummy
 ----
-. Configure the dummy. The config file needs to be created like so:
+. Configure the dummy.
+The config file needs to be created like so:
 +
 [source,bash]
 ----
