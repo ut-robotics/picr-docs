@@ -24,6 +24,8 @@ xref:basketball-robot-guide/electronics/review-summary.adoc[Review summary]
 
 xref:basketball-robot-guide/mechanics/design.adoc[Design]
 
+xref:basketball-robot-guide/mechanics/checklist.adoc[Checklist]
+
 xref:basketball-robot-guide/mechanics/cam.adoc[Fusion 360 CAM]
 
 xref:basketball-robot-guide/mechanics/review-summary.adoc[Review summary]
