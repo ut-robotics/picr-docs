@@ -35,9 +35,9 @@ image::mechanics_checklist_interference_parts.png[]
 
 In almost all cases, parts should be affixed using bolts.
 
-=== Make bolts and parts accessable
+=== Make bolts and parts accessible
 
-Bolts used for affixing parts to the chassis should be accessable. +
+Bolts used for affixing parts to the chassis should be accessible. +
 When designing parts that are attached together, you should think about how
 the components are positioned and assembled together. +
 "_How many parts do I need to disassemble to access this specific component?_" +
