@@ -8,7 +8,7 @@
 
 === All sketches have to be fully defined
 
-xref::design.adoc#_fully_defined_sketch[Fully defined sketch in Mechanics Design > Sketches]
+xref:basketball-robot-guide/mechanics/design.adoc#_fully_defined_sketch[Fully defined sketch in Mechanics Design > Sketches]
 
 === Milled parts have to be modeled based on the material used for milling
 
@@ -46,7 +46,7 @@ the components are positioned and assembled together. +
 
 === Make bolt holes and their responses correctly dimensioned
 
-xref::design.adoc#_fasteners[Fasterners in Mechanics Design]
+xref:basketball-robot-guide/mechanics/design.adoc#_fasteners[Fasterners in Mechanics Design]
 
 When a bolt goes through multiple parts, only the last part should have a
 threaded hole. +
@@ -56,7 +56,7 @@ threaded holes for the physical parts.
 
 === Make inside corners with dogbones
 
-xref::design.adoc#_inside_sharp_corners[Inside sharp corners in Mechanics Design]
+xref:basketball-robot-guide/mechanics/design.adoc#_inside_sharp_corners[Inside sharp corners in Mechanics Design]
 
 When milling, sharp inside corners are impossible to be milled due to the
 radius of the tool. This will cause the corners to be rounded, and this can
@@ -104,7 +104,7 @@ image::mechanics_checklist_rounded_corner.png[]
 
 == Camera
 
-xref::design.adoc#_camera[Camera in Mechanics Design]
+xref:basketball-robot-guide/mechanics/design.adoc#_camera[Camera in Mechanics Design]
 
 === Center the RGB sensor of the camera to the center of the thrower
 
