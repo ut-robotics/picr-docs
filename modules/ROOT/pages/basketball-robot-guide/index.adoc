@@ -38,8 +38,14 @@ xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
 xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup]
 
+xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins]
+
 
 == Changelog
+
+=== 2024-08-13
+
+. Created the plugin guide page.
 
 === 2024-08-09
 

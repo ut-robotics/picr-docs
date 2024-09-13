@@ -21,6 +21,7 @@
 *** xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion]
 *** xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 *** xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup]
+*** xref:basketball-robot-guide/software/remote-desktop.adoc[Using IDE plugins]
 
 .xref:boot-camp-tasks/index.adoc[Boot camp tasks]
 * Electronics
