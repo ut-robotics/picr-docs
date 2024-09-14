@@ -1,0 +1,166 @@
+= Using IDE plugins
+
+There are plugins you can utilize in your development process to increase efficient.
+This document highlights some of them and provides examples of their usefulness.
+This document is based on the PyCharm IDE but similar plugins are available for other popular IDE-s, like VS code.
+If not using PyCharm take the guide as a set of guidelines and adapt them to your IDE-s features
+
+== SonarLint
+
+SonarLint is a static code analyzer that helps you write more maintainable code.
+It highlights issues, small and large, sometimes even suggesting fixes for them.
+It is a great tool to avoid the usual pitfalls when writing code.
+You can read more details about it here https://www.sonarsource.com/products/sonarlint/.
+
+=== Examining issues in a file
+
+SonarLint Scans your open file and highlights issues it discovered.
+In the plugin drawer you can see details about issues in the file.
+They are ordered based on severity.
+When selecting an issue you see additional information about said issues on the right.
+There the basic nature of the issue is described and fixes are suggested.
+
+image::plugins_sonarlint_ide.png[]
+
+=== Example: Default values on mutable function parameters
+
+This is a usual issue where python assigns function default values once.
+If this value is modified, then so is the default used everywhere else.
+
+SonarLint provides a handy tip that describes the nature of the issue and sometimes has suggestions as to how to fix it.
+An example can be seen below when hovering over the issue highlighted in yellow.
+
+image::plugins_sonarlint_fix_suggestion.png[]
+
+Additional information can be seen in the plugin drawer below.
+It also highlights other issues that are in the file you are working on.
+We can see quite a few highlighted issues:
+
+image::plugins_sonarlint_file_info.png[]
+
+When clicking on the issue, you can see more details about the issue on the right.
+It can give you hints as to how to resolve the issue:
+
+image::plugins_sonarlint_aditional_info.png[]
+
+Some issues can be resolved automatically by clicking on the SonarLint suggested fix.
+In this case it suggests us to initialize the parameter.
+Clicking on it modifies your code.
+
+image::plugins_sonarlint_fix_suggestion.png[]
+
+The plugin modifies your code, resulting in new code, like so:
+
+image::plugins_sonarlint_fix_implementation.png[]
+
+== Mypy
+
+Mypy is a static type checker for Python.
+It extends python functionality to combine dynamic and static typing.
+This allows to avoid issues with mixed types where code logic can be affected by wrong but non-erroneous input types.
+As an example this can happen when passing a float as a function parameter requiring an integer.
+
+=== Setup
+
+Installing Mypy is simple, you can install it with your favorite Python package manager, pip for example:
+
+[source,bash]
+----
+python3 -m pip install mypy
+----
+
+After that you can run the checker via command line:
+
+[source,bash]
+----
+mypy program.py
+----
+
+or you can install a Mypy plugin for your IDE.
+
+=== Code examples
+
+We have code that prints the input to console.
+It is designed to only handle strings as inputs.
+
+[source,python]
+----
+def say_hello(name):
+    return "Hello " + name
+
+# This call will fail because Python does not allow
+# to add a string and a number
+print(say_hello(123))
+# This call succeeds and prints out the string "Hello Juku"
+print(say_hello("Juku"))
+----
+
+Now we will convert this code to use typing:
+
+[source,python]
+----
+def say_hello(name: string) -> string:
+    return "Hello " + name
+
+# Now Mypy displays an error here because there is a argument type missmatch
+# Argument 1 to "say_hello" has incompatible type "int"; expected "str"
+print(say_hello(123))
+# This call succeeds and prints out "Hello Juku"
+print(say_hello("Juku"))
+----
+
+Additionally, the type definitions allow to detect illegal operations inside functions:
+
+[source,python]
+----
+# Here we multiply two strings. This is an illegal action that Mypy picks up on.
+# Unsupported operand types for * ("str" and "str")
+def wrong_say_hello(name: str) -> str:
+    return 'Hello ' * name
+----
+
+Type detection also works on more complex and nested data structures like lists and dictionaries:
+
+[source,python]
+----
+def greet_people(names: list[str]) -> None:
+    for name in names:
+        print('Hello ' + name)
+
+# Works fine since we expect a list of strings
+greet_people(["Juku", "Juhan", "Pille"])
+# Error due to wrong type
+greet_people([1, 2, 3])
+----
+
+You can also utilize types from external libraries:
+
+[source,python]
+----
+from pathlib import Path
+
+def load_template(template_path: Path, name: str) -> str:
+    # Mypy knows that `template_path` has a `read_text` method that returns a str
+    template = template_path.read_text()
+    # ...so it understands this line type checks
+    return template.replace('USERNAME', name)
+----
+
+Some more complex libraries that, for example are missing type hints, may require additional plugins.
+You might need to declare stub files that describe the libraries expected input and output types.
+Info about how to do it can be found here https://mypy.readthedocs.io/en/stable/stubs.html#stub-files.
+Numpy, for example, has a plugin for Mypy support that can be read up on here
+https://numpy.org/devdocs/reference/typing.html.
+
+Different Mypy features can also be configured using a configuration file.
+A reference guide can be found here https://mypy.readthedocs.io/en/stable/config_file.html.
+
+=== IDE plugins
+
+For IDE support, I suggest using the Mypy plugin by Roberto Leinardi that can be found here https://plugins.jetbrains.com/plugin/11086-mypy.
+It helps with real time and on-demand scanning of your project files so you don't forget to do it.
+
+If you commit to using Mypy, I suggest setting it to strict and following its guidelines.
+It helps you write more maintainable and error resistant code.
+
+image::plugins_mypy_ide.png[]
