@@ -2,11 +2,12 @@
 
 There are plugins you can utilize in your development process to increase efficient.
 This document highlights some of them and provides examples of their usefulness.
-The IDE this document is based on is PyCharm but similar plugins are available for most other popular IDE-s.
+This document is based on the PyCharm IDE but similar plugins are available for other popular IDE-s, like VS code.
+If not using PyCharm take the guide as a set of guidelines and adapt them to your IDE-s features
 
 == SonarLint
 
-SonarLint is a static code analyzed that helps you write more maintainable code.
+SonarLint is a static code analyzer that helps you write more maintainable code.
 It highlights issues, small and large, sometimes even suggesting fixes for them.
 It is a great tool to avoid the usual pitfalls when writing code.
 You can read more details about it here https://www.sonarsource.com/products/sonarlint/.
@@ -16,14 +17,14 @@ You can read more details about it here https://www.sonarsource.com/products/son
 SonarLint Scans your open file and highlights issues it discovered.
 In the plugin drawer you can see details about issues in the file.
 They are ordered based on severity.
-When selecting an issue you see additional information about siad issues on the right.
+When selecting an issue you see additional information about said issues on the right.
 There the basic nature of the issue is described and fixes are suggested.
 
 image::plugins_sonarlint_ide.png[]
 
 === Example: Default values on mutable function parameters
 
-This is an usual issue where python assigns function default values once.
+This is a usual issue where python assigns function default values once.
 If this value is modified, then so is the default used everywhere else.
 
 SonarLint provides a handy tip that describes the nature of the issue and sometimes has suggestions as to how to fix it.
@@ -54,9 +55,10 @@ image::plugins_sonarlint_fix_implementation.png[]
 
 == Mypy
 
-Mypy is an static type checker for Python.
+Mypy is a static type checker for Python.
 It extends python functionality to combine dynamic and static typing.
-This allows to avoid issues with mixed types where code logic can be affected by wrong but non-erroneous input types, like passing a float to a function requiring an integer.
+This allows to avoid issues with mixed types where code logic can be affected by wrong but non-erroneous input types.
+As an example this can happen when passing a float as a function parameter requiring an integer.
 
 === Setup
 
@@ -74,7 +76,7 @@ After that you can run the checker via command line:
 mypy program.py
 ----
 
-or you can install an Mypy plugin for your IDE.
+or you can install a Mypy plugin for your IDE.
 
 === Code examples
 
@@ -107,7 +109,7 @@ print(say_hello(123))
 print(say_hello("Juku"))
 ----
 
-Additionally the type definitions allow to detect illegal operations inside functions:
+Additionally, the type definitions allow to detect illegal operations inside functions:
 
 [source,python]
 ----
