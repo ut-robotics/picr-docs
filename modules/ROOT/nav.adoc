@@ -19,9 +19,9 @@
 *** xref:basketball-robot-guide/mechanics/review-summary.adoc[Review summary]
 ** Software
 *** xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion]
-*** xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 *** xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup]
 *** xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins]
+*** xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
 .xref:boot-camp-tasks/index.adoc[Boot camp tasks]
 * Electronics
