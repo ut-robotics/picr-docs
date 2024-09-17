@@ -15,9 +15,9 @@
 * Closed loop speed control of 3 brushless DC motors.
 ** Designed for https://www.pololu.com/category/116/37d-metal-gearmotors[Pololu 37D Metal Gearmotors]
 with quadrature encoders.
-** Motor driver current limited to 1.94 A.
+** Motor driver current limited to 2.9 A.
 ** Motor driver supply voltage up to around 16.8V (maximum voltage of 4S LiPo batteries).
-Limited by ceramic capacitors that are rated  to 25 V.
+Limited by ceramic capacitors that are rated to 25 V.
 * Reverse voltage protection MOSFET on the motor driver supply side.
 * Two 5 V small hobby servo outputs with 50 Hz PWM signals.
 * One BLDC ESC (Electronic Speed Controller) signal output using DShot protocol at 150 kb/s.
