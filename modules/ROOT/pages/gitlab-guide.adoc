@@ -3,16 +3,16 @@
 
 = GitLab guide
 
-== Team repository
+Guide for using GitLab hosted team repository.
 
-=== Directory structure
+== Directory structure
 
 * `/` - general documentation
 * `software/` - robot's code
 * `electronics/` - electronics design
 * `firmware/` - mainboard firmware
 
-=== Branches
+== Branches
 
 Use correct branch to edit files in a specific directory.
 It is allowed to create subdirectories in the root directory
@@ -28,7 +28,7 @@ Merge requests should be created against this branch.
 * `electronics` - for electronics design and related documentation in `electronics` directory.
 * `firmware` - for mainboard firmware and related documentation in `firmware` directory.
 
-=== Workflow
+== Workflow
 
 === Cloning the repository
 
@@ -42,12 +42,12 @@ git clone --single-branch --branch documentation git@gitlab.ut.ee:loti.05.023/pi
 git clone --single-branch --branch software git@gitlab.ut.ee:loti.05.023/picr2024/picr24-team-<team-name>.git picr24-team-<team-name>-software
 ----
 
-==== General documentation
+=== General documentation
 
 * `documentation` branch should be used.
 * Merge request should be created when general documentation is ready for review.
 
-==== Software
+=== Software
 
 * `software` branch should be used.
 * When the functionality for a programming task has been implemented and thoroughly tested on the court,
@@ -57,7 +57,7 @@ a merge request should be created and instructors notified about it.
 * If the robot is able to complete the task, then the team gets the task approved.
 * If code changes are needed for completing the task, new merge request needs to be created.
 
-==== Firmware
+=== Firmware
 
 * `firmware` branch should be used.
 * When the functionality has been implemented and thoroughly tested, a merge request should be created
@@ -68,7 +68,7 @@ and instructors notified about it.
 then the team gets the task approved.
 * If code changes are needed for completing the task, new merge request needs to be created.
 
-==== Electronics
+=== Electronics
 
 * `electronics` branch should be used.
 * Instructors should be notified
@@ -82,7 +82,7 @@ Instructors will close the issues when they have been resolved.
 then the design tasks are completed and the PCBs will be ordered by instructors.
 * When the electronics documentation is ready, it needs to be reviewed the same way as the design.
 
-==== Mechanics
+=== Mechanics
 
 * Mechanics design must be created in Autodesk Fusion.
 * Instructors should be notified
@@ -95,6 +95,3 @@ Instructors will close the issues when they have been resolved.
 * If the final review has been completed and there are no more issues,
 then the design tasks are completed and the design can be prepared for milling.
 * Manufacturing setup for milling needs to be reviewed the same way as the designs.
-
-
-
