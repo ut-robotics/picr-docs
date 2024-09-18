@@ -64,7 +64,8 @@ image::schematic_programmer_connector_arm10.png[Programmer connector,400]
 
 BOOT0 pin can be left unused or used for some other function if nSWBOOT0 is set to 1 in FLASH_OPTR registry.
 If nSWBOOT0 is set to 0, then pulldown resitor should be connected to BOOT0 pin.
-For more information see Boot configuration section on link:firmware.adoc[Firmware] page.
+For more information see Boot configuration section on
+xref:basketball-robot-guide/electronics/firmware.adoc[Firmware] page.
 
 === nRESET pin
 
