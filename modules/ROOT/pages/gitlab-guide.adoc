@@ -51,7 +51,7 @@ git clone --single-branch --branch software git@gitlab.ut.ee:loti.05.023/picr202
 
 * `software` branch should be used.
 * When the functionality for a programming task has been implemented and thoroughly tested on the court,
-a merge request should be created.
+a merge request should be created and instructors notified about it.
 * Instructors will review the merge request and either give feedback that needs to be resolved or merge the merge request.
 * After the merge request has been merged, the relevant task can be presented during practical.
 * If the robot is able to complete the task, then the team gets the task approved.
@@ -60,7 +60,8 @@ a merge request should be created.
 ==== Firmware
 
 * `firmware` branch should be used.
-* When the functionality has been implemented and thoroughly tested, a merge request should be created.
+* When the functionality has been implemented and thoroughly tested, a merge request should be created
+and instructors notified about it.
 * Instructors will review the merge request and either give feedback that needs to be resolved or merge the merge request.
 * After the merge request has been merged, the relevant task can be presented during practical.
 * If the mainboard functionality is demonstrated and meets the firmware task requirements,
