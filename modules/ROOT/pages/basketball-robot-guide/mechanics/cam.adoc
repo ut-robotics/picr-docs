@@ -27,11 +27,39 @@ to make a model that you can edit without affecting the original model.
 
 image::fusion_360_cam_manufacturing_model.png[]
 
-If you have a multipart assembly you can use the "Arrange" functionality from Fusion 360 preview features
-to automatically arrange and flatten the assembly.
+Parts that will not be milled out should be removed from the manufacturing model.
+
+The manufacturing model can be edited by right-clicking on it and selecting "Edit Manufacturing Model".
+
+image::fusion_360_cam_manufacturing_model_edit.png[]
+
+== Arrange
+
+Using the Arrange feature, flat parts can be placed down and set up for milling.
+
+Arranging the parts will be done in the Manufacturing Model.
+
+image::fusion_360_cam_manufacturing_model_edit.png[]
+
+Using Arrange in Manufacturing Model is more convenient, and does not break operations when changing the arrangement of parts.
 
 A video tutorial on how to enable and use the "Arrange" functionality can be found here: +
 https://youtu.be/7egLufCg5tk
+
+You should also check out these two guides below
+
+Follow the *Arrange in the Manufacture workspace* part +
+https://help.autodesk.com/view/fusion360/ENU/?guid=NST-ARR-MFG-MDL[Fusion Help | Arrange in the Design or Manufacture workspace]
+
+And this guide +
+https://help.autodesk.com/view/fusion360/ENU/?guid=NST-ARR-SELECT[Fusion Help | Arrange components on a flat surface]
+
+
+The settings below can be used. These settings can be changed later, i.e the length and width, depending on the dimensions of the actual available material.
+Make sure that the "Allow Partial Arrange" is unticked, this will let Fusion raise an error message if the selected parts do not fit into the area.
+"Auto Preview" can also be unticked so Fusion doesn’t calculate a new arrangement when selecting a new part or changing the settings.
+
+image::fusion_360_cam_arrange_settings.png[]
 
 == Job setup
 
@@ -53,6 +81,32 @@ Another important thing here is to set stock offsets to 0 on the Stock tab.
 image::fusion_360_cam_stock_settings.png[]
 
 Now you can click OK, and you have created your first setup for milling job.
+
+== Order of operations
+
+Generally move from inside the part to outside.
+Cutting from outside first can mean that the part comes loose and the inside features can't be cut.
+
+Example order:
+
+. Drilling
+. Pockets
+. Inside contours
+. Outside contours
+
+== Tool size
+
+Largest available diameter tool size should be used based on smallest inner radius of the milled parts.
+Larger diameter tools are more rigid and can remove more material in the same time.
+
+== Tools
+
+The file for the tools you can use can be found below at <<_tool_settings>>.
+
+Import these into your local tool library, by opening up MANAGE -> Tool Library. +
+There, on the left side, right-click on Local and select "Import libraries". +
+Select the tools file to import.
+
 
 == Drilling
 
@@ -143,6 +197,26 @@ Tabs are usually not needed for small inside contours.
 
 image::fusion_360_cam_contour_geometry.png[]
 
+Heights can be usually left unchanged.
+
+image::fusion_360_cam_contour_heights.png[]
+
+On the *Passes* tab, change *Tolerance* to 0.01, if not using finishing passes.
+
+Select *Multiple Depths*. Use a value of 1 mm for *Maximum Roughing Stepdown*.
+Cutting too much material in one pass can result in bad surface finish or the tool can break under load.
+
+Uncheck *Stock to Leave* or use small negative *Radial Stock to Leave* if you need looser fit.
+
+image::fusion_360_cam_contour_passes.png[]
+
+On the *Linking* tab, uncheck *Lead-In (Entry)* and *Lead-Out (Exit)*.
+Change *Ramp Type* to *Plunge*.
+Plastic is soft enough to not require more gradual ramping.
+
+image::fusion_360_cam_contour_linking.png[]
+
+
 == Checking the results
 
 Now that you have created your CAM job, you can quickly check it for any obvious mistakes.
@@ -177,10 +251,14 @@ https://cam.autodesk.com/hsmposts[https://cam.autodesk.com/hsmposts]
 === First time usage
 
 . Open MANUFACTURE in Fusion 360.
-. Select *Post process* from Toolbar -> Actions or by right-clicking on a setup or operation(s).
-. Click on *Setup* and choose *Use Personal Post Library*.
-. Make sure that *STEPCRAFT UCCNC* is selected under Post Configuration.
-. Uncheck *Open NC file in editor*.
+. Select *Post process* from MILLING → ACTIONS or by right-clicking on a setup or operation(s).
+. Under Settings → Post, click on the folder icon *"Select post from the library"*.
+. From the options at the top, select *"Import"*.
+. Select the previously downloaded .cps file.
+. Select the *STEPCRAFT UCCNC* post and click "Select".
+. Rename the file in the "File name" field.
+. Select an output folder that you can easily find.
+. Uncheck *Open NC file in editor* and *Create NC program*.
 . Press *Post* and save the file.
 
 === Usage
