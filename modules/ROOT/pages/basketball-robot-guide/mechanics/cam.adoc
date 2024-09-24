@@ -60,8 +60,9 @@ And this guide +
 https://help.autodesk.com/view/fusion360/ENU/?guid=NST-ARR-SELECT[Fusion Help | Arrange components on a flat surface]
 
 
-The settings below can be used. These settings can be changed later,
-i.e the length and width, depending on the dimensions of the actual available material.
+The settings below can be used.
+These settings can be changed later, i.e the length and width,
+depending on the dimensions of the actual available material.
 Make sure that the "Allow Partial Arrange" is unticked,
 this will let Fusion raise an error message if the selected parts do not fit into the area.
 "Auto Preview" can also be unticked so Fusion doesn’t calculate a new arrangement
