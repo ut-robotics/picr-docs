@@ -7,7 +7,8 @@
 == Intro
 
 To mill out your parts from plastic sheet,
-we need to generate https://en.wikipedia.org/wiki/G-code[G-code] for the milling machine.
+we need to generate https://en.wikipedia.org/wiki/G-code[G-code] for the
+milling machine.
 This can be achieved with Fusion's *MANUFACTURE* feature.
 This document describes most important properties and methods how to prepare your designs for milling.
 
@@ -27,11 +28,47 @@ to make a model that you can edit without affecting the original model.
 
 image::fusion_360_cam_manufacturing_model.png[]
 
-If you have a multipart assembly you can use the "Arrange" functionality from Fusion 360 preview features
-to automatically arrange and flatten the assembly.
+Parts that will not be milled out should be removed from
+the manufacturing model.
 
-A video tutorial on how to enable and use the "Arrange" functionality can be found here: +
+The manufacturing model can be edited by right-clicking on it and selecting "Edit Manufacturing Model".
+
+image::fusion_360_cam_manufacturing_model_edit.png[]
+
+== Arrange
+
+Using the Arrange feature, flat parts can be placed down and set up for milling.
+
+Arranging the parts will be done in the Manufacturing Model.
+
+image::fusion_360_cam_manufacturing_model_edit.png[]
+
+Using Arrange in Manufacturing Model is more convenient,
+and does not break operations when changing the arrangement of parts.
+
+A video tutorial on how to enable and use the "Arrange" functionality
+can be found here: +
 https://youtu.be/7egLufCg5tk
+
+You should also check out these two guides below
+
+Follow the *Arrange in the Manufacture workspace* part +
+https://help.autodesk.com/view/fusion360/ENU/?guid=NST-ARR-MFG-MDL[Fusion Help | Arrange in the Design or Manufacture
+workspace]
+
+And this guide +
+https://help.autodesk.com/view/fusion360/ENU/?guid=NST-ARR-SELECT[Fusion Help | Arrange components on a flat surface]
+
+
+The settings below can be used.
+These settings can be changed later, i.e the length and width,
+depending on the dimensions of the actual available material.
+Make sure that the "Allow Partial Arrange" is unticked,
+this will let Fusion raise an error message if the selected parts do not fit into the area.
+"Auto Preview" can also be unticked so Fusion doesn’t calculate a new arrangement
+when selecting a new part or changing the settings.
+
+image::fusion_360_cam_arrange_settings.png[]
 
 == Job setup
 
@@ -54,6 +91,32 @@ image::fusion_360_cam_stock_settings.png[]
 
 Now you can click OK, and you have created your first setup for milling job.
 
+== Order of operations
+
+Generally move from inside the part to outside.
+Cutting from outside first can mean that the part comes loose and the inside features can't be cut.
+
+Example order:
+
+. Drilling
+. Pockets
+. Inside contours
+. Outside contours
+
+== Tool size
+
+Largest available diameter tool size should be used based on smallest inner radius of the milled parts.
+Larger diameter tools are more rigid and can remove more material in the same time.
+
+== Tools
+
+The file for the tools you can use can be found below at <<_tool_settings>>.
+
+. Import these into your local tool library, by opening up MANAGE -> Tool Library.
+. On the left side, right-click on Local and select "Import libraries".
+. Select the tools file to import.
+
+
 == Drilling
 
 Drilling should usually be the first operation.
@@ -63,7 +126,7 @@ Create new drilling operations from the toolbar DRILLING -> Drill.
 
 Select or create a tool.
 Change the Spindle Speed and Plunge Feedrate if necessary.
-Refer to the tools table below.
+Refer to the tools table towards the bottom of this page.
 
 image::fusion_360_cam_drill_tool.png[]
 
@@ -73,13 +136,12 @@ Same size holes can be included by selecting *Select Same Diameter*.
 image::fusion_360_cam_drill_geometry.png[]
 
 On the heights tab, change the *Feed Height Offset* to 1mm.
-This helps to save time since drilling does a lot of movements in z-axis direction and (plunge) feedrate is rather slow.
+This helps to save time since drilling does a lot of movements in Z-axis direction and (plunge) feedrate is rather slow.
 
 If the drilled holes do not start from the top of the remaining stock, change *Top Height From* to *Stock top*.
 Otherwise the drill will be plunged too fast into the uncut material.
 
-Select *Drill Tip Through Bottom* and add small *Break-Through Depth*,
-if drilling all the way through the material.
+Select *Drill Tip Through Bottom* and add small *Break-Through Depth*, if drilling all the way through the material.
 
 image::fusion_360_cam_drill_heights.png[]
 
@@ -110,7 +172,7 @@ image::fusion_360_cam_pocket_heights.png[]
 On the *Passes* tab, change *Tolerance* to 0.01, if not using finishing passes.
 
 Select *Multiple Depths*.
-Default value of 1 mm works well for *Maximum Roughing Stepdown*.
+Use a value of 1 mm for *Maximum Roughing Stepdown*.
 Cutting too much material in one pass can result in bad surface finish or the tool can break under load.
 
 Uncheck *Stock to Leave* or use small negative *Radial Stock to Leave* if you need looser fit.
@@ -142,6 +204,26 @@ Loose parts can get in the way of the tool, which can damage the parts and break
 Tabs are usually not needed for small inside contours.
 
 image::fusion_360_cam_contour_geometry.png[]
+
+Heights can be usually left unchanged.
+
+image::fusion_360_cam_contour_heights.png[]
+
+On the *Passes* tab, change *Tolerance* to 0.01, if not using finishing passes.
+
+Select *Multiple Depths*. Use a value of 1 mm for *Maximum Roughing Stepdown*.
+Cutting too much material in one pass can result in bad surface finish or the tool can break under load.
+
+Uncheck *Stock to Leave* or use small negative *Radial Stock to Leave* if you need looser fit.
+
+image::fusion_360_cam_contour_passes.png[]
+
+On the *Linking* tab, uncheck *Lead-In (Entry)* and *Lead-Out (Exit)*.
+Change *Ramp Type* to *Plunge*.
+Plastic is soft enough to not require more gradual ramping.
+
+image::fusion_360_cam_contour_linking.png[]
+
 
 == Checking the results
 
@@ -177,17 +259,20 @@ https://cam.autodesk.com/hsmposts[https://cam.autodesk.com/hsmposts]
 === First time usage
 
 . Open MANUFACTURE in Fusion 360.
-. Select *Post process* from Toolbar -> Actions or by right-clicking on a setup or operation(s).
-. Click on *Setup* and choose *Use Personal Post Library*.
-. Make sure that *STEPCRAFT UCCNC* is selected under Post Configuration.
-. Uncheck *Open NC file in editor*.
+. Select *Post process* from MILLING → ACTIONS or by right-clicking on a setup or operation(s).
+. Under Settings → Post, click on the folder icon *"Select post from the library"*.
+. From the options at the top, select *"Import"*.
+. Select the previously downloaded .cps file.
+. Select the *STEPCRAFT UCCNC* post and click "Select".
+. Rename the file in the "File name" field.
+. Select an output folder that you can easily find.
+. Uncheck *Open NC file in editor* and *Create NC program*.
 . Press *Post* and save the file.
 
 === Usage
 
 . Open MANUFACTURE in Fusion 360.
-. Select *Post process* from Toolbar -> Actions or by right-clicking on a
-setup or operation(s).
+. Select *Post process* from Toolbar -> Actions or by right-clicking on a setup or operation(s).
 * If you want to include all the operations, select the setup.
 If you want to include only some of the operations, select only those operations.
 . Press *Post* and save the file.
@@ -205,8 +290,8 @@ xref:attachment$digilab_stepcraft_tools.json[Tools library file]
 *Material: Polycarbonate*
 
 Plastics work better with higher feedrates.
-At low feedrates the material might start to melt
-from excessive heat generated by the tool spending too much time in one place.
+At low feedrates the material might start to melt from
+excessive heat generated by the tool spending too much time in one place.
 
 Following settings are good starting points that have been used before.
 Reduce feedrates by around half for smaller features like inner contours.
@@ -293,8 +378,8 @@ Larger diameter tools are more rigid and can remove more material in the same ti
 . Reduce the *Feed height* for operations that use a lot of z-axis movements, like drilling.
 . Using the least amount of different tools allows to save time by avoiding tool changes.
 * One option is to design inner radiuses to be as large as possible to avoid using smaller diameter tools.
-. If different tools have to be used then it is recommended to order the operations
-by grouping together those that use the same tool.
+. If different tools have to be used then it is recommended to order
+the operations by grouping together those that use the same tool.
 
 === Multiple designs with single job
 
@@ -302,12 +387,13 @@ If same thickness material is used for different designs or same design needs to
 then it is possible to save time by creating an assembly from those designs and single CAM job for the entire assembly.
 Parts should be placed flat next to each other with enough space between them,
 so that tool used for outer contour fits between them.
-For example when using 3 mm endmill,
-there should be at least 3 mm of space between parts to avoid cutting into the part next to the one being milled.
+For example when using 3 mm endmill, there should be at least 3 mm of space between parts to avoid cutting into the
+part next to the one being milled.
 
-Use joints to place the parts in the assembly. Parts should be on the same plane.
+Use joints to place the parts in the assembly.
+Parts should be on the same plane.
 
 Inspect stock height from setup's settings.
-If all the parts have the same thickness, then stock height should not be larger than thickness of the parts.
+If all the parts have the same thickness, then stock height should not be larger than the thickness of the parts.
 
 image::fusion_360_cam_stock_height.png[]
