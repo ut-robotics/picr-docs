@@ -3,6 +3,20 @@
 
 = Grading and tasks
 
+== Changes
+
+=== 2024-10-24
+
+[cols=",,",options="header",]
+|===
+|Task |Old full points deadline |New full points deadline
+|Mainboard schematic completed |2024-10-14 20:00 |2024-10-28 20:00
+|Motor driver schematic completed |2024-10-14 20:00 |2024-10-28 20:00
+|Mainboard design completed |2024-11-04 20:00 |2024-11-11 20:00
+|Motor driver design completed |2024-11-04 20:00 |2024-11-11 20:00
+|PCB(s) soldered properly |2024-11-18 20:00 |2024-11-25 20:00
+|===
+
 == Grading
 
 Points you have earned will determine your grade. Refer to the list below.
@@ -60,11 +74,11 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 |Whole new robot fabricated |1000 |2024-11-25 20:00 |2024-12-09 20:00
 |Mechanics assembled |1600 |2024-12-02 20:00 |2025-01-15 20:00
 |*Electronics* | | |
-|Mainboard schematic completed |1000 |2024-10-14 20:00 |2025-01-15 20:00
-|Motor driver schematic completed |600 |2024-10-14 20:00 |2025-01-15 20:00
-|Mainboard design completed |1200 |2024-11-04 20:00 |2025-01-15 20:00
-|Motor driver design completed |600 |2024-11-04 20:00 |2025-01-15 20:00
-|PCB(s) soldered properly |600 |2024-11-18 20:00 |2025-01-15 20:00
+|Mainboard schematic completed |1000 |2024-10-28 20:00 |2025-01-15 20:00
+|Motor driver schematic completed |600 |2024-10-28 20:00 |2025-01-15 20:00
+|Mainboard design completed |1200 |2024-11-11 20:00 |2025-01-15 20:00
+|Motor driver design completed |600 |2024-11-11 20:00 |2025-01-15 20:00
+|PCB(s) soldered properly |600 |2024-11-25 20:00 |2025-01-15 20:00
 |PCB(s) working with firmware |1600 |2024-12-02 20:00 |2025-01-15 20:00
 |Throwing angle adjustable through mainboard |1000 |2024-12-02 20:00 |2025-01-15 20:00
 |Ball holder controllable through mainboard |1200 |2024-12-02 20:00 |2025-01-15 20:00
