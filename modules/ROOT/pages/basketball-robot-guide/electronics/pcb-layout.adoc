@@ -25,9 +25,9 @@ It's recommended to use 4 layers:
 
 . Start with initial component placement.
 Majority of time should be spent in this step to make routing the signals easier.
-. Route the signals and connect power and ground with vias to internal layers.
+. Route the signals and power, and connect ground with vias to internal layers.
 Adjust component placement where necessary to make room for vias and tracks or to bring components closer to each other.
-. Create power and ground copper areas on internal layers.
+. Create ground copper areas on internal layers.
 It's also useful to add ground copper areas on top and bottom layers for better thermal performance.
 
 == Component placement
@@ -46,10 +46,10 @@ Then place resistors close to the microcontroller.
 * Place decoupling capacitors as close as possible to power pins.
 ** This reduces the noise that could picked up on the longer track.
 ** Shorter tracks also resist the current flow less.
-* Connect power and ground with vias.
+* Connect ground with vias.
 ** Avoid placing vias between component pins and decoupling capacitor.
 ** Current should flow from power supply to capacitor and from decoupling capacitor to the component.
-** When tha components are hand soldered, then it's fine to place the vias inside the capacitor's pads.
+** When components are hand soldered, then it's fine to place the vias inside the capacitor's pads.
 ** When reflow soldering, vias would need to be plugged/filled first to avoid solder paste flowing into the via holes.
 
 image::pcb_layout_decoupling_capacitor.png[Decoupling capacitor connection]
