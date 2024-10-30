@@ -6,7 +6,7 @@
 
 == Student licence
 
-link:https://www.altium.com/solutions/academic-programs/student-licenses[]
+link:https://www.altium.com/education/students[]
 
 == Project
 
@@ -180,7 +180,7 @@ which is helpful for reducing crosstalk.
 image::electronics_jlcpcb_JLC04161H-3313_1p6mm_stackup.png[]
 +
 Dielectric constants for materials used by JLCPCB can be found here:
-https://jlcpcb.com/help/article/263-User-Guide-to-the-JLCPCB-Impedance-Calculator
+https://jlcpcb.com/help/article/User-Guide-to-the-JLCPCB-Impedance-Calculator
 . Open stackup editor with **D**esign -> Layer Stack Manager...
 . Select *Top Layer* and press *Add*.
 +

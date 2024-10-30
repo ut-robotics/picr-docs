@@ -3,6 +3,7 @@
 = Code review summary
 
 == Follow style guide for Python Code (PEP 8), if the team does that have any other preferences
+
 https://peps.python.org/pep-0008/
 
 == Use uniform writing style (of variables, functions, classes, files)

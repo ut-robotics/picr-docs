@@ -66,7 +66,7 @@ Place ESD protection components as close to the connector as possible.
 ** Wider tracks have less resistance and can carry more current.
 ** Calculators can be used to calculate track widths and other properties:
 *** https://www.digikey.ee/en/resources/conversion-calculators/conversion-calculator-pcb-trace-width
-*** https://saturnpcb.com/pcb_toolkit/
+*** https://saturnpcb.com/saturn-pcb-toolkit/
 ** Wider tracks are also mechanically more robust, which can be useful when doing hand soldering or rework.
 
 === Vias
@@ -74,8 +74,8 @@ Place ESD protection components as close to the connector as possible.
 * Via size can be calculated by current capability.
 ** Multiple smaller vias can be used in parallel instead of one larger via.
 ** Calculators can be used to calculate via properties:
-*** https://saturnpcb.com/pcb_toolkit/
-*** http://circuitcalculator.com/wordpress/2006/03/12/pcb-via-calculator/
+*** https://saturnpcb.com/saturn-pcb-toolkit/
+*** https://circuitcalculator.com/wordpress/2006/03/12/pcb-via-calculator/
 
 === Current return paths
 
@@ -94,7 +94,7 @@ and making sure the return current can flow through the path of least impedance.
 More information:
 
 * link:https://resources.altium.com/p/what-return-current-path-pcb[]
-* link:https://www.maximintegrated.com/en/design/technical-documents/tutorials/5/5450.html[]
+* link:https://www.analog.com/en/resources/technical-articles/successful-pcb-grounding-with-mixedsignal-chips--follow-the-path-of-least-impedance.html[]
 
 === Copper areas
 

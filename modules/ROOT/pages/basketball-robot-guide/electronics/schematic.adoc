@@ -51,8 +51,8 @@ image::schematic_decoupling_capacitors.png[Net labels,600]
 == Programmer connector
 
 One place where to find the pinout for programmer connector is in
-link:https://www.st.com/resource/en/user_manual/dm00555046-stlinkv3mods-and-stlinkv3mini-mini-debuggersprogrammers-for-stm32-stmicroelectronics.pdf[STLINK-V3MINI user manual]
-under _9.1.3 STDC14 for STLINK-V3MINI (STM32 JTAG/SWD and VCP)_.
+link:https://www.st.com/resource/en/user_manual/um2910-stlinkv3minie-debuggerprogrammer-tiny-probe-for-stm32-microcontrollers-stmicroelectronics.pdf[STLINK-V3MINIE user manual]
+under _6.3 STDC14 connector (CN4)_.
 
 On the schematic the connections should look similar to the image below:
 
