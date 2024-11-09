@@ -273,11 +273,11 @@ If there are other components or traces close to the differential pair traces,
 try to move them further away.
 +
 image::altium_differential_pair_routing_component_positioning.png[]
-. Start routing with Ro**u**te -> Interactive D**i**fferential Pair Routing (Shift+Ctrl+W or U -> I).
+. Start routing with Ro**u**te -> Interactive D**i**fferential Pair Routing (U -> I).
 To reduce impedance discontinuities and intra-pair skew:
 try to avoid bends,
 avoid using vias if possible or reduce the amount of vias
-and Keep traces as symmetrical as possible.
+and keep traces as symmetrical as possible.
 +
 image::altium_differential_pair_routing_inital_traces.png[]
 . If needed, adjust traces manually to reduce stub lengths.
