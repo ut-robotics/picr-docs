@@ -352,4 +352,4 @@ image::altium_designer_gerber_x2_connect_output_container.png[]
 
 . Click *Generate content* on the Output Container.
 . GerberX2 folder should be created with *.gbr files in it.
-. Make sure to save the *.OutJob file.
+. Make sure to save the *.OutJob and *.PrjPcb files.
