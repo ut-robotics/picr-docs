@@ -285,3 +285,71 @@ This can be done with regular routing (Ro**u**te -> Interactive Rou**t**ing [Ctr
 and some manual deleting and moving of the traces.
 +
 image::altium_differential_pair_routing_adjusted_traces.png[]
+
+== Generating Gerber X2 files
+
+=== Add OutJob to project
+
+. Right click on *.PrjPcb and select Add New to Project -> Output Job File.
+. Save *.OutJob file.
+It can have the same name as the project.
+
+=== Add Gerber X2 output to OutJob
+
+Click on [Add New Fabrication Output] and select Gerber X2 Files -> [PCB Document].
+
+image::altium_designer_add_gerber_x2_output.png[]
+
+=== Configure Gerber X2 output
+
+. Double-click on *Gerber X2 Files* or right click and select Configure...
++
+image::altium_designer_open_gerber_x2_configuration.png[]
+
+. Untick Generate Reports.
++
+image::altium_designer_gerber_x2_setup_untick_generate_reports.png[]
+
+. Make sure that Plot column is ticked for Board Outline, Copper Layers, Silkscreen, Solder Mask and Drills.
+Paste Mask is optional.
+Paste Mask files are needed for creating solder paste stencils.
++
+image::altium_designer_gerber_x2_setup.png[]
+
+. Press *Apply*.
+
+=== Add New Output Container
+
+. Click on [Add New Output Container] and select New Folder Structure.
++
+image::altium_designer_add_new_output_container_folder_structure.png[]
+
+. Name it Gerber X2.
+
+=== Change output container settings
+
+. Click on Change on output container.
+
+. Click on [Release Managed], select [Manually Managed] and press Done.
++
+image::altium_designer_output_container_manually_managed.png[]
+
+. Expand Advanced and untick "Open generated outputs" and "Add generated files to project".
++
+
+image::altium_designer_gerber_x2_output_container_settings.png[]
+
+. Press OK.
+
+=== Connect Fabrication Output to Output Container
+
+With the Output Container selected click the Enabled column on the Gerber X2 fabrication output row.
+Green line will show the connection between the output and the output container.
+
+image::altium_designer_gerber_x2_connect_output_container.png[]
+
+=== Generate Gerber X2 files
+
+. Click *Generate content* on the Output Container.
+. GerberX2 folder should be created with *.gbr files in it.
+. Make sure to save the *.OutJob file.
