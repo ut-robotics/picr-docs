@@ -28,6 +28,8 @@ xref:basketball-robot-guide/mechanics/checklist.adoc[Checklist]
 
 xref:basketball-robot-guide/mechanics/cam.adoc[Fusion 360 CAM]
 
+xref:basketball-robot-guide/mechanics/milling.adoc[Digilab milling]
+
 xref:basketball-robot-guide/mechanics/review-summary.adoc[Review summary]
 
 == Software
@@ -42,6 +44,10 @@ xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
 
 == Changelog
+
+=== 2024-11-18
+
+. Created the Digilab milling page.
 
 === 2024-08-13
 
