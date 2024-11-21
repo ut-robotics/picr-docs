@@ -56,15 +56,14 @@ image::picr23-mainboard_dimensions.png[]
 *v1.0.0*
 
 . Initial implementation of 3 wheel motor and 1 thrower motor speed control.
-
+////
 ==== Binary firmware file
 
-link:https://github.com/ReikoR/picr21-basketball-robot-guide/raw/master/source/electronics/picr21-NUCLEO-adapter-firmware_v1_1_0.bin[picr21-NUCLEO-adapter-firmware_v1_1_0.bin]
+xref:attachment$picr23-mainboard-firmware_v1_0_0.bin[picr23-mainboard-firmware_v1_0_0.bin]
 
-xref:attachment$picr21-NUCLEO-adapter-firmware_v1_1_0.bin[picr21-NUCLEO-adapter-firmware_v1_1_0.bin]
+Connect STLINK programmer to the mainboard and to a computer with USB.
+Drag or copy the *.bin file to the STLINK drive.
 
-Connect NUCLEO to a computer and drag or copy the *.bin file on the NOD_G431KB drive.
-////
 ==== Sending commands to mainboard
 
 Struct in firmware
