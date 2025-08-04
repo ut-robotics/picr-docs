@@ -110,7 +110,7 @@ Larger diameter tools are more rigid and can remove more material in the same ti
 
 == Tools
 
-The file for the tools you can use can be found below at <<_tool_settings>>.
+The file for the tools you can use can be found below at <<tool_settings>>.
 
 . Import these into your local tool library, by opening up MANAGE -> Tool Library.
 . On the left side, right-click on Local and select "Import libraries".
@@ -274,6 +274,7 @@ If you want to include only some of the operations, select only those operations
 . Press *Post* and save the file.
 . Collect your post process files on USB flash drive.
 
+[#tool_settings]
 == Tool settings
 
 [#fusion_360_digilab_tools_library]
