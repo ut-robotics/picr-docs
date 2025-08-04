@@ -13,7 +13,7 @@ link:https://www.altium.com/education/students[]
 === Creating a project
 
 * File -> New -> Project...
-* In *Create Project* window set project name (for example picr24-team-<your team name>-mainboard) and select project folder.
+* In *Create Project* window set project name (for example picr25-team-<your team name>-mainboard) and select project folder.
 
 === Adding schematic file
 
