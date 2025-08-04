@@ -398,7 +398,7 @@ image:dealing_with_opponent_step_3.svg[]
 * Design approved.
 * Camera added to the assembly.
 * Color sensor field of view pyramid added to the camera.
-** https://www.intelrealsense.com/wp-content/uploads/2024/10/Intel-RealSense-D400-Series-Datasheet-October-2024.pdf
+** https://realsenseai.com/wp-content/uploads/2024/10/Intel-RealSense-D400-Series-Datasheet-October-2024.pdf
 * It's recommended to align color sensor with the thrower.
 Color sensor is offset from the center of the camera.
 
@@ -663,4 +663,4 @@ or did something different, describe it.
 * Return parts, but keep robots assembled.
 * No grades if parts are not returned.
 * Refer to
-https://docs.google.com/spreadsheets/d/12PH4N7N4ndcIf181msBR4AeV2ylxO12JDnogXfvr8h8[Handed out equipment]
+https://docs.google.com/spreadsheets/d/13Yh1V3-C78R8dmtW2qVZxRvorkwktFD3FIHXrzvpMEc[handed out equipment table].

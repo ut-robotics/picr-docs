@@ -35,7 +35,7 @@ link:https://www.altium.com/education/students[]
 
 * Right click on *.PrjPcb -> Save
 * One option to name the files in the project is to use the projects name.
-For example if project is named picr24-team-one-mainboard.PrjPcb, then schematic would be named picr24-team-one-mainboard.SchDoc.
+For example if project is named picr25-team-one-mainboard.PrjPcb, then schematic would be named picr25-team-one-mainboard.SchDoc.
 
 == General
 

@@ -247,7 +247,7 @@ G-code is used to control the milling machine.
 === Setting up
 
 . Go to
-https://cam.autodesk.com/hsmposts[https://cam.autodesk.com/hsmposts]
+https://cam.autodesk.com/hsmposts
 . Search "STEPCRAFT UCCNC"
 . Click "Download" and put the downloaded file in Posts folder
 (_C:\Users\<USERNAME>\AppData\Roaming\Autodesk\Fusion 360 CAM\Posts_)
