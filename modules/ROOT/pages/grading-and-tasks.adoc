@@ -163,6 +163,8 @@ and request full design review several weeks before deadline.
 ==== Programming tasks
 
 * Code must be reviewed and approved by instructors to complete the tasks.
+* *Each task must be successfully completed 2 times in a row.*
+* Multiple attempts allowed.
 
 ==== Programming and competition tasks
 
@@ -236,9 +238,6 @@ on how to use the board.
 * Motor speed can be controlled through mainboard.
 
 === Programming
-
-* Each task must be successfully completed 2 times in a row.
-* Multiple attempts allowed.
 
 ==== Mainboard communication
 
