@@ -382,7 +382,7 @@ image:dealing_with_opponent_step_3.svg[]
 
 ==== Software documented
 
-* In team's repository `software` branch and `software/README.asciidoc` file.
+* In team's repository `software` branch and `software/README.asciidoc` file in AsciiDoc format.
 * Instructions on how to set up and run the code.
 * Used libraries and purpose of use.
 * A brief description of your game logic and overall code structure.
