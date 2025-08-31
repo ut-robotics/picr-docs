@@ -206,7 +206,6 @@ pictures and videos of some components and simple diagrams or drawings.
 ** Camera
 ** Mainboard
 ** Motors for each wheel.
-** Motor controller for each motor.
 ** Power path control board with PC adapter and battery inputs and PC power output.
 *** Refer to link:https://github.com/ReikoR/power_path_control_2016[power path control board] GitHub repository
 on how to use the board.
