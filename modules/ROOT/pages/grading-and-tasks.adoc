@@ -157,7 +157,7 @@ It is recommended to ask feedback early during practicals to fix most major prob
 and request full design review several weeks before deadline.
 * Mechanical design must be created with Autodesk Fusion.
 ** Mechanical design project folder will be created by instructors and shared with team members.
-* Electronics design must be in team's GitLab repository.
+* Electronics design must be in team's repository.
 ** All necessary documents (schematic, PCB layout, component libraries, project file, etc.) must be in the repository.
 
 ==== Programming tasks
