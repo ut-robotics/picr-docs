@@ -149,6 +149,7 @@ and the other half of the points from another team.
 
 * Designs must be reviewed and approved by instructors before fabricating mechanical parts or before PCBs are ordered.
 * Designs can be submitted for review at any time.
+** Unfinished designs can be submitted for early feedback.
 ** Revised designs can be resubmitted multiple times for review.
 ** Please consider that reviewing takes time and don't expect feedback immediately.
 ** In some cases it can take up to a month or more from the first review to the design being approved,
@@ -389,8 +390,6 @@ image:dealing_with_opponent_step_3.svg[]
 * A block diagram of your game logic.
 
 === Mechanics
-
-* Unfinished designs can be submitted for review at any time for early feedback.
 
 ==== Omni wheels design completed
 
