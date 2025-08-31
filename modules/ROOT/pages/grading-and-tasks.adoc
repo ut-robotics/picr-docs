@@ -18,8 +18,6 @@ Points you have earned will determine your grade. Refer to the list below.
 
 === Task points and deadlines
 
-Earned points can be found in *https://utr.ee[tasks table]*.
-
 *Tasks approved after "Full points deadline" and before "Expires at" will receive half of the points.*
 
 [cols=",,,",options="header",]
