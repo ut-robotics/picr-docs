@@ -399,7 +399,7 @@ image:dealing_with_opponent_step_3.svg[]
 ==== Motor mounts design completed
 
 * Design approved.
-* Motors and wheels added to the assembly
+* Motors and wheels added to the assembly.
 
 ==== Camera mount design completed
 
@@ -434,7 +434,6 @@ Color sensor is offset from the center of the camera.
 * Electronics mounting:
 ** Computer
 ** Mainboard
-** Motor boards
 ** Cutout for motor battery power switch.
 ** Cutout for PC power adapter socket.
 * Design that prevents balls from getting stuck against the robot.
