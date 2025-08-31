@@ -2,7 +2,7 @@
 :toclevels: 2
 :toc-title: Table of contents
 
-= Fusion 360 CAM
+= Autodesk Fusion CAM
 
 == Intro
 
@@ -254,7 +254,7 @@ https://cam.autodesk.com/hsmposts
 
 === First time usage
 
-. Open MANUFACTURE in Fusion 360.
+. Open MANUFACTURE in Autodesk Fusion.
 . Select *Post process* from MILLING → ACTIONS or by right-clicking on a setup or operation(s).
 . Under Settings → Post, click on the folder icon *"Select post from the library"*.
 . From the options at the top, select *"Import"*.
@@ -267,7 +267,7 @@ https://cam.autodesk.com/hsmposts
 
 === Usage
 
-. Open MANUFACTURE in Fusion 360.
+. Open MANUFACTURE in Autodesk Fusion.
 . Select *Post process* from Toolbar -> Actions or by right-clicking on a setup or operation(s).
 * If you want to include all the operations, select the setup.
 If you want to include only some of the operations, select only those operations.
@@ -277,10 +277,10 @@ If you want to include only some of the operations, select only those operations
 [#tool_settings]
 == Tool settings
 
-[#fusion_360_digilab_tools_library]
-=== Fusion 360 DigiLab tools library
+[#autodesk_fusion_digilab_tools_library]
+=== Autodesk Fusion DigiLab tools library
 
-You can import the file below into Fusion 360.
+You can import the file below into Autodesk Fusion.
 
 xref:attachment$digilab_stepcraft_tools.json[Tools library file]
 

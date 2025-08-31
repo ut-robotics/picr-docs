@@ -8,7 +8,7 @@ do not install any of the "Drivers (for updating firmware)".
 
 . Exporting file for printing:
 .. For Standalone software users: +
-In Fusion 360, select File > 3D Print.
+In Autodesk Fusion, select File > 3D Print.
 This will open up a prompt.
 Select the model you want to export.
 For the format choose STL (Binary)
@@ -16,7 +16,7 @@ and Unit Type as Millimeters.
 Click "OK" and a prompt should appear to save the .stl file.
 Save it somewhere that you can access easily.
 .. For online software users: +
-In Fusion 360, select File > Export.
+In Autodesk Fusion, select File > Export.
 This will open a prompt, under "Type", select STL files (*.stl).
 This should start a cloud translation of the file.
 The prompt will notify you where you can access the file.

@@ -12,7 +12,7 @@ and experience on robot building to improve overall quality of their robots.
 
 * *README.asciidoc*
 ** Names of all team members.
-** Links to all external sources (public link to Fusion 360 assembly and any other repositories).
+** Links to all external sources (public link to Autodesk Fusion assembly and any other repositories).
 ** Programming section (see below for requirements).
 ** Electronics section (see below for requirements).
 ** Mechanics section (see below for requirements).

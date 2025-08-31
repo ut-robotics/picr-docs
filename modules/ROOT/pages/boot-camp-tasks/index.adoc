@@ -16,7 +16,7 @@ xref:boot-camp-tasks/electronics/hterm-commands.adoc[Send commands to mainboard 
 
 == Mechanics
 
-xref:boot-camp-tasks/mechanics/install.adoc[Install Fusion 360]
+xref:boot-camp-tasks/mechanics/install.adoc[Install Autodesk Fusion]
 
 xref:boot-camp-tasks/mechanics/model.adoc[Model a minimal motor mount]
 
