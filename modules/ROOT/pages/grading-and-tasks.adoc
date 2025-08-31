@@ -590,7 +590,7 @@ on how to use the board.
 
 ==== Firmware documented
 
-* In team's repository `firmware` branch and `firmware/README.asciidoc` file.
+* In team's repository `firmware` branch and `firmware/README.asciidoc` file in AsciiDoc format.
 * Format and description of the data that can be sent to and received from mainboard.
 
 === Competitions
