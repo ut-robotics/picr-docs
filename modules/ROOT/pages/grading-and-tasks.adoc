@@ -519,7 +519,7 @@ Other colours are more expensive.
 *** Green solder mask to save money.
 Other colours are more expensive.
 **** PCB needs to be covered in the robot to comply with competition rules.
-*** For exceptions ask instructors
+*** For exceptions ask instructors.
 
 ==== PCB(s) soldered properly
 
@@ -529,7 +529,7 @@ Other colours are more expensive.
 ==== PCB(s) working with firmware
 
 * Firmware implements required functionality.
-* Firmware code hosted in team's repository.
+* Firmware code hosted in team's repository `firmware` branch.
 * Firmware code reviewed and approved.
 * Wheel and thrower motors can be controlled through the mainboard.
 * Wheel motors can be rotated in both directions.
