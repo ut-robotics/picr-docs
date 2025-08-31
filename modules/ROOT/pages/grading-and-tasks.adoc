@@ -216,6 +216,7 @@ on how to use the board.
 
 ==== Test robot thrower design completed
 
+* Design approved.
 * Thrower should technically be able to throw the ball.
 * At least one part must be designed to be milled in the lab.
 
@@ -227,7 +228,6 @@ on how to use the board.
 
 ==== Test robot thrower mechanics assembled and attached to robot
 
-* Design approved.
 * Thrower assembled and attached to the robot.
 
 ==== Test robot thrower electronics attached and working
