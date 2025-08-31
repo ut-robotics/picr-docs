@@ -478,8 +478,6 @@ but smaller robot uses less material and fits more easily into boxes.
 === Electronics
 
 * It's recommended to design a single PCB with a microcontroller and motor drivers.
-* *All PCB designs must be ready for ordering before 2023-12-04 20:00.*
-No orders will be made after that time.
 
 ==== Mainboard schematic completed
 
