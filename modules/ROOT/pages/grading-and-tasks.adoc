@@ -3,20 +3,6 @@
 
 = Grading and tasks
 
-== Changes
-
-=== 2024-10-24
-
-[cols=",,",options="header",]
-|===
-|Task |Old full points deadline |New full points deadline
-|Mainboard schematic completed |2024-10-14 20:00 |2024-10-28 20:00
-|Motor driver schematic completed |2024-10-14 20:00 |2024-10-28 20:00
-|Mainboard design completed |2024-11-04 20:00 |2024-11-11 20:00
-|Motor driver design completed |2024-11-04 20:00 |2024-11-11 20:00
-|PCB(s) soldered properly |2024-11-18 20:00 |2024-11-25 20:00
-|===
-
 == Grading
 
 Points you have earned will determine your grade. Refer to the list below.
@@ -40,94 +26,99 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 |===
 |Task |Points |Full points deadline |Expires at
 |*Test Robot* | | |
-|Test robot assembled |1200 |2024-09-23 20:00 |2024-11-18 20:00
-|Test robot thrower design completed |800 |2024-09-23 20:00 |2024-11-18 20:00
-|Test robot thrower fabricated |400 |2024-10-07 20:00 |2024-11-18 20:00
-|Test robot thrower mechanics assembled and attached to robot |400 |2024-10-10 20:00 |2024-11-18 20:00
-|Test robot thrower electronics attached and working |400 |2024-10-10 20:00 |2024-11-18 20:00
+|Test robot assembled |1000 |2025-09-22 20:00 |2025-11-17 20:00
+|Test robot thrower design completed |600 |2025-09-22 20:00 |2025-11-17 20:00
+|Test robot thrower fabricated |400 |2025-10-06 20:00 |2025-11-17 20:00
+|Test robot thrower mechanics assembled and attached to robot |400 |2025-10-09 20:00 |2025-11-17 20:00
+|Test robot thrower electronics attached and working |200 |2025-10-09 20:00 |2025-11-17 20:00
 |*Programming* | | |
-|Mainboard communication |1000 |2024-09-23 20:00 |2025-01-15 20:00
-|Robot finds a ball |2000 |2024-10-10 20:00 |2025-01-15 20:00
-|Robot follows a ball |1600 |2024-10-24 20:00 |2025-01-15 20:00
-|Robot finds basket with a ball |1600 |2024-10-31 20:00 |2025-01-15 20:00
-|Robot throws a ball |800 |2024-11-04 20:00 |2025-01-15 20:00
-|Robot can properly react to referee commands |1000 |2024-11-18 20:00 |2025-01-15 20:00
-|Code works with new mechanics |600 |2024-12-02 20:00 |2025-01-15 20:00
-|Code works with new electronics |600 |2024-12-02 20:00 |2025-01-15 20:00
-|3 of 11 balls in 60 seconds |2400 |2024-12-14 20:00 |2025-01-15 20:00
-|5 of 11 balls in 60 seconds |1600 |2024-12-14 20:00 |2025-01-15 20:00
-|2 of 5 balls with 6 balls outside |2000 |2024-12-09 20:00 |2025-01-15 20:00
-|Dealing with opponent robot using 1 ball |2000 |2024-12-09 20:00 |2025-01-15 20:00
-|Robot movable with remote controller |400 |2024-12-09 20:00 |2025-01-15 20:00
-|Throwing range test |1200 |2024-12-09 20:00 |2025-01-15 20:00
-|Ball holding test |1200 |2024-12-09 20:00 |2025-01-15 20:00
-|Software documented |200 |2025-01-09 20:00 |2025-01-15 20:00
+|Mainboard communication |400 |2025-09-25 20:00 |2026-01-12 20:00
+|Robot finds a ball |800 |2025-10-09 20:00 |2026-01-12 20:00
+|Robot follows a ball |800 |2025-10-23 20:00 |2026-01-12 20:00
+|Robot finds basket with a ball |800 |2025-11-06 20:00 |2026-01-12 20:00
+|Robot throws a ball |300 |2025-11-10 20:00 |2026-01-12 20:00
+|Robot can properly react to referee commands |800 |2025-11-17 20:00 |2026-01-12 20:00
+|Code works with new mechanics |400 |2025-12-18 20:00 |2026-01-17 20:00
+|Code works with new electronics |400 |2025-12-18 20:00 |2026-01-17 20:00
+|3 of 11 balls in 60 seconds |1000 |2025-12-18 20:00 |2026-01-17 20:00
+|5 of 11 balls in 60 seconds |1000 |2025-12-18 20:00 |2026-01-17 20:00
+|2 of 5 balls with 6 balls outside |1200 |2026-01-05 20:00 |2026-01-12 20:00
+|Dealing with opponent robot using 1 ball |1200 |2026-01-05 20:00 |2026-01-12 20:00
+|Robot movable with remote controller |400 |2026-01-05 20:00 |2026-01-12 20:00
+|Throwing range test |1200 |2026-01-05 20:00 |2026-01-12 20:00
+|Ball holding test |800 |2026-01-05 20:00 |2026-01-12 20:00
+|Software documented |400 |2026-01-19 20:00 |2026-01-21 20:00
 |*Mechanics* | | |
-|Omni wheels design completed |600 |2024-09-30 20:00 |2025-01-15 20:00
-|Motor mounts design completed |200 |2024-10-07 20:00 |2025-01-15 20:00
-|Camera mount design completed |200 |2024-10-21 20:00 |2025-01-15 20:00
-|Ball thrower design completed |600 |2024-11-11 20:00 |2025-01-15 20:00
-|Adjustable ball throwing angle design completed |1200 |2024-11-28 20:00 |2025-01-15 20:00
-|Ball holding thrower design completed |1200 |2024-11-28 20:00 |2025-01-15 20:00
-|Robot chassis design completed |1000 |2024-11-11 20:00 |2025-01-15 20:00
-|Robot design completed |1000 |2024-11-11 20:00 |2025-01-15 20:00
-|Whole new robot fabricated |1000 |2024-11-25 20:00 |2024-12-09 20:00
-|Mechanics assembled |1600 |2024-12-02 20:00 |2025-01-15 20:00
+|Omni wheels design completed |600 |2025-10-06 20:00 |2026-01-12 20:00
+|Motor mounts design completed |200 |2025-10-06 20:00 |2026-01-12 20:00
+|Camera mount design completed |200 |2025-11-03 20:00 |2026-01-12 20:00
+|Ball thrower design completed |1000 |2025-11-03 20:00 |2026-01-12 20:00
+|Adjustable ball throwing angle design completed |1000 |2025-11-03 20:00 |2026-01-12 20:00
+|Ball holding thrower design completed |400 |2025-11-24 20:00 |2026-01-12 20:00
+|Robot chassis design completed |1000 |2025-11-24 20:00 |2026-01-12 20:00
+|Robot design completed |600 |2025-11-24 20:00 |2026-01-12 20:00
+|Whole new robot fabricated |600 |2025-12-08 20:00 |2026-01-12 20:00
+|Mechanics assembled |1000 |2025-12-15 20:00 |2026-01-12 20:00
 |*Electronics* | | |
-|Mainboard schematic completed |1000 |2024-10-28 20:00 |2025-01-15 20:00
-|Motor driver schematic completed |600 |2024-10-28 20:00 |2025-01-15 20:00
-|Mainboard design completed |1200 |2024-11-11 20:00 |2025-01-15 20:00
-|Motor driver design completed |600 |2024-11-11 20:00 |2025-01-15 20:00
-|PCB(s) soldered properly |600 |2024-11-25 20:00 |2025-01-15 20:00
-|PCB(s) working with firmware |1600 |2024-12-02 20:00 |2025-01-15 20:00
-|Throwing angle adjustable through mainboard |1000 |2024-12-02 20:00 |2025-01-15 20:00
-|Ball holder controllable through mainboard |1200 |2024-12-02 20:00 |2025-01-15 20:00
-|Thrower voltage regulator attached and working |400 |2024-12-02 20:00 |2025-01-15 20:00
-|Electronics attached to the robot and working |1200 |2024-12-02 20:00 |2025-01-15 20:00
-|Mainboard documented |600 |2025-01-09 20:00 |2025-01-15 20:00
-|Motor driver documented |600 |2025-01-09 20:00 |2025-01-15 20:00
-|Firmware documented |200 |2025-01-09 20:00 |2025-01-15 20:00
+|Mainboard schematic completed |1200 |2025-10-19 20:00 |2026-01-12 20:00
+|Motor driver schematic completed |1000 |2025-10-19 20:00 |2026-01-12 20:00
+|Mainboard design completed |1200 |2025-11-09 20:00 |2026-01-12 20:00
+|Motor driver design completed |1000 |2025-11-09 20:00 |2026-01-12 20:00
+|PCB(s) soldered properly |800 |2025-12-01 20:00 |2026-01-12 20:00
+|PCB(s) working with firmware |1000 |2025-12-15 20:00 |2026-01-12 20:00
+|Throwing angle adjustable through mainboard |800 |2025-12-15 20:00 |2026-01-12 20:00
+|Ball holder controllable through mainboard |800 |2025-12-15 20:00 |2026-01-12 20:00
+|Thrower voltage regulator attached and working |200 |2025-12-15 20:00 |2026-01-12 20:00
+|Electronics attached to the robot and working |600 |2025-12-15 20:00 |2026-01-12 20:00
+|Mainboard documented |300 |2026-01-19 20:00 |2026-01-21 20:00
+|Motor driver documented |300 |2026-01-19 20:00 |2026-01-21 20:00
+|Firmware documented |200 |2026-01-19 20:00 |2026-01-21 20:00
 |*Progress Presentations* | | |
-|Progress presentation |200 | |2024-09-16 20:00
-|Progress presentation |200 | |2024-09-30 20:00
-|Progress presentation |200 | |2024-10-14 20:00
-|Progress presentation |200 | |2024-10-28 20:00
-|Progress presentation |200 | |2024-11-11 20:00
-|Progress presentation |200 | |2024-11-25 20:00
-|Progress presentation |200 | |2024-12-09 20:00
+|Progress presentation |100 | |2025-09-15 20:00
+|Progress presentation |100 | |2025-09-29 20:00
+|Progress presentation |100 | |2025-10-13 20:00
+|Progress presentation |100 | |2025-10-27 20:00
+|Progress presentation |100 | |2025-11-10 20:00
+|Progress presentation |100 | |2025-11-24 20:00
+|Progress presentation |100 | |2025-12-08 20:00
+|Progress presentation |100 | |2026-01-12 20:00
 |*Competitions* | | |
-|1st test competition |800 | |2024-11-07 20:00
-|1st test competition with new mechanics |100 | |2024-11-07 20:00
-|1st test competition with new electronics |100 | |2024-11-07 20:00
-|1st test competition winner |400 | |2024-11-07 20:00
-|2nd test competition |600 | |2024-11-21 20:00
-|2nd test competition with new mechanics |200 | |2024-11-21 20:00
-|2nd test competition with new electronics |200 | |2024-11-21 20:00
-|2nd test competition winner |400 | |2024-11-21 20:00
-|3rd test competition |400 | |2024-12-05 20:00
-|3rd test competition with new mechanics |300 | |2024-12-05 20:00
-|3rd test competition with new electronics |300 | |2024-12-05 20:00
-|3rd test competition winner |400 | |2024-12-05 20:00
-|4th test competition |200 | |2024-12-12 20:00
-|4th test competition with new mechanics |400 | |2024-12-12 20:00
-|4th test competition with new electronics |400 | |2024-12-12 20:00
-|4th test competition winner |400 | |2024-12-12 20:00
-|Delta X |2000 | |2024-12-14 20:00
-|Delta X with new mechanics |2000 | |2024-12-14 20:00
-|Delta X with new electronics |2000 | |2024-12-14 20:00
-|Delta X best course robot |1000 | |2024-12-14 20:00
-|Delta X 2nd best course robot |400 | |2024-12-14 20:00
-|Delta X 3rd best course robot |200 | |2024-12-14 20:00
+|1st test competition |1000 | |2025-11-20 20:00
+|1st test competition with new mechanics |100 | |2025-11-20 20:00
+|1st test competition with new electronics |100 | |2025-11-20 20:00
+|1st test competition winner |400 | |2025-11-20 20:00
+|2nd test competition |800 | |2025-12-04 20:00
+|2nd test competition with new mechanics |200 | |2025-12-04 20:00
+|2nd test competition with new electronics |200 | |2025-12-04 20:00
+|2nd test competition winner |400 | |2025-12-04 20:00
+|3rd test competition |600 | |2025-12-18 20:00
+|3rd test competition with new mechanics |300 | |2025-12-18 20:00
+|3rd test competition with new electronics |300 | |2025-12-18 20:00
+|3rd test competition winner |400 | |2025-12-18 20:00
+|4th test competition |400 | |2026-01-08 20:00
+|4th test competition with new mechanics |400 | |2026-01-08 20:00
+|4th test competition with new electronics |400 | |2026-01-08 20:00
+|4th test competition winner |400 | |2026-01-08 20:00
+|5th test competition |200 | |2026-01-15 20:00
+|5th test competition with new mechanics |500 | |2026-01-15 20:00
+|5th test competition with new electronics |500 | |2026-01-15 20:00
+|5th test competition winner |400 | |2026-01-15 20:00
+|Delta X |2000 | |2026-01-17 20:00
+|Delta X with new mechanics |2000 | |2026-01-17 20:00
+|Delta X with new electronics |2000 | |2026-01-17 20:00
+|Delta X best course robot |1000 | |2026-01-17 20:00
+|Delta X 2nd best course robot |400 | |2026-01-17 20:00
+|Delta X 3rd best course robot |200 | |2026-01-17 20:00
 |*Other* | | |
-|Team documentation started |200 |2024-09-23 20:00 |2024-11-18 20:00
-|Team documentation completed |400 |2025-01-09 20:00 |2025-01-15 20:00
-|Final presentation |0 | |2025-01-16 20:00
-|Parts returned |0 | |2025-01-16 20:00
+|Team documentation started |200 |2025-09-22 20:00 |2025-11-17 20:00
+|Team documentation completed |400 |2026-01-19 20:00 |2026-01-21 20:00
+|Final presentation |0 | |2026-01-22 20:00
+|Parts returned |0 | |2026-01-22 20:00
 |===
 
 === Teams
 
-* 4 members per team is recommended as grading is optimized for that.
+* 3 members per team is recommended as grading is optimised for that.
 * Teams can be self-formed.
 * Each team should have members to cover programming, mechanics and electronics.
 * Teams must be approved by the instructors.
@@ -143,15 +134,18 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 * Points can be distributed between all participants in the course, not just between members of the team.
 * All points must be distributed.
 * Points must be distributed as integers.
-* Each person can receive up to the maximum of a task’s points for the same task.
-For example, it's possible to receive half of the task’s maximum points from one team
+* Each person can receive up to the maximum of a task's points for the same task.
+For example, it's possible to receive half of the task's maximum points from one team
 and the other half of the points from another team.
 * Point distribution can't be changed without a good reason after the task has been completed.
 
 === Task presentation
 
-* At Delta robotics rooms.
-* During practicals (Mondays and Thursdays from 18:15 to 20:00) or any other time agreed upon with an instructor.
+==== All tasks
+
+* No adhesives (e.g. tape or glue) allowed on the robot.
+** Competing at Delta X is allowed, but points will not be awarded.
+** If you have a special use case, ask instructors for exceptions.
 
 ==== Design tasks
 
@@ -159,16 +153,33 @@ and the other half of the points from another team.
 * Designs can be submitted for review at any time.
 ** Revised designs can be resubmitted multiple times for review.
 ** Please consider that reviewing takes time and don't expect feedback immediately.
-* Design project access must be granted to instructors for review purposes.
-* Mechanical design must be created with Fusion 360.
+** In some cases it can take up to a month or more from the first review to the design being approved,
+when there are a lot of changes needed.
+It is recommended to ask feedback early during practicals to fix most major problems
+and request full design review several weeks before deadline.
+* Mechanical design must be created with Autodesk Fusion.
+** Mechanical design project folder will be created by instructors and shared with team members.
+* Electronics design must be in team's GitLab repository.
+** All necessary documents (schematic, PCB layout, component libraries, project file, etc.) must be in the repository.
 
-==== Programming and competitions
+==== Programming tasks
 
-* Code must be reviewed and approved by instructors to complete the tasks and to qualify for competitions.
+* Code must be reviewed and approved by instructors to complete the tasks.
+
+==== Programming and competition tasks
+
+* At Delta robotics rooms.
+**  During practicals (Mondays and Thursdays from 18:15 to 20:00) or any other time agreed upon with an instructor.
+* Robot needs to be properly assembled.
+** Relevant tasks need to be completed depending on the used hardware:
+*** Test robot assembled
+*** Test robot thrower mechanics assembled and attached to robot
+*** Test robot thrower electronics attached and working
+*** Mechanics assembled
+*** Electronics attached to the robot and working
+*** Thrower voltage regulator attached and working
 
 == Tasks
-
-https://utr.ee[*Tasks Table*]
 
 === Progress presentation
 
@@ -202,18 +213,20 @@ pictures and videos of some components and simple diagrams or drawings.
 *** Refer to link:https://github.com/ReikoR/power_path_control_2016[power path control board] GitHub repository
 on how to use the board.
 ** Batteries
-** Power switch between motor battery’s positive power connection.
+** Power switch between motor battery's positive power connection.
 ** Wires connecting electronics.
 *** Wires that connect to power sources should not be exposed.
 
 ==== Test robot thrower design completed
 
 * Thrower should technically be able to throw the ball.
+* At least one part must be designed to be milled in the lab.
 
 ==== Test robot thrower fabricated
 
 * CAM approved.
 * Parts fabricated.
+* At least one part milled in the lab.
 
 ==== Test robot thrower mechanics assembled and attached to robot
 
@@ -320,7 +333,7 @@ on how to use the board.
 * 6 balls outside the playing court.
 ** Outside black lines but on the playing area or outside the playing court.
 * Balls are placed by instructors.
-* Robot’s starting position will be selected by the instructors.
+* Robot's starting position will be selected by the instructors.
 ** For example robot can be placed outside the playing court (outside black lines)
 looking at the balls that are outside the playing area (not on the orange carpet).
 ** Robot can also be placed behind basket's backboard.
@@ -449,6 +462,9 @@ so that the edge of the bottom plate touches the ball before the side of the rob
 ==== Robot design completed
 
 * Complete design approved.
+* *Robots's maximum diameter must be 30 cm and maximum height 30 cm.*
+** Robot basketball rules allow for a diameter of up to 35 cm and height of up to 35 cm,
+but smaller robot uses less material and fits more easily into boxes.
 
 ==== Whole new robot fabricated
 
@@ -456,7 +472,7 @@ so that the edge of the bottom plate touches the ball before the side of the rob
 ** Milled parts must fit on the material sheet.
 ** Must use available milling tools.
 *** Consult with instructors about available tools.
-**** See xref:basketball-robot-guide/mechanics/cam.adoc#fusion_360_digilab_tools_library[Fusion 360 DigiLab tools library]
+**** See xref:basketball-robot-guide/mechanics/cam.adoc#autodesk_fusion_digilab_tools_library[Autodesk Fusion DigiLab tools library]
 * All parts fabricated.
 * Parts do not need to be assembled.
 
@@ -477,7 +493,10 @@ No orders will be made after that time.
 * Required functionality:
 ** Closed loop control of at least 3 motors.
 ** Thrower motor control.
-** Communication with robot’s computer.
+** Communication with robot's computer.
+* When using STM32 microcontroller and STM32CubeIDE or STM32CubeMX to do the pin assignments,
+add STM32CubeIDE project or *.ioc file to `firmware` branch in the team's repository.
+** This simplifies checking the pin assignments on the schematic.
 
 ==== Motor driver schematic completed
 
@@ -486,6 +505,7 @@ No orders will be made after that time.
 ** Can drive motors that are used on the robot.
 ** Works with batteries that are used on the robot.
 ** Electrically isolated from the mainboard.
+** Protected when power is connected with reverse polarity.
 
 ==== Mainboard design completed
 
@@ -493,7 +513,9 @@ No orders will be made after that time.
 * Design (schematic and layout) approved.
 ** PCB limitations:
 *** Size up to 50 mm x 50 mm.
-*** Price from JLCPCB up to 40$.
+*** Green solder mask to save money.
+Other colours are more expensive.
+**** PCB needs to be covered in the robot to comply with competition rules.
 *** For exceptions ask instructors.
 
 ==== Motor driver design completed
@@ -502,7 +524,9 @@ No orders will be made after that time.
 * Design (schematic and layout) approved.
 ** PCB limitations:
 *** Size up to 50 mm x 50 mm.
-*** Price from JLCPCB up to 40$.
+*** Green solder mask to save money.
+Other colours are more expensive.
+**** PCB needs to be covered in the robot to comply with competition rules.
 *** For exceptions ask instructors
 
 ==== PCB(s) soldered properly
@@ -515,17 +539,18 @@ No orders will be made after that time.
 * Firmware implements required functionality.
 * Firmware code hosted in team's repository.
 * Firmware code reviewed and approved.
-* Motors can be controlled through the mainboard.
-* Motors can be rotated in both directions.
-* Encoders must work. Closed loop (e.g. PI or PID) speed control must work.
+* Wheel and thrower motors can be controlled through the mainboard.
+* Wheel motors can be rotated in both directions.
+** Encoders must work.
+** Closed loop (e.g. PI or PID) speed control must work.
 
 ==== Throwing angle adjustable through mainboard
 
-* Commands can be sent to the mainboard to change the thrower angle.
+* Commands can be sent to the mainboard to change the throwing angle of a physical thrower.
 
 ==== Ball holder controllable through mainboard
 
-* Commands can be sent to the mainboard to grab, hold and release or/and throw a ball.
+* Commands can be sent to the mainboard to grab, hold and release or/and throw a ball with a physical thrower or mechanism.
 
 ==== Thrower voltage regulator attached and working
 
@@ -577,7 +602,7 @@ on how to use the board.
 ** Fits into size limits.
 ** Does not have any forbidden colors visible.
 ** Scores at least 1 point.
-* Starting from the 2nd test competition, robot needs to properly react to referee commands.
+* Robot needs to properly react to referee commands.
 
 ===== Test competition with new mechanics
 
@@ -619,14 +644,14 @@ on how to use the board.
 
 ==== Team documentation started
 
+* Must be reviewed and approved by instructors.
 * In team's repository `documentation` branch and `README.asciidoc` file.
+* In https://asciidoc.org/[AsciiDoc] format.
 * In English.
 * Names of the team members.
-* Public Fusion 360 project link.
 
 ==== Team documentation completed
 
-* Must be reviewed and approved by instructors.
 * No grades if not completed.
 * Requirements from the "Team documentation started" task also apply here.
 * README.asciidoc sections:
@@ -638,6 +663,7 @@ or did something different, describe it.
 *** Photos illustrating electronics on your robot. (electronics board, cable management, etc.)
 *** A short analysis of what was good and bad in your electronics and how to improve.
 ** Mechanics
+*** Public Autodesk Fusion design link.
 *** If you used something different from what was given at the start of the course
 or did something different, describe it.
 *** Description of the main points of interest in your ball thrower design and construction process.
