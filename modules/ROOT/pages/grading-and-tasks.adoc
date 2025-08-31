@@ -33,7 +33,7 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 |Test robot thrower electronics attached and working |200 |2025-10-09 20:00 |2025-11-17 20:00
 |*Programming* | | |
 |Mainboard communication |400 |2025-09-25 20:00 |2026-01-12 20:00
-|Robot finds a ball |800 |2025-10-09 20:00 |2026-01-12 20:00
+|Robot finds a ball |1200 |2025-10-09 20:00 |2026-01-12 20:00
 |Robot follows a ball |800 |2025-10-23 20:00 |2026-01-12 20:00
 |Robot finds basket with a ball |800 |2025-11-06 20:00 |2026-01-12 20:00
 |Robot throws a ball |300 |2025-11-10 20:00 |2026-01-12 20:00
