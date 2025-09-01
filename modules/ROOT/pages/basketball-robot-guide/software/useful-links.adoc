@@ -8,3 +8,6 @@ Here is a collection of useful links that might help you develop better code and
 
 * https://docs.python.org/3/howto/logging.html - Basics of logging in Python.
 
+* https://docs.python.org/3/library/profile.html - If your code is running slow you should profile and investigate what takes time.
+
+* https://numba.pydata.org/ - If you want to make very performant algorithms in Python. This pre-compiles functions but takes some work to get things working and plays hard with external libraries.
