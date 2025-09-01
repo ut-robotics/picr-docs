@@ -1,0 +1,10 @@
+= Useful links
+
+Here is a collection of useful links that might help you develop better code and give some hints when stuck:
+
+* https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html - Filtering out noise and amplifying interesting features.
+
+* https://www.geeksforgeeks.org/python/find-and-draw-contours-using-opencv-python/ - Finding contours of colored blobs.
+
+* https://docs.python.org/3/howto/logging.html - Basics of logging in Python.
+

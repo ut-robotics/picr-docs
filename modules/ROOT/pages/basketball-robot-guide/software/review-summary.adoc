@@ -1,12 +1,40 @@
 :toc:
 
-= Code review summary
+== Requirements for code and reviews
 
-== Follow style guide for Python Code (PEP 8), if the team does that have any other preferences
+=== Created Merge Requests should be small in scope
+
+To make Merge Requests as smooth as possible let's keep one MR-s scope to one task.
+
+If multiple tasks are combined into one MR it becomes hard to review due to the sheer scope of changes. This increases the time a review takes. Additionally, it is harder for the codes author to fix issues since systematic mistakes can be repeated more, creating more places needing fixing.
+
+*TL;DR:* It is better to keep the scope of code changes small and focused to make reviews fast and fixes easy.
+
+=== Follow PEP 8 coding conventions
+
+Let's follow PEP 8 coding conventions when writing code. They can be found here: *https://peps.python.org/pep-0008/*. This allows us to unify coding conventions and write better-to-read that can be understood faster by more people.
+
+*TL;DR:* Similar coding practices make understanding code simpler for reviewers and future readers of code.
+
+=== Use python logging instead of "print(...)" in final code
+While printing stuff to console is a simple approach to get fast results it is hard to fine tune and configure later on without changes in code. This becomes a real issue when the project grows, and it is needed to enable or disable printing for debugging purposes or gaining the few percentage points of performance you need by disabling all logging during a competition.
+
+[source,python]
+----
+print("Something happened!") # BAD
+
+logger.info("Something happened!") # GOOD
+----
+
+*TL;DR:* Logging seems like a lot of effort but it simple to set up and allows for better configurability that improves code debugging and performance when utilizing the tools correctly.
+
+== Previous code review summary
+
+=== Follow style guide for Python Code (PEP 8), if the team does that have any other preferences
 
 https://peps.python.org/pep-0008/
 
-== Use uniform writing style (of variables, functions, classes, files)
+=== Use uniform writing style (of variables, functions, classes, files)
 . https://github.com/ut-robotics/picr21-team-jordan/issues/51
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/24
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/43
@@ -20,23 +48,23 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-kobe/issues/82
 . https://github.com/ut-robotics/picr21-team-robothree/issues/4
 
-== Use understandable naming (for variables, functions, classes, files)
+=== Use understandable naming (for variables, functions, classes, files)
 . https://github.com/ut-robotics/picr21-team-jordan/issues/66
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/41
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/70
 . https://github.com/ut-robotics/picr21-team-kobe/issues/31
 . https://github.com/ut-robotics/picr21-team-kobe/issues/77
 
-== Use English
+=== Use English
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/12
 . https://github.com/ut-robotics/picr21-team-robothree/issues/7
 
-== Do not create separate code for completing tasks
+=== Do not create separate code for completing tasks
 . https://github.com/ut-robotics/picr21-team-jordan/issues/22
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/11
 . https://github.com/ut-robotics/picr21-team-shaq/issues/53
 
-== Do not duplicate code
+=== Do not duplicate code
 . https://github.com/ut-robotics/picr21-team-jordan/issues/11
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/25
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/45
@@ -50,30 +78,30 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-shaq/issues/57
 . https://github.com/ut-robotics/picr21-team-kobe/issues/12
 
-== Do not use global variables
+=== Do not use global variables
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/26
 . https://github.com/ut-robotics/picr21-team-bts/issues/58
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/13
 . https://github.com/ut-robotics/picr21-team-4meats/issues/14
 . https://github.com/ut-robotics/picr21-team-robothree/issues/2
 
-== Use pyrealsense2
+=== Use pyrealsense2
 . https://github.com/ut-robotics/picr21-team-jordan/issues/8
 . https://github.com/ut-robotics/picr21-team-bts/issues/16
 . https://github.com/ut-robotics/picr21-team-shaq/issues/25
 
-== Use manual camera exposure and white balance
+=== Use manual camera exposure and white balance
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/28
 . https://github.com/ut-robotics/picr21-team-shaq/issues/55
 
-== Use wide camera resolutions and higher frame rates
+=== Use wide camera resolutions and higher frame rates
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/29
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/21
 . https://github.com/ut-robotics/picr21-team-shaq/issues/22
 . https://github.com/ut-robotics/picr21-team-kobe/issues/27
 . https://github.com/ut-robotics/picr21-team-robothree/issues/8
 
-== Align camera depth frames with color frames when using depth data
+=== Align camera depth frames with color frames when using depth data
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/30
 . https://github.com/ut-robotics/picr21-team-bts/issues/88
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/69
@@ -81,7 +109,7 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-shaq/issues/58
 . https://github.com/ut-robotics/picr21-team-4meats/issues/15
 
-== Use serial.tools.list_ports (or equivalent) to find correct serial port
+=== Use serial.tools.list_ports (or equivalent) to find correct serial port
 . https://github.com/ut-robotics/picr21-team-jordan/issues/25
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/14
 . https://github.com/ut-robotics/picr21-team-bts/issues/18
@@ -92,30 +120,30 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-kurgimopeed/issues/8
 . https://github.com/ut-robotics/picr21-team-robothree/issues/1
 
-== Use enums
+=== Use enums
 . https://github.com/ut-robotics/picr21-team-jordan/issues/26
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/10
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/42
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/15
 
-== Avoid unnamed/hardcoded/repeated constants
+=== Avoid unnamed/hardcoded/repeated constants
 . https://github.com/ut-robotics/picr21-team-jordan/issues/9
 . https://github.com/ut-robotics/picr21-team-bts/issues/57
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/18
 . https://github.com/ut-robotics/picr21-team-kobe/issues/17
 . https://github.com/ut-robotics/picr21-team-kobe/issues/80
 
-== Create configuration files for constants that need to be changed
+=== Create configuration files for constants that need to be changed
 . https://github.com/ut-robotics/picr21-team-jordan/issues/70
 . https://github.com/ut-robotics/picr21-team-bts/issues/30
 . https://github.com/ut-robotics/picr21-team-kobe/issues/14
 
-== Use loops instead of repeating similar code
+=== Use loops instead of repeating similar code
 . https://github.com/ut-robotics/picr21-team-jordan/issues/10
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/15
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/14
 
-== Keep different parts of the code separate (separation of concerns)
+=== Keep different parts of the code separate (separation of concerns)
 . https://github.com/ut-robotics/picr21-team-jordan/issues/12
 . https://github.com/ut-robotics/picr21-team-jordan/issues/39
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/16
@@ -136,7 +164,7 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-kurgimopeed/issues/33
 . https://github.com/ut-robotics/picr21-team-robothree/issues/9
 
-== Use state machine for game logic
+=== Use state machine for game logic
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/38
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/46
 . https://github.com/ut-robotics/picr21-team-bts/issues/17
@@ -145,99 +173,100 @@ https://peps.python.org/pep-0008/
 . https://github.com/ut-robotics/picr21-team-4meats/issues/13
 . https://github.com/ut-robotics/picr21-team-kobe/issues/29
 
-== Create separate functions for state handlers
+=== Create separate functions for state handlers
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/17
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/43
 . https://github.com/ut-robotics/picr21-team-shaq/issues/54
 
-== Make manual control one of the game logic states
+=== Make manual control one of the game logic states
 . https://github.com/ut-robotics/picr21-team-bts/issues/42
 . https://github.com/ut-robotics/picr21-team-kobe/issues/34
 
-== Do not use hardcoded movement functions
+=== Do not use hardcoded movement functions
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/13
 . https://github.com/ut-robotics/picr21-team-bts/issues/20
 . https://github.com/ut-robotics/picr21-team-robothree/issues/3
 
-== Use proportional driving
+=== Use proportional driving
 . https://github.com/ut-robotics/picr21-team-shaq/issues/29
 . https://github.com/ut-robotics/picr21-team-4meats/issues/10
 . https://github.com/ut-robotics/picr21-team-kobe/issues/18
 
-== Use omni-motion to calculate motor speeds
+=== Use omni-motion to calculate motor speeds
 . https://github.com/ut-robotics/picr21-team-jordan/issues/23
 . https://github.com/ut-robotics/picr21-team-bts/issues/21
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/20
 . https://github.com/ut-robotics/picr21-team-robothree/issues/6
 
-== Do not open serial port connection multiple times
+=== Do not open serial port connection multiple times
 . https://github.com/ut-robotics/picr21-team-jordan/issues/24
 
-== Do not send commands to mainboard too frequently
+=== Do not send commands to mainboard too frequently
 . https://github.com/ut-robotics/picr21-team-shaq/issues/31
 
-== Close opened resources (camera, serial port, files)
+=== Close opened resources (camera, serial port, files)
 . https://github.com/ut-robotics/picr21-team-jordan/issues/52
 
-== Fix typos
+=== Fix typos
 . https://github.com/ut-robotics/picr21-team-jordan/issues/40
 
-== Remove unused code
+=== Remove unused code
 . https://github.com/ut-robotics/picr21-team-jordan/issues/53
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/27
 . https://github.com/ut-robotics/picr21-team-kobe/issues/35
 . https://github.com/ut-robotics/picr21-team-kobe/issues/37
 
-== Use WebSockets for receiving referee signals
+=== Use WebSockets for receiving referee signals
 . https://github.com/ut-robotics/picr21-team-jordan/issues/65
 
-== Do not send anything over WebSocket to robot basketball manager
+=== Do not send anything over WebSocket to robot basketball manager
 . https://github.com/ut-robotics/picr21-team-kobe/issues/52
 
-== Make sure that all the functionality has been implemented that is required in the task description
+=== Make sure that all the functionality has been implemented that is required in the task description
 . https://github.com/ut-robotics/picr21-team-jordan/issues/67
 
-== Test and review the code
+=== Test and review the code
 . https://github.com/ut-robotics/picr21-team-jordan/issues/38
 . https://github.com/ut-robotics/picr21-team-kobe/issues/28
 . https://github.com/ut-robotics/picr21-team-kobe/issues/53
 
-== Do not overuse threads
+=== Do not overuse threads
 . https://github.com/ut-robotics/picr21-team-bts/issues/82
 . https://github.com/ut-robotics/picr21-team-shaq/issues/30
 
-== Use unpacking operator (in Python)
+=== Use unpacking operator (in Python)
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/17
 
-== Use map() or list comprehension (in Python)
+=== Use map() or list comprehension (in Python)
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/19
 
-== Use elif (else if)
+=== Use elif (else if)
 . https://github.com/ut-robotics/picr21-team-tlo-rock/issues/65
 s
-== Use finally clause
+
+=== Use finally clause
 . https://github.com/ut-robotics/picr21-team-kobe/issues/81
 
-== Throw and handle exceptions
+=== Throw and handle exceptions
 . https://github.com/ut-robotics/picr21-team-kobe/issues/10
 
-== Create connect/open method for serial connection
+=== Create connect/open method for serial connection
 . https://github.com/ut-robotics/picr21-team-kobe/issues/11
 
-== Sample multiple depth pixels to find less noisy distance
+=== Sample multiple depth pixels to find less noisy distance
 . https://github.com/ut-robotics/picr21-team-kobe/issues/83
 
-== Avoid driving too close to basket
+=== Avoid driving too close to basket
 . https://github.com/ut-robotics/picr21-team-kobe/issues/93
 
-== Other code style improvements
+=== Other code style improvements
 . https://github.com/ut-robotics/picr21-team-kobe/issues/26
 . https://github.com/ut-robotics/picr21-team-kurgimopeed/issues/9
 
-== Performance optimisation
+=== Performance optimisation
 . https://github.com/ut-robotics/picr21-team-kobe/issues/84
 
-== Other
+=== Other
 . https://github.com/ut-robotics/picr21-team-sauna-madis/issues/47
 . https://github.com/ut-robotics/picr21-team-bts/issues/31
 . https://github.com/ut-robotics/picr21-team-bts/issues/33

@@ -40,6 +40,7 @@ xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins]
 
 xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
+xref:basketball-robot-guide/software/useful-links.adoc[Useful links]
 
 == Changelog
 
