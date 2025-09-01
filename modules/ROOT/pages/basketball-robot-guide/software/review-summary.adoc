@@ -1,5 +1,7 @@
 :toc:
 
+= Review summary
+
 == Requirements for code and reviews
 
 === Created Merge Requests should be small in scope
@@ -34,7 +36,7 @@ logger.info("Something happened!") # GOOD
 
 *TL;DR:* Logging seems like a lot of effort but it simple to set up and allows for better configurability that improves code debugging and performance when utilizing the tools correctly.
 
-== Previous code review summary
+== Previous code review issues index
 
 === Follow style guide for Python Code (PEP 8), if the team does that have any other preferences
 
