@@ -44,6 +44,9 @@ xref:basketball-robot-guide/software/useful-links.adoc[Useful links]
 
 == Changelog
 
+=== 2024-09-01
+. Created the useful links page for programming.
+
 === 2024-08-13
 
 . Created the plugin guide page.
