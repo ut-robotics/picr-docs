@@ -10,7 +10,7 @@ Some hints can be found here: *https://docs.opencv.org/4.x/d4/d73/tutorial_py_co
 . Return the found coordinates in a structured way in case you need to extend the data being returned in the future. Remember that there can be multiple balls in the frame so you should return a list. Also consider how to sort the list of balls to find the best one to drive towards.*TL;DR steps:*
 * Create a new function that takes in the frame data and returns a list of found balls
 * In the function find the contours for all using OpenCV
-* (Optional: Do some filtering to reduce noise, like pixel-sized contours)
+* (Optional: Do some filtering to reduce noise, like pixel-sized contours. It is best to filter data as soon as possible to reduce work being done on data you will throw away anyway)
 * Get the X and Y coordinates (and other data, if needed) for every contour. This is the data we will return.
 * Sort the data in a meaningful and consistent way. You should lock onto a single ball, not change the target every detection loop.
 * Make sure you return all the processed data to the main loop.
