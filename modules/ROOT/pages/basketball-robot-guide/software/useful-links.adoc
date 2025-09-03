@@ -1,4 +1,6 @@
-= Useful links
+= Useful links and other resources
+
+== Links
 
 Here is a collection of useful links that might help you develop better code and give some hints when stuck:
 
@@ -10,4 +12,70 @@ Here is a collection of useful links that might help you develop better code and
 
 * https://docs.python.org/3/library/profile.html - If your code is running slow you should profile and investigate what takes time.
 
-* https://numba.pydata.org/ - If you want to make very performant algorithms in Python. This pre-compiles functions but takes some work to get things working and plays hard with external libraries.
+* https://numba.pydata.org/ - If you want to make very performant algorithms in Python.
+This pre-compiles functions but takes some work to get things working and plays hard with external libraries.
+
+== Pseudo-code examples and ideas
+
+Here you can find some simple algorithms that might help you in writing code for your robot.
+
+=== Finding interesting objects
+
+Here is some pseudo-code that describes a way to find objects with segmented data and how one could filter out noise or bad objects.
+
+[source,python]
+----
+# We take 2 arguments:
+# segmented_frame: only our interested color segmented out data
+# unfiltered_segmented_frame: contains all colors segmented out data
+def find_objects(segmented_frame, unfiltered_segmented_frame):
+    # Filter out noise and transform raw segmented frame
+    segmented_frame = morphology(segmented_frame)
+    # Find contours from processed segmented frame
+    contours = find_contours(segmented_frame)
+
+    found_objects = []
+
+    for contour in contours:
+        if contour.size < MIN_OBJECT_SIZE:
+            continue
+
+        obj_x, obj_y = contour.get_centre_coordinates()
+
+        obj_size = contour.get_size()
+
+        if obj_size < MINIMUM_SIZE:
+            # Object is smaller than minimum threshold
+            continue
+
+        # we convert the pixel values to a normalized range between 0.0 and 1.0
+        normalized_x = normalize(obj_x, 0, FRAME_SIZE_X)
+        normalized_y = normalize(obj_y, 0, FRAME_SIZE_Y)
+
+        # Different filters to sort out invalid objects
+        if normalized_y < 0.05:
+            # Object in the top 5% of the frame. Implausible to be of interest
+            continue
+
+        # Analyze what pixels are between the object and center of the frame
+
+        # Find the color sequence of pixels between 2 points in the frame
+        line_sequence = get_line_color_sequence(
+            unfiltered_segmented_frame,
+            FRAME_SIZE_X/2,
+            FRAME_SIZE_Y,
+            obj_x,
+            obj_y)
+
+        if FORBIDDEN_SEQUENCE in line_sequence:
+            # We found a forbidden sequence in the line data. Object most likely behind a line
+            continue
+
+        found_objects.append(TrackedElement(obj_x, obj_y, obj_size))
+
+    # Sort the found objects based on a metric
+    found_objects.sort()
+
+    return found_objects
+
+----
