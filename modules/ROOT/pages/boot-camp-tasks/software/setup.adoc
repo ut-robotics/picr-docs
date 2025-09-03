@@ -32,7 +32,7 @@ Some useful plugins:
 sudo apt install git
 ----
 . Use Git to clone the provided example repository to a directory of your choice: +
-*https://github.com/ut-robotics/picr22-boot-camp-programming*
+*https://github.com/ut-robotics/picr25-boot-camp-programming*
 . Set up venv for python. Also familiarize yourself with the commands:
 +
 [source,bash]
