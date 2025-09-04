@@ -56,7 +56,7 @@ or any other reasonable place.
 
 === Team documentation
 
-Example assumes that directory name `images` containing image files has been created.
+Example assumes that a directory named `images` containing image files has been created.
 
 [source,asciidoc]
 ----
