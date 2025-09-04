@@ -4,6 +4,8 @@
 
 xref:basketball-robot-guide/general/batteries.adoc[Using batteries]
 
+xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
+
 == Electronics
 
 xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
@@ -42,6 +44,10 @@ xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
 
 == Changelog
+
+=== 2025-09-04
+
+. Created a page about writing documentation.
 
 === 2024-08-13
 

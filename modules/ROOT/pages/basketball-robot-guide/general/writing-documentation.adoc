@@ -1,0 +1,82 @@
+:toc:
+:toclevels: 3
+
+= Writing documentation
+
+Guide for using writing documentation in AsciiDOc format.
+
+== Branches
+
+Different tasks require documentation to be written in different team repository branches.
+
+To avoid switching between branches it's more convenient to make multiple local clones of the team repository.
+
+See: xref:gitlab-guide.adoc[GitLab Guide]
+
+[source,bash]
+----
+git clone --single-branch --branch documentation git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-documentation
+
+git clone --single-branch --branch software git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-software
+
+git clone --single-branch --branch electronics git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-electronics
+
+git clone --single-branch --branch firmware git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-firmware
+----
+
+== Editors
+
+AsciiDoc files can be edited online in GitLab, but offline IDEs provide better features
+and are recommended over online editing.
+
+* JetBrains IDEs (for example https://www.jetbrains.com/pycharm/[PyCharm])
+with https://plugins.jetbrains.com/plugin/7391-asciidoc[AsciiDoc plugin]
+* https://code.visualstudio.com/[Visual Studio] Code
+with https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[AsciiDoc extension].
+
+More information: https://docs.asciidoctor.org/asciidoctor/latest/tooling/
+
+== AsciiDoc documentation
+
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+== Recommended practices
+
+https://asciidoctor.org/docs/asciidoc-recommended-practices/
+
+=== One line per sentence
+
+In addition to
+https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line[One Sentence Per Line] practice,
+keep lines at a maximum length of 120 (or 80) symbols.
+Sentences longer than that can be split into multiple lines at commas, conjunction words (and, or, etc.)
+or any other reasonable place.
+
+== Examples
+
+=== Team documentation
+
+Example assumes that directory name `images` containing image files has been created.
+
+[source,asciidoc]
+----
+= Team Name
+
+== Team members
+
+* Name of the first member
+* Name of the second member
+* Name of the last member
+
+== Mechanics
+
+=== Design
+
+https://a360.co/123example[Fusion assembly]
+
+=== Thrower
+
+image::images/thrower_design.png[Thrower design]
+
+image::images/thrower_photo.jpg[Thrower]
+----

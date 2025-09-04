@@ -4,6 +4,7 @@
 .xref:basketball-robot-guide/index.adoc[Basketball robot guide]
 ** General
 *** xref:basketball-robot-guide/general/batteries.adoc[Using batteries]
+*** xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
 ** Electronics
 *** xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
 *** xref:basketball-robot-guide/electronics/components.adoc[Components]

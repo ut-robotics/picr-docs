@@ -641,6 +641,7 @@ on how to use the board.
 * In https://asciidoc.org/[AsciiDoc] format.
 * In English.
 * Names of the team members.
+* See: xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
 
 ==== Team documentation completed
 
