@@ -3,7 +3,7 @@
 
 = Writing documentation
 
-Guide for using writing documentation in AsciiDOc format.
+Guide for using writing documentation in AsciiDoc format.
 
 == Branches
 
