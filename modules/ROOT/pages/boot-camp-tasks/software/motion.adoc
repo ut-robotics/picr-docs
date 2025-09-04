@@ -13,6 +13,7 @@ Some hints can be found here: *https://docs.opencv.org/4.x/d4/d73/tutorial_py_co
 * (Optional: Do some filtering to reduce noise, like pixel-sized contours. It is best to filter data as soon as possible to reduce work being done on data you will throw away anyway)
 * Get the X and Y coordinates (and other data, if needed) for every contour. This is the data we will return.
 * Sort the data in a meaningful and consistent way. You should lock onto a single ball, not change the target every detection loop.
+* Check xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources] for an example.
 * Make sure you return all the processed data to the main loop.
 . Use the return data in the main loop to find if there are any balls in the frame.
 . If there are balls in the frame, *find the largest ball* and its coordinates.
