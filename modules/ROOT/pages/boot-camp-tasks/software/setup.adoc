@@ -37,7 +37,7 @@ sudo apt install git
 +
 [source,bash]
 ----
-cd picr22-boot-camp-programming
+cd picr25-boot-camp-programming
 sudo apt-get install -y python3-venv
 python -m venv robot_env
 

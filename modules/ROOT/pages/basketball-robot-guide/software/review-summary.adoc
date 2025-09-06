@@ -12,15 +12,11 @@ If multiple tasks are combined into one MR it becomes hard to review due to the 
 This increases the time a review takes.
 Additionally, it is harder for the codes author to fix issues since systematic mistakes can be repeated more, creating more places needing fixing.
 
-*TL;DR:* It is better to keep the scope of code changes small and focused to make reviews fast and fixes easy.
-
 === Follow PEP 8 coding conventions
 
 Let's follow PEP 8 coding conventions when writing code.
 They can be found here: *https://peps.python.org/pep-0008/*.
 This allows us to unify coding conventions and write better-to-read that can be understood faster by more people.
-
-*TL;DR:* Similar coding practices make understanding code simpler for reviewers and future readers of code.
 
 === Use python logging instead of "print(...)" in final code
 
