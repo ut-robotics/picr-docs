@@ -42,12 +42,17 @@ xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins]
 
 xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 
+xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources]
 
 == Changelog
 
 === 2025-09-04
 
 . Created a page about writing documentation.
+
+=== 2025-09-01
+
+. Created the "Useful links and other resources" page for programming.
 
 === 2024-08-13
 
@@ -82,19 +87,23 @@ Added repouring polygons section.
 . Added inventory table to components page.
 
 === 2022-07-10
+
 . Created mechanics design page.
 . Created Fusion 360 CAM page.
 . Created batteries page.
 . Created omni-motion page.
 
 === 2021-11-24
+
 . Updated some info for newer MCU and motor driver.
 
 === 2021-09-15
+
 . Changed recommended components to the ones that are in stock.
 . Changed recommended PCB layer stackup.
 
 === 2021-09-09
+
 . Added info to the firmware page about including usbd_cdc_if.h in main.c.
 . Added new test robot mainboard firmware that includes failsafe.
 

@@ -32,12 +32,12 @@ Some useful plugins:
 sudo apt install git
 ----
 . Use Git to clone the provided example repository to a directory of your choice: +
-*https://github.com/ut-robotics/picr22-boot-camp-programming*
+*https://github.com/ut-robotics/picr25-boot-camp-programming*
 . Set up venv for python. Also familiarize yourself with the commands:
 +
 [source,bash]
 ----
-cd picr22-boot-camp-programming
+cd picr25-boot-camp-programming
 sudo apt-get install -y python3-venv
 python -m venv robot_env
 
@@ -49,7 +49,7 @@ deactivate
 
 # Do not run this command. It will delete your OS.
 # It is important to read comments
-sudo rm -fr /*
+sudo rm -fr /
 ----
 . Install the required dependencies using pip:
 +

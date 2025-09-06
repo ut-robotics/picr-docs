@@ -3,18 +3,34 @@
 . Open `main.py`.
 This file contains an example implementation of the image processor and motion classes.
 *For this task in case of questions, ask an instructor.*
-. There should be a main loop that processes every camera frame
-and outputs a `ProcessedResults` object that contains information about objects detected in the frame.
-. Use the return data to find if there are any balls in the frame.
-. If there are balls in the frame, *find the largest balls Object.*
-. *Find the X and Y coordinates of the ball.*
+. There should be a main loop that processes every camera frame and outputs the color information received by the camera.
+. You should implement an object contour finding algorithm using tools provided by OpenCV to find the center coordinates for every green ball's contours.
+Some hints can be found here: *https://docs.opencv.org/4.x/d4/d73/tutorial_py_contours_begin.html*
+. Return the found coordinates in a structured way in case you need to extend the data being returned in the future.
+Remember that there can be multiple balls in the frame so you should return a list.
+Also consider how to sort the list of balls to find the best one to drive towards.*TL;DR steps:*
+* Create a new function that takes in the frame data and returns a list of found balls
+* In the function find the contours for all using OpenCV
+* (Optional: Do some filtering to reduce noise, like pixel-sized contours.
+It is best to filter data as soon as possible to reduce work being done on data you will throw away anyway)
+* Get the X and Y coordinates (and other data, if needed) for every contour.
+This is the data we will return.
+* Sort the data in a meaningful and consistent way.
+You should lock onto a single ball, not change the target every detection loop.
+* Check xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources] for an pseudo-code example.
+* Make sure you return all the processed data to the main loop.
+. Use the return data in the main loop to find if there are any balls in the frame.
+. If there are balls in the frame, *find the largest ball* and its coordinates.
 Take into consideration that the zero coordinates of the frame are in the upper left corner.
 . Using these coordinates calculate the rotation for the robot to turn towards the ball.
 Use `PrintingMotion` and its move method print the direction the robot is turning.
-If the directiction is opposite to what you expect, you can set the `polarity` variable to -1 to invert it. Teh default is 1.
-Write code so that *the robot centers the ball horizontally*.
+If the direction is opposite to what you expect, you can set the `polarity` variable to -1 to invert it.
+The default is 1.
+. Write code so that *the robot centers the ball horizontally*.
+The robot should stop once a ball is in the center of the frame and turn towards the ball if it is at one of the edges of the frame.
 *Don't only use constant speeds* since it leads to jerky motion.
 Try to implement a proportional system where the robot turns faster when the ball is further away from the center and slower when closer, stopping when centered.
+Consider using the width of the frame, the current position of the ball and the desired position of the ball in your calculations.
 . Demo your solution to the instructors.
 Iterate on the solution in case deficiencies are brought up by instructors.
 . If everything works, continue to the next task.
