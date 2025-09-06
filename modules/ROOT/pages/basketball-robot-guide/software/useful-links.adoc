@@ -242,8 +242,9 @@ def find_objects(segmented_frame, unfiltered_segmented_frame):
             # Object in the top 5% of the frame. Implausible to be of interest
             continue
 
-        # Analyze what pixels are between the object and center of the frame
+        # ADVANCED FILTERING START
 
+        # Analyze what pixels are between the object and center of the frame
         # Find the color sequence of pixels between 2 points in the frame
         line_sequence = get_line_color_sequence(
             unfiltered_segmented_frame,
@@ -255,6 +256,12 @@ def find_objects(segmented_frame, unfiltered_segmented_frame):
         if FORBIDDEN_SEQUENCE in line_sequence:
             # We found a forbidden sequence in the line data. Object most likely behind a line
             continue
+
+        if invalid_pixel_percentabe_below(obj_x, obj_y) > INVALID_PIXEL_THRESHOlD:
+            # We found too many wrong/non-orange pixels below the object. It most likely is not on the playing area
+            continue
+
+        # ADVANCED FILTERING END
 
         found_objects.append(TrackedElement(obj_x, obj_y, obj_size))
 
