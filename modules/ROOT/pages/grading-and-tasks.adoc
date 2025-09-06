@@ -18,8 +18,6 @@ Points you have earned will determine your grade. Refer to the list below.
 
 === Task points and deadlines
 
-Earned points can be found in *https://utr.ee[tasks table]*.
-
 *Tasks approved after "Full points deadline" and before "Expires at" will receive half of the points.*
 
 [cols=",,,",options="header",]
@@ -33,7 +31,7 @@ Earned points can be found in *https://utr.ee[tasks table]*.
 |Test robot thrower electronics attached and working |200 |2025-10-09 20:00 |2025-11-17 20:00
 |*Programming* | | |
 |Mainboard communication |400 |2025-09-25 20:00 |2026-01-12 20:00
-|Robot finds a ball |800 |2025-10-09 20:00 |2026-01-12 20:00
+|Robot finds a ball |1200 |2025-10-09 20:00 |2026-01-12 20:00
 |Robot follows a ball |800 |2025-10-23 20:00 |2026-01-12 20:00
 |Robot finds basket with a ball |800 |2025-11-06 20:00 |2026-01-12 20:00
 |Robot throws a ball |300 |2025-11-10 20:00 |2026-01-12 20:00
@@ -151,6 +149,7 @@ and the other half of the points from another team.
 
 * Designs must be reviewed and approved by instructors before fabricating mechanical parts or before PCBs are ordered.
 * Designs can be submitted for review at any time.
+** Unfinished designs can be submitted for early feedback.
 ** Revised designs can be resubmitted multiple times for review.
 ** Please consider that reviewing takes time and don't expect feedback immediately.
 ** In some cases it can take up to a month or more from the first review to the design being approved,
@@ -159,12 +158,14 @@ It is recommended to ask feedback early during practicals to fix most major prob
 and request full design review several weeks before deadline.
 * Mechanical design must be created with Autodesk Fusion.
 ** Mechanical design project folder will be created by instructors and shared with team members.
-* Electronics design must be in team's GitLab repository.
+* Electronics design must be in team's repository.
 ** All necessary documents (schematic, PCB layout, component libraries, project file, etc.) must be in the repository.
 
 ==== Programming tasks
 
 * Code must be reviewed and approved by instructors to complete the tasks.
+* *Each task must be successfully completed 2 times in a row.*
+* Multiple attempts allowed.
 
 ==== Programming and competition tasks
 
@@ -208,7 +209,6 @@ pictures and videos of some components and simple diagrams or drawings.
 ** Camera
 ** Mainboard
 ** Motors for each wheel.
-** Motor controller for each motor.
 ** Power path control board with PC adapter and battery inputs and PC power output.
 *** Refer to link:https://github.com/ReikoR/power_path_control_2016[power path control board] GitHub repository
 on how to use the board.
@@ -219,6 +219,7 @@ on how to use the board.
 
 ==== Test robot thrower design completed
 
+* Design approved.
 * Thrower should technically be able to throw the ball.
 * At least one part must be designed to be milled in the lab.
 
@@ -230,7 +231,6 @@ on how to use the board.
 
 ==== Test robot thrower mechanics assembled and attached to robot
 
-* Design approved.
 * Thrower assembled and attached to the robot.
 
 ==== Test robot thrower electronics attached and working
@@ -239,9 +239,6 @@ on how to use the board.
 * Motor speed can be controlled through mainboard.
 
 === Programming
-
-* Each task must be successfully completed 2 times in a row.
-* Multiple attempts allowed.
 
 ==== Mainboard communication
 
@@ -386,15 +383,13 @@ image:dealing_with_opponent_step_3.svg[]
 
 ==== Software documented
 
-* In team's repository `software` branch and `software/README.asciidoc` file.
+* In team's repository `software` branch and `software/README.asciidoc` file in AsciiDoc format.
 * Instructions on how to set up and run the code.
 * Used libraries and purpose of use.
 * A brief description of your game logic and overall code structure.
 * A block diagram of your game logic.
 
 === Mechanics
-
-* Unfinished designs can be submitted for review at any time for early feedback.
 
 ==== Omni wheels design completed
 
@@ -404,7 +399,7 @@ image:dealing_with_opponent_step_3.svg[]
 ==== Motor mounts design completed
 
 * Design approved.
-* Motors and wheels added to the assembly
+* Motors and wheels added to the assembly.
 
 ==== Camera mount design completed
 
@@ -439,7 +434,6 @@ Color sensor is offset from the center of the camera.
 * Electronics mounting:
 ** Computer
 ** Mainboard
-** Motor boards
 ** Cutout for motor battery power switch.
 ** Cutout for PC power adapter socket.
 * Design that prevents balls from getting stuck against the robot.
@@ -484,8 +478,6 @@ but smaller robot uses less material and fits more easily into boxes.
 === Electronics
 
 * It's recommended to design a single PCB with a microcontroller and motor drivers.
-* *All PCB designs must be ready for ordering before 2023-12-04 20:00.*
-No orders will be made after that time.
 
 ==== Mainboard schematic completed
 
@@ -527,7 +519,7 @@ Other colours are more expensive.
 *** Green solder mask to save money.
 Other colours are more expensive.
 **** PCB needs to be covered in the robot to comply with competition rules.
-*** For exceptions ask instructors
+*** For exceptions ask instructors.
 
 ==== PCB(s) soldered properly
 
@@ -537,7 +529,7 @@ Other colours are more expensive.
 ==== PCB(s) working with firmware
 
 * Firmware implements required functionality.
-* Firmware code hosted in team's repository.
+* Firmware code hosted in team's repository `firmware` branch.
 * Firmware code reviewed and approved.
 * Wheel and thrower motors can be controlled through the mainboard.
 * Wheel motors can be rotated in both directions.
@@ -649,6 +641,7 @@ on how to use the board.
 * In https://asciidoc.org/[AsciiDoc] format.
 * In English.
 * Names of the team members.
+* See: xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
 
 ==== Team documentation completed
 
