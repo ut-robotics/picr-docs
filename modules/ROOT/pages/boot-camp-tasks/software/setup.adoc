@@ -8,11 +8,11 @@ You can use another version of Linux but consider, that a library we use `pyreal
 is only available on python 3.11 or older.
 The guide below applies for Ubuntu 22 and python 3.10.
 
-. Install `distutils` for python :
+. Install `build-essential, python3-dev, distutils` for python :
 +
 [source,bash]
 ----
-sudo apt-get install python3-distutils
+sudo apt-get install build-essential python3-dev python3-distutils
 ----
 . Install a IDE of your choice.
 Visual Studio Code or PyCharm are good options.
