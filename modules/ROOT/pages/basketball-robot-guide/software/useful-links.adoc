@@ -10,7 +10,8 @@ Here is a collection of useful links that might help you develop better code and
 
 * https://docs.python.org/3/howto/logging.html - Basics of logging in Python.
 
-* https://docs.python.org/3/library/profile.html - If your code is running slow you should profile and investigate what takes time.
+* https://docs.python.org/3/library/profile.html - If your code is running slow you should profile and investigate
+what takes time.
 
 * https://numba.pydata.org/ - If you want to make very performant algorithms in Python.
 This pre-compiles functions but takes some work to get things working and plays hard with external libraries.
@@ -18,9 +19,10 @@ This pre-compiles functions but takes some work to get things working and plays 
 == How to Git - intro
 
 Git is a useful versioning tool we use during the whole course.
-There are some useful patterns to know before you start the robot project to avoid pitfalls and make everyone's life a little bit easier.
+There are some useful patterns to know before you start the robot project to avoid pitfalls and make everyone's
+life a little bit easier.
 
-Overall I suggest ot use a IDE when working with Git, not the command line interface.
+Overall I suggest ot use an IDE when working with Git, not the command line interface.
 Visuals provided by and IDE makes navigating in the project a lot simpler.
 Command examples below are provided as commands, but they are identically named inside an IDE.
 
@@ -39,21 +41,29 @@ Can be created using
 ----
 git init
 ----
+
 or when using a remote repository
 +
 [source,bash]
 ----
 git clone git@github.com:ut-robotics/picr-docs.git
 ----
+
 the status of a repository can be checked using
 +
 [source,bash]
 ----
+# Get status
 git status
-
 #On branch ....
 #Your branch is up to date with 'origin/...'.
+
+#Get git history log
+git log
+# commit b8cbbff7c8f260a18373e2cc121708d3a5b8a21d (HEAD -> ..., origin/...)
+#Author: ...
 ----
+
 * *Local Repository* - part of the Repository that resides in your file system.
 It can be synced with the remote Repository.
 * *Remote Repository* - part of the Repository that resides off-site in another server.
@@ -79,7 +89,9 @@ git add -A && git commit -m "A reasonable and meaningful message"
 # git push REMOTE-NAME BRANCH-NAME
 git push origin master # pushes the changes to the 'master' branch in 'origin'
 ----
-Sometimes there is a need to remove files from a repository. This can be done so:
+
+Sometimes there is a need to remove files from a repository.
+This can be done so:
 +
 [source,bash]
 ----
@@ -87,7 +99,11 @@ git rm bad_file
 git commit -m "Remove bad_file"
 git push
 ----
-* *Git ignore* - some files, like local configuration files or files containing secrets should not be commited. To enforce this it is possible to define a .gitignore file that makes said objects invisible to git. In our course we have multiple folders with different contents. It is good to have separate .gitignore files to limit the scope of changes to said folders.
+
+* *Git ignore* - some files, like local configuration files or files containing secrets should not be commited.
+To enforce this it is possible to define a .gitignore file that makes said objects invisible to git.
+In our course we have multiple folders with different contents.
+It is good to have separate .gitignore files to limit the scope of changes to said folders.
 +
 [source,bash]
 ----
@@ -98,7 +114,7 @@ echo *.log >> .software/gitignore # ignores all files with the *.log suffix
 ----
 
 * *Branching* - allows you to create separate lines of development in your repository.
-Branches have a origin point and can be later joined back to the main branch.
+Branches have an origin point and can be later joined back to the main branch.
 Branches, like commit messages, must have meaningful names.
 +
 [source,bash]
@@ -119,7 +135,7 @@ Some examples follow:
 +
 [source,bash]
 ----
-# Create and switch to a branch
+# Checkout a previous commit
 git checkout a0f81fkaq # the ID hash of a commit
 
 # If you want to delete all local changes with the rollback
@@ -130,6 +146,9 @@ git stash
 git reset --hard a0f81fkaq
 git stash pop
 # At this point a merge conflict is possible
+
+# If you want to restore a file to a previous commit
+git restore --source=a0f81fkaq -- software/important_code.py
 ----
 
 * *Merge conflicts* - happen when Git can’t automatically patch changes from two sources.
@@ -172,9 +191,13 @@ When doing more specific things with Git there are some interesting concepts:
 Merge: Combines two branches by creating a new “merge commit” that joins their histories.
 The history stays branched and shows all the separate work.
 +
-Rebase: Moves (or “replays”) your changes from one branch on top of another branch, rewriting history to make it look like all work happened in a straight line.
+Rebase: Moves (or “replays”) your changes from one branch on top of another branch, rewriting history to make it look
+like all work happened in a straight line.
 +
-Both actions result in the same end set of Objects. The difference is in the Git history. Merging keeps all branch history and shows the merge point. Rebasing creates a cleaner, linear history by “reapplying” commits.
+Both actions result in the same end set of Objects.
+The difference is in the Git history.
+Merging keeps all branch history and shows the merge point.
+Rebasing creates a cleaner, linear history by “reapplying” commits.
 
 == Pseudocode examples and ideas
 
@@ -182,7 +205,8 @@ Here you can find some simple algorithms that might help you in writing code for
 
 === Finding interesting objects
 
-Here is some pseudo-code that describes a way to find objects with segmented data and how one could filter out noise or bad objects.
+Here is some pseudocode that describes a way to find objects with segmented data and how one could filter out noise or
+invalid objects.
 
 [source,python]
 ----
