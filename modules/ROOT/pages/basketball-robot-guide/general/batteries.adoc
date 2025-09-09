@@ -6,31 +6,33 @@
 
 See https://batteryuniversity.com/ for extensive information on batteries.
 
+Batteries used in the course are lithium-ion polymer/lithium polymer (LiPo) batteries.
+
 == What do the numbers mean?
 
-* *3,7V, 7,4V, 11,1V, 14,8V, ...* - This is the nominal voltage of the battery.
+* *3.7 V, 7.4 V, 11.1 V, 14.8 V, ...* - This is the nominal voltage of the battery.
 This can also be used to calculate the number of series cells on a battery,
-as a single cell has a nominal voltage of 3,7V.
+as a single cell has a nominal voltage of 3.7 V.
 When the battery voltage drops significantly below the nominal voltage, you can consider the battery to be empty.
-You can consider this threshold to be something like 3.5V per cell.
-So 7V for-2 cell battery, 10.5V for 3-cell battery, 14V for 4-cell battery.
-A full battery actually has a voltage higher than the nominal voltage of the battery: 4.2V per cell.
-So it makes 8.4V for 2-cell battery, 12.6V for 3-cell battery, 16.8V for 4-cell battery.
+You can consider this threshold to be something like 3.5 V per cell.
+So 7 V for 2-cell battery, 10.5 V for 3-cell battery, 14 V for 4-cell battery.
+A full battery actually has a voltage higher than the nominal voltage of the battery: 4.2 V per cell.
+So it makes 8.4 V for 2-cell battery, 12.6 V for 3-cell battery, 16.8 V for 4-cell battery.
 * *1S, 2S, 3S, 4S, ...* - This is the number of LiPo cells the battery has connected in series.
-This can be used to calculate the nominal voltage of the battery, as every cell has a nominal voltage of 3.7V.
-* *1000mAh, 5500mAh, 3000mAh, 4000mAh, ...* - this is the capacitance of the battery.
-This means that a 1000mAh battery can provide average current of 1000mA for 1 hour,
-500mA for 2 hours, ..., until the battery is discharged completely.
+This can be used to calculate the nominal voltage of the battery, as every cell has a nominal voltage of 3.7 V.
+* *1000 mAh, 5500 mAh, 3000 mAh, 4000 mAh, ...* - this is the capacitance of the battery.
+This means that a 1000 mAh battery can provide average current of 1000 mA for 1 hour,
+500 mA for 2 hours, ..., until the battery is discharged completely.
 * *15C, 20C, 34C, 80C, ...* - This number means the maximum discharge rate of the battery
 as a function of its capacitance.
-A 1000mAh 10C battery can be discharged at a maximum of 1000mAh * 10C = 10000mA = 10A rate.
+A 1000 mAh 10C battery can be discharged at a maximum of 1000 mAh * 10C = 10000 mA = 10 A rate.
 Sometimes discharge rates are shown as something like 15C - 25C,
 in which case 15C is the maximum continuous discharge rate,
 while 25C is the maximum burst rate.
 
 == Charging the battery with a 4-button charger
 
-https://youtu.be/kvr-25yGeVk[A video on charging LiPo batteries]
+https://www.youtube.com/watch?v=kvr-25yGeVk[A video on charging LiPo batteries]
 
 Main points of charging:
 
@@ -43,45 +45,67 @@ Take note of polarity (black wire should be negative).
 * Start the charge.
 * Ensure that at least one person is always in the room while the battery is charging.
 
+Do not charge cells over 4.2 V.
+Higher cell voltages damage the batteries.
+
+Always use balance charging.
+Otherwise, the cells can over-charge or over-discharge.
+
 == Battery etiquette
 
 When you finish testing, disconnect your batteries.
-When testing on the field (programming on the robot computer) have the computer power adapter connected.
-Disconnect it only when you want to drive across the field, where the cable is not long enough.
-To change quickly between power adapter and battery,
+When testing on the court (programming on the robot's computer) have the computer power adapter connected.
+Disconnect it only when you want to drive across the court, where the cable is not long enough.
+To change batteries without turning off the computer,
 use the link:https://github.com/ReikoR/power_path_control_2016[power path controller board].
 
 When testing, monitor the voltage of the batteries.
-If the open circuit voltage of a cell is below 3.6 V,
-voltage is below 3.3 V under load or voltage alarm activates when you are driving around,
-it is time to charge your battery.
+If the voltage alarm activates, it is time to charge your battery.
+Voltage under load might drop temporarily below 3.5 V (recommended alarm threshold),
+which also causes the alarm to activate.
 
-Batteries that have been restored (cells charged from low voltage),
+Batteries that are old or have been restored (cells charged from low voltage),
 should have the temperature checked during charging and testing.
-If there is a heat build-up, disconnect the battery immediately and put into LiPo-safe charge bag.
+If there is a heat build-up, disconnect the battery immediately
+and place it to a place where there is less flammable material nearby.
 If the heat continues to build up, take the battery outside and let it burn in a safe area.
 
 If there is no heat build-up during charging or normal operation, the battery is safe to be charged with 1C.
 
+When not using batteries for a longer periods (week or more),
+charge the batteries to storage voltage (typically 3.8 V).
+Battery life is longer when kept near nominal voltage and shorter when kept at higher voltage.
+Chargers usually have storage charge mode.
+
+Avoid using batteries to test electronics that have not been powered before.
+Batteries deliver high currents that will damage the electronics if there are any shorts.
+Use lab power supply with low (0.1 A) current limit on first power up.
+Increase power supply current limit after initial power up if the supply is not at the current limit.
+Use batteries when electronics is operating properly and higher currents are needed.
+
 == Using LiPo alarms/buzzers
 
-* Make sure they are set to a sensible threshold voltage (preferably 3.5V)
+* Make sure they are set to a sensible threshold voltage (preferably 3.5 V)
+** Voltage starts to drop more rapidly below 3.5 V.
+** Threshold of 3.5 V allows to have some time to stop the robot and remove the battery.
 * Make sure you attach them in the correct direction (black wire goes to the negative terminal).
 * Make sure they make a noise when you attach them.
+** Buzzers can be covered with a finger when connecting the alarm to reduce the volume.
 * Use at all times when actively discharging/using the battery.
-Otherwise you risk over-discharging the battery and ruining it.
+Otherwise, you risk over-discharging the battery and ruining it.
 * Do not use while charging.
 * Remove alarm and unplug battery when not using the battery for a longer time period (more than one hour).
-If you leave the buzzers on overnight, they draw a small amount of current from the battery and may over-discharge it.
+If you leave the alarms on overnight, they draw a small amount of current from the battery and may over-discharge it.
 
 == Dangers of the batteries
 
 When over-discharging LiPo-s, the internal resistance will increase and the damage is irreversible.
-When discharging cells below 3.0V, damage becomes significant enough to care about.
-When the voltage is below 2.5V/cell, the battery is too dangerous to be charged with 1C.
-Below 2.0V/cell the LiPo-s rate of permanent damage will only increase and it is not linear.
+When discharging cells below 3.0 V, damage becomes significant enough to care about.
+When the voltage is below 2.5 V/cell, the battery is too dangerous to be charged with 1C.
+Below 2.0 V/cell the LiPo-s rate of permanent damage will only increase, and it is not linear.
 Even if we manage to restore the batteries,
 they will not have their initial capacity and also the maximum current you can safely draw is reduced.
 Worst case the battery will lose its ability to hold a charge and will be unusable.
 
-Do not puncture or damage the battery mechanically or it might catch fire.
+Do not puncture or damage the battery mechanically.
+It might catch fire.
