@@ -41,14 +41,14 @@ Can be created using
 ----
 git init
 ----
-
++
 or when using a remote repository
 +
 [source,bash]
 ----
 git clone git@github.com:ut-robotics/picr-docs.git
 ----
-
++
 the status of a repository can be checked using
 +
 [source,bash]
@@ -89,7 +89,7 @@ git add -A && git commit -m "A reasonable and meaningful message"
 # git push REMOTE-NAME BRANCH-NAME
 git push origin master # pushes the changes to the 'master' branch in 'origin'
 ----
-
++
 Sometimes there is a need to remove files from a repository.
 This can be done so:
 +
@@ -158,6 +158,7 @@ Usually an IDE provides tools to resolve them.
 
 Basics can be read up on here: https://git-scm.com/doc or utilize some good old search-engine-fu.
 
+[#feature_branches]
 == How to Git - Feature branches
 
 We prefer to use a version of feature branches (*https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow*).

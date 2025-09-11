@@ -160,10 +160,12 @@ and request full design review several weeks before deadline.
 ** Mechanical design project folder will be created by instructors and shared with team members.
 * Electronics design must be in team's repository.
 ** All necessary documents (schematic, PCB layout, component libraries, project file, etc.) must be in the repository.
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 
 ==== Programming tasks
 
 * Code must be reviewed and approved by instructors to complete the tasks.
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 * *Each task must be successfully completed 2 times in a row.*
 * Multiple attempts allowed.
 
@@ -384,6 +386,8 @@ image:dealing_with_opponent_step_3.svg[]
 ==== Software documented
 
 * In team's repository `software` branch and `software/README.asciidoc` file in AsciiDoc format.
+** See: xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 * Instructions on how to set up and run the code.
 * Used libraries and purpose of use.
 * A brief description of your game logic and overall code structure.
@@ -488,6 +492,7 @@ but smaller robot uses less material and fits more easily into boxes.
 ** Communication with robot's computer.
 * When using STM32 microcontroller and STM32CubeIDE or STM32CubeMX to do the pin assignments,
 add STM32CubeIDE project or *.ioc file to `firmware` branch in the team's repository.
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 ** This simplifies checking the pin assignments on the schematic.
 
 ==== Motor driver schematic completed
@@ -530,6 +535,7 @@ Other colours are more expensive.
 
 * Firmware implements required functionality.
 * Firmware code hosted in team's repository `firmware` branch.
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 * Firmware code reviewed and approved.
 * Wheel and thrower motors can be controlled through the mainboard.
 * Wheel motors can be rotated in both directions.
@@ -566,6 +572,8 @@ on how to use the board.
 
 * All documentation must be in your team's repository with electronics design files.
 * Functionality and connector pinouts described in AsciiDoc format in `electronics` branch and in `electronics/README.asciidoc` file.
+** See: xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 * Schematic PDF file.
 * Components BOM in TSV (tab-separated values, *.tsv) format.
 ** Columns
@@ -583,6 +591,8 @@ on how to use the board.
 ==== Firmware documented
 
 * In team's repository `firmware` branch and `firmware/README.asciidoc` file in AsciiDoc format.
+** See: xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
+** See: xref:gitlab-guide.adoc[GitLab Guide]
 * Format and description of the data that can be sent to and received from mainboard.
 
 === Competitions

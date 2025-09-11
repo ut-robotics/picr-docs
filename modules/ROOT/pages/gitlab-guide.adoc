@@ -19,12 +19,14 @@ It is allowed to create subdirectories in the root directory
 if the directory names don't conflict with directories listed above.
 For example `images` directory for documentation.
 Do not merge between branches listed below.
+For example don't merge from `main` to `documentation`.
 
 * `main` (protected) - default branch.
 Direct pushing not allowed.
-Merge requests should be created against this branch.
+Merge requests (except software merge requests) should be created against this branch.
 * `documentation` - for editing main README.asciidoc and any other general documentation in root directory.
-* `software` - for robot's code and related documentation in `software` directory.
+* `software` (protected) - for robot's code and related documentation in `software` directory.
+Software merge requests should be created against this branch.
 * `electronics` - for electronics design and related documentation in `electronics` directory.
 * `firmware` - for mainboard firmware and related documentation in `firmware` directory.
 
@@ -65,9 +67,10 @@ git clone --single-branch --branch documentation git@gitlab.ut.ee:/loti/loti.05.
 
 === Software
 
-* `software` branch should be used.
+* Feature branches should be created from `software` branch.
+** See: xref:basketball-robot-guide/software/useful-links.adoc#feature_branches[Feature branches guide]
 * When the functionality for a programming task has been implemented and thoroughly tested on the court,
-a merge request should be created and instructors notified about it.
+a merge request from feature branch to `software` should be created and instructors notified about it.
 * Instructors will review the merge request and either give feedback that needs to be resolved or merge the merge request.
 * After the merge request has been merged, the relevant task can be presented during practical.
 * If the robot is able to complete the task, then the team gets the task approved.
