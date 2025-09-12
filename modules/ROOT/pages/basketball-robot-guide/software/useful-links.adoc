@@ -119,14 +119,14 @@ Branches, like commit messages, must have meaningful names.
 +
 [source,bash]
 ----
-# Creating a branch
-git branch software/follow_ball
+# Creating a branch. Remember to be in the branch you want to merge into later (eg. software)
+git branch follow_ball
 
 # Switch to a branch
-git checkout software/follow_ball
+git checkout follow_ball
 
 # Create and switch to a branch
-git checkout -b software/follow_ball
+git checkout -b follow_ball
 ----
 
 * *Reverting to a previous commit* - all commits are assigned unique ID-s.
