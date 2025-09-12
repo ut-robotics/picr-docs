@@ -19,7 +19,7 @@ Back-ups include:
 == Setup
 
 . Install NoMachine on both your client and server machine.
-You can download the rpm package and install it using your preferred installer.
+You can download the rpm package from https://www.nomachine.com/ and install it using your preferred installer.
 One way would be:
 +
 [source,bash]
@@ -71,3 +71,5 @@ EndSection
 ----
 . Restart the machine and unplug the display.
 . Try to connect with NoMachine and try to run config_colors.py.
+. Remember that the HDMI/DP won't output anything anymore. If you need the outputs again, just rename or remove the
+created *xorg.conf* file. Do it over SSH or if there are network issues over the recovery terminal.

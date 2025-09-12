@@ -183,6 +183,10 @@ In this way the scope of a merge request is limited and makes reviewing them eas
 * Multiple feature branches on the same code can get messy
 * Some management overhead
 
+A visual example how development would look like:
+
+image::software_git_flow_chart.png[]
+
 == How to Git - Advanced stuff
 
 When doing more specific things with Git there are some interesting concepts:

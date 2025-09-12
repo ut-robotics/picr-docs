@@ -46,6 +46,12 @@ xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other re
 
 == Changelog
 
+=== 2025-09-12
+
+. Added a git flowchart to illustrate feature branches.
+. Added a link to the NoMachine homepage.
+. Added additional comment that the dummy adapter will break the computers display output.
+
 === 2025-09-04
 
 . Created a page about writing documentation.
