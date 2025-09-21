@@ -85,6 +85,12 @@ Depending on how the design is oriented, you might need to select different opti
 
 image::fusion_360_cam_setup_settings.png[]
 
+The directions of the WCS should also keep in mind the XYZ-axis of the machine.
+The X-axis of the machine is shorter than the Y-axis - thus the X-axis of your WCS should also be matched
+with the shorter edge of your pieces' arrangement.
+
+image::mill_stepcraft_xyz.png[]
+
 Another important thing here is to set stock offsets to 0 on the Stock tab.
 
 image::fusion_360_cam_stock_settings.png[]
