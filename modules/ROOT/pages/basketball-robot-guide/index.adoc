@@ -2,6 +2,8 @@
 
 == General
 
+xref:basketball-robot-guide/general/parts.adoc[Parts]
+
 xref:basketball-robot-guide/general/batteries.adoc[Using batteries]
 
 xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
@@ -47,6 +49,10 @@ xref:basketball-robot-guide/software/review-summary.adoc[Review summary]
 xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources]
 
 == Changelog
+
+== 2025-09-25
+
+. Create parts page.
 
 === 2025-09-12
 

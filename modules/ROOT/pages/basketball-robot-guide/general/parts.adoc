@@ -1,0 +1,207 @@
+= Parts
+
+== Camera
+
+=== RealSense D435 and D435i
+
+image::parts/realsense_d435.webp[RealSense D435,400]
+
+Product pages:
+
+* https://realsenseai.com/stereo-depth-cameras/stereo-depth-camera-d435/
+* https://realsenseai.com/stereo-depth-cameras/depth-camera-d435i/
+
+3D models and documentation:
+
+* https://dev.realsenseai.com/docs/stereo-depth-camera-d400
+
+== Computers
+
+=== Gigabyte BRIX GB-BRR5-4500
+
+image::parts/gigabyte_brix_GB-BRR5-4500.png[Gigabyte BRIX GB-BRR5-4500,400]
+
+Product page:
+
+* https://www.gigabyte.com/Mini-PcBarebone/GB-BRR5-4500-rev-10
+
+=== Intel NUC10i5FNK
+
+image::parts/NUC10i5FNK.jpg[NUC10i5FNK,400]
+
+Product page:
+
+* https://www.asus.com/supportonly/nuc10i5fnk/helpdesk_download/
+
+=== Intel NUC7i5BNK
+
+image::parts/NUC7I5BNK.jpg[NUC7i5BNK,400]
+
+Product page:
+
+* https://www.asus.com/supportonly/nuc7i5bnk/helpdesk_manual/
+
+=== Intel D54250WYK
+
+image::parts/D54250WYK.webp[D54250WYK,400]
+
+Product page:
+
+* https://www.intel.com/content/www/us/en/products/sku/76977/intel-nuc-kit-d54250wyk/specifications.html
+
+=== Gigabyte BRIX GB-BXi5-5200
+
+image::parts/gigabyte_brix_GB-BXi5-5200.png[Gigabyte BRIX GB-BXi5-5200,400]
+
+Product page:
+
+* https://www.gigabyte.com/Mini-PcBarebone/GB-BXi5-5200-rev-10
+
+=== NUC 3D models
+
+* https://www.intel.com/content/www/us/en/support/articles/000006820/intel-nuc.html
+* https://www.asus.com/support/faq/1052528/
+
+== Wheel adapter
+
+View and download:
+
+* https://a360.co/4nMGzcn
+
+Direct download:
+
+* xref:attachment$wheel_motor_adapter.f3d[wheel_motor_adapter.f3d]
+
+image::parts/wheel_adapter_drawing.svg[Wheel adapter drawing]
+
+== Wheel rollers
+
+Designation: V623ZZ
+
+image::parts/wheel_roller_spec.png[Wheel roller specification]
+
+Dowel pins used as roller shafts have a diameter of 3 mm and a length of 8 mm.
+
+Dowel pin shop links:
+
+* DIN 7 / ISO 2338
+** https://www.tme.eu/en/details/b3x8_bn684/safety-pins/bossard/1255800/
+* DIN 6325 / ISO 8734
+** https://www.tme.eu/en/details/b3x8_bn857/safety-pins/bossard/1303872/
+
+== Motors
+
+=== Wheel motor
+
+Pololu 19:1 Metal Gearmotor 37Dx68L mm with 64 CPR Encoder
+
+image::parts/pololu_4751.jpg[Pololu 19:1 Metal Gearmotor 37Dx68L mm with 64 CPR Encoder,400]
+
+Product page:
+
+* https://www.pololu.com/product/4751
+
+3D model:
+
+* https://www.pololu.com/product/4751/resources
+
+Store links:
+
+* https://www.tme.eu/ee/details/pololu-4751/alalisvoolumootorid/pololu/19-1-metal-gearmotor-37dx68l-64-cpr/
+* https://www.ebmia.pl/silniki-dc-z-przekladnia/217071-silnik-z-przekladnia-37dx68l-19-1-12v-530rpm-enkoder-cpr-64-zamiennik-pololu-4751.html
+
+=== Thrower motor
+
+==== Turnigy D2836/8 1100KV
+
+Turnigy D2836/8 1100KV Brushless Outrunner Motor
+
+Product page:
+
+* https://hobbyking.com/en_us/turnigy-d2836-8-1100kv-brushless-outrunner-motor.html
+
+==== PROPDRIVE v2 2826 1200KV
+
+PROPDRIVE v2 2826 1200KV Brushless Outrunner Motor (Short Shaft Version)
+
+https://hobbyking.com/en_us/propdrive-v2-series-2826-1200kv-brushless-outrunner-motor-short-shaft-version.html
+
+=== Thrower motor ESC
+
+==== Chaos BLHeli_S Dshot ESC 30A 2-6S
+
+https://www.unmannedtechshop.co.uk/products/chaos-blheli_s-dshot-esc-20a-25a-30a-2-6s?variant=56613034295677
+
+=== Turnigy Multistar BLheli_32 ARM 33A 3g Race Spec ESC 2-5S (OPTO)
+
+https://hobbyking.com/en_us/turnigy-multistar-blheli-32-arm-33a-3g-race-spec-esc-2-5s-opto.html
+
+=== Turnigy MultiStar 30A BLHeli-S Rev16 V3 ESC 2-4S (Opto)
+
+https://hobbyking.com/en_us/blheli-s-30a.html
+
+=== DYS Aria 35A Blheli_32 ESC (3-6S) (Opto)
+
+https://hobbyking.com/en_us/dys-aria-35a-blheli-32bit-esc-3-6s-opto.html
+
+== Thrower servo
+
+=== Corona 939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
+
+https://hobbyking.com/en_us/corona-939mg-metal-gear-servo-2-5kg-0-14sec-12-5g.html
+
+=== Turnigy TGY-180D 180 degree Digital Servo 2.2kg / 0.10sec / 12g
+
+https://hobbyking.com/en_us/turnigytm-tgy-180d-180-degree-digital-servo-2-2kg-0-10sec-12g.html
+
+== Thrower boost regulator
+
+=== 400W 15A with adjustable current and voltage
+
+https://www.aliexpress.us/item/3256806060375992.html?spm=a2g0o.store_pc_home.0.0.50713e2319S435
+
+=== Okystar OKY3498-3
+
+Product page:
+
+* https://www.okystar.com/product-item/dc-dc-boost-converter-oky3498-3/
+
+Shop links:
+
+* https://www.oomipood.ee/product/oky3498_3_toitemoodul_dc_dc_step_up_10_32v_to_12_35v_10a_200w
+
+== Battery
+
+=== Tattu Funfly Series 1300mAh 14.8V 100C 4S1P
+
+https://gensace.de/products/tattu-funfly-series-1300mah-14-8v-100c-4s1p-lipo-battery-pack-with-xt60-plug
+
+=== Turnigy Graphene 1300mAh 4S 45C Lipo Pack w/ XT60
+
+https://hobbyking.com/en_us/graphene-1300mah-4s-45c-w-xt60.html
+
+=== ZIPPY Flightmax 3000mAh 4S1P 20C LiPo Pack w/XT60
+
+https://hobbyking.com/en_us/zippy-flightmax-3000mah-4s1p-20c-lipo-pack-w-xt60.html
+
+== Battery alarm
+
+Lipo Voltage Checker (2S-8S)
+
+https://hobbyking.com/en_us/hobbykingtm-lipo-voltage-checker-2s-8s.html
+
+Shop links:
+
+* https://www.aliexpress.us/item/3256805974305920.html?spm=a2g0o.productlist.main.5.3c3fzWDAzWDARX
+
+== Power switch
+
+https://www.tme.eu/ee/en/details/ae-c1500abbb/rocker-switches/bulgin/c1500abmbb/
+
+== PC power adapter socket
+
+https://www.tme.eu/ee/en/details/pc-gm2.5/dc-power-connectors/ninigi/
+
+== PC power plug
+
+https://www.tme.eu/en/details/1633-04/dc-power-connectors/lumberg/1633-04/
