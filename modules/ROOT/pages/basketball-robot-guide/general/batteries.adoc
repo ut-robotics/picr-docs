@@ -51,6 +51,35 @@ Higher cell voltages damage the batteries.
 Always use balance charging.
 Otherwise, the cells can over-charge or over-discharge.
 
+== Using parallel charging boards
+
+* Connect batteries with similar voltage.
+If the voltages are different then high currents might flow from one battery to another.
+Parallel charging boards that we are using have fuses that can protect from damage to the batteries
+or the boards themselves, but fuses might get damaged and need to be replaced.
+Check the voltages with battery alarms before connecting.
+* Connect all main (XT60) plugs first.
+Main connector can handle higher currents, in case the batteries happen to have different voltages,
+and you forgot to check that.
+Balance charging connectors might get damaged from the high currents.
+* Increase charging current based on the total capacitance or battery count if the batteries have same capacitance.
+If you charge one battery with 1 A, then charge two batteries with 2 A (1 A per battery).
+Otherwise, the charging will take too long and other teams might be waiting to use the charger.
+* Each charger channel has an output power limit of 50 W.
+For example, when charging the batteries at 4 A (1 A per battery),
+the charger will start limiting the current at 12.5 V (50 W / 4 A) and above and the charging will take more time.
+Current at 16V will be limited to 3.125 A (50 W / 16 V) , about 0.78 A per battery.
+If other teams do not need to use the charger, then it's fine to use more than one battery charger channel.
+
+Article about charging batteries in parallel: +
+https://oscarliang.com/parallel-charging-multiple-lipo
+
+4-channel battery charger used in the lab: +
+https://hobbyking.com/en_us/turnigy-4x6s-lithium-polymer-battery-pack-charger.html
+
+Parallel charging boards used in the lab: +
+https://hobbyking.com/en_us/hobbyking-safe-40a-parallel-charge-board-for-4-packs-2-6s-xt60.html
+
 == Battery etiquette
 
 When you finish testing, disconnect your batteries.
