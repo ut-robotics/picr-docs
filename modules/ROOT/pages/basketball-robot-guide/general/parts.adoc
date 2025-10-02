@@ -205,3 +205,16 @@ https://www.tme.eu/ee/en/details/pc-gm2.5/dc-power-connectors/ninigi/
 == PC power plug
 
 https://www.tme.eu/en/details/1633-04/dc-power-connectors/lumberg/1633-04/
+
+== XT60E1-M
+
+image::parts/XT60E1-M.webp[XT60E1-M, role=text-left]
+
+3D model:
+
+* https://grabcad.com/library/xt60e-m-3
+* Direct download: xref:attachment$XT60E-M.STEP[XT60E-M.STEP]
+
+Shop links:
+
+* https://www.tme.eu/ee/en/details/xt60e1-m/dc-power-connectors/amass/xt60e1-m-xt60e-m/
