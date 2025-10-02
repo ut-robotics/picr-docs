@@ -4,7 +4,7 @@
 
 === RealSense D435 and D435i
 
-image::parts/realsense_d435.webp[RealSense D435,400]
+image::parts/realsense_d435.webp[RealSense D435,400,role=text-left]
 
 Product pages:
 
@@ -19,7 +19,7 @@ Product pages:
 
 === Gigabyte BRIX GB-BRR5-4500
 
-image::parts/gigabyte_brix_GB-BRR5-4500.png[Gigabyte BRIX GB-BRR5-4500,400]
+image::parts/gigabyte_brix_GB-BRR5-4500.png[Gigabyte BRIX GB-BRR5-4500,400,role=text-left]
 
 Product page:
 
@@ -27,7 +27,7 @@ Product page:
 
 === Intel NUC10i5FNK
 
-image::parts/NUC10i5FNK.jpg[NUC10i5FNK,400]
+image::parts/NUC10i5FNK.jpg[NUC10i5FNK,400,role=text-left]
 
 Product page:
 
@@ -35,7 +35,7 @@ Product page:
 
 === Intel NUC7i5BNK
 
-image::parts/NUC7I5BNK.jpg[NUC7i5BNK,400]
+image::parts/NUC7I5BNK.jpg[NUC7i5BNK,400,role=text-left]
 
 Product page:
 
@@ -43,7 +43,7 @@ Product page:
 
 === Intel D54250WYK
 
-image::parts/D54250WYK.webp[D54250WYK,400]
+image::parts/D54250WYK.webp[D54250WYK,400,role=text-left]
 
 Product page:
 
@@ -51,7 +51,7 @@ Product page:
 
 === Gigabyte BRIX GB-BXi5-5200
 
-image::parts/gigabyte_brix_GB-BXi5-5200.png[Gigabyte BRIX GB-BXi5-5200,400]
+image::parts/gigabyte_brix_GB-BXi5-5200.png[Gigabyte BRIX GB-BXi5-5200,400,role=text-left]
 
 Product page:
 
@@ -72,13 +72,13 @@ Direct download:
 
 * xref:attachment$wheel_motor_adapter.f3d[wheel_motor_adapter.f3d]
 
-image::parts/wheel_adapter_drawing.svg[Wheel adapter drawing]
+image::parts/wheel_adapter_drawing.svg[Wheel adapter drawing,role=text-left]
 
 == Wheel rollers
 
 Designation: V623ZZ
 
-image::parts/wheel_roller_spec.png[Wheel roller specification]
+image::parts/wheel_roller_spec.png[Wheel roller specification,role=text-left]
 
 Dowel pins used as roller shafts have a diameter of 3 mm and a length of 8 mm.
 
@@ -95,7 +95,7 @@ Dowel pin shop links:
 
 Pololu 19:1 Metal Gearmotor 37Dx68L mm with 64 CPR Encoder
 
-image::parts/pololu_4751.jpg[Pololu 19:1 Metal Gearmotor 37Dx68L mm with 64 CPR Encoder,400]
+image::parts/pololu_4751.jpg[Pololu 19:1 Metal Gearmotor 37Dx68L mm with 64 CPR Encoder,400,role=text-left]
 
 Product page:
 
@@ -208,7 +208,7 @@ https://www.tme.eu/en/details/1633-04/dc-power-connectors/lumberg/1633-04/
 
 == XT60E1-M
 
-image::parts/XT60E1-M.webp[XT60E1-M, role=text-left]
+image::parts/XT60E1-M.webp[XT60E1-M,role=text-left]
 
 3D model:
 
