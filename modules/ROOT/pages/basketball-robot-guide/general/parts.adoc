@@ -15,6 +15,10 @@ Product pages:
 
 * https://dev.realsenseai.com/docs/stereo-depth-camera-d400
 
+Simplified 3D model:
+
+* xref:attachment$simplified_Intel_RealSense_Depth_Camera_D435.f3d[simplified_Intel_RealSense_Depth_Camera_D435.f3d]
+
 == Computers
 
 === Gigabyte BRIX GB-BRR5-4500
