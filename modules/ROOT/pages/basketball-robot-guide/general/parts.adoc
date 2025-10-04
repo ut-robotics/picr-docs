@@ -25,6 +25,10 @@ Product page:
 
 * https://www.gigabyte.com/Mini-PcBarebone/GB-BRR5-4500-rev-10
 
+Simple 3D model:
+
+* xref:attachment$GB-BRR5-4500.f3d[GB-BRR5-4500.f3d]
+
 === Intel NUC10i5FNK
 
 image::parts/NUC10i5FNK.jpg[NUC10i5FNK,400,role=text-left]
