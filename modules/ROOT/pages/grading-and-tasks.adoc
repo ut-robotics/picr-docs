@@ -453,18 +453,20 @@ Color sensor is offset from the center of the camera.
 * Design that prevents balls from getting stuck against the robot.
 If the robot drives against the ball, the ball should roll away.
 ** Problem:
-*** When robot sides are angled outwards, then the ball would get stuck,
-because the ball does not slide against the carpet and the robot sides.
-**** image:ball_stuck_outwards_angle.png[width=160]
-*** Ball can also get stuck with vertical robot sides, when the ball is not sliding against the carpet and the side.
-In this case the ball can't rotate and roll away.
-**** image:ball_stuck_vertical_angle.png[width=160]
+*** When robot's sides are angled outwards, then the ball would get stuck,
+because the ball does not slide against the carpet and the robot's sides. +
+image:ball_stuck_outwards_angle.png[width=160]
+*** Ball can also get stuck with vertical robot's sides, when the ball is not sliding against the carpet and the side.
+In this case the ball can't rotate and roll away. +
+image:ball_stuck_vertical_angle.png[width=160]
 ** Possible solutions:
 *** One option to solve this is to have the sides angled inwards.
-**** image:ball_not_stuck_inwards_angle.png[width=160]
+Wheels can also be angled in a similar way by designing motor mounts that angle the motors together with the wheels. +
+image:ball_not_stuck_inwards_angle.png[width=160]
 *** Another option is to make the bottom plate extend outwards,
 so that the edge of the bottom plate touches the ball before the side of the robot.
-*** image:ball_not_stuck_extended_bottom.png[width=160]
+Bottom plate can also extend around the wheels. +
+image:ball_not_stuck_extended_bottom.png[width=160]
 *** Both options push the ball below its center, which helps the ball to roll away.
 
 ==== Robot design completed
