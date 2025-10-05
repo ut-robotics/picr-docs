@@ -9,7 +9,7 @@
 
 List of components available in the lab.
 
-Date: 2024-10-02
+Date: 2025-10-05
 
 [%header,format=tsv]
 |===
@@ -29,7 +29,10 @@ include::attachment$electronics_components.tsv[]
 * Driver does not need to be capable of driving the motor at stall current.
 Driving the motor at stall current for longer period will overheat the motor.
 * Motor's power can be higher than the rated power for a short duration.
-* Driver should be capable of limiting the current somewhere between the stall current and maximum power limit (where current is 12W / 16.8V).
+* Driver should be capable of limiting the current somewhere between the stall current
+and maximum power limit (where current is 12W / 16.8V).
+About 3 A current limit works.
+Lower current limit might prevent robot from moving.
 
 === Recommended
 
@@ -226,11 +229,6 @@ and a resistor can be used to limit current through zener diode.
 * link:https://www.nexperia.com/product/BUK6Y10-30P[Product page]
 * link:https://assets.nexperia.com/documents/data-sheet/BUK6Y10-30P.pdf[Datasheet]
 
-==== BUK6Y24-40PX
-
-* link:https://www.nexperia.com/product/BUK6Y24-40P[Product page]
-* link:https://assets.nexperia.com/documents/data-sheet/BUK6Y24-40P.pdf[Datasheet]
-
 == High current connections
 
 === Requirements
@@ -240,7 +238,7 @@ and a resistor can be used to limit current through zener diode.
 === Recommended
 
 * No separate components are needed.
-* Simple rectangular SMD pads, where wires can be soldered, take little room and creates a reliable connection.
+* Simple rectangular SMD pads, where wires can be soldered, take little room and create a reliable connection.
 * Pad size can be 3 x 3 mm or larger for 18 AWG wire.
 
 == LEDs
@@ -257,7 +255,7 @@ The simplest way to limit current is to use resistor in series with the LED.
 === Recommended
 
 * 0603 SMD package.
-* Current around 1 mA.
+* Current below 1 mA.
 Higher currents usually make the LED too bright and waste energy.
 Exact current is not that important if LED is used for visual indication
 and can be changed later by replacing the resistor.
