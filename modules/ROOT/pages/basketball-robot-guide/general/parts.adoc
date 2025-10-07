@@ -156,9 +156,13 @@ https://hobbyking.com/en_us/dys-aria-35a-blheli-32bit-esc-3-6s-opto.html
 
 === Corona 939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
 
+*Recommended for new designs.*
+
 https://hobbyking.com/en_us/corona-939mg-metal-gear-servo-2-5kg-0-14sec-12-5g.html
 
 === Turnigy TGY-180D 180 degree Digital Servo 2.2kg / 0.10sec / 12g
+
+*Do not use in new designs.*
 
 https://hobbyking.com/en_us/turnigytm-tgy-180d-180-degree-digital-servo-2-2kg-0-10sec-12g.html
 
@@ -181,6 +185,8 @@ Shop links:
 == Battery
 
 === Tattu Funfly Series 1300mAh 14.8V 100C 4S1P
+
+*Recommended for new designs.*
 
 https://gensace.de/products/tattu-funfly-series-1300mah-14-8v-100c-4s1p-lipo-battery-pack-with-xt60-plug
 
