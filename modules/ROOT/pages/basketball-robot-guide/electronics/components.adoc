@@ -7,9 +7,9 @@
 
 == Inventory
 
-List of components available in the lab.
+List of components available in Delta storage.
 
-Date: 2025-10-05
+Date: 2025-10-08
 
 [%header,format=tsv]
 |===
