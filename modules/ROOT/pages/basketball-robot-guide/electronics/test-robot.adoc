@@ -33,6 +33,52 @@ Limited by ceramic capacitors that are rated to 25 V.
 
 === Connectors
 
+==== Connector pinouts
+
+Encoders:
+
+. GND
+. 3.3 V
+. Signal A
+. Signal B
+
+Thrower ESC:
+
+. GND
+. PWM
+. 5V (not used by ESC)
+. GND (not used by ESC)
+
+Ball sensors:
+
+. GND
+. 5 V
+. Sensor 1 input
+. Sensor 2 input
+
+Servos:
+
+[cols="1,100,1,100"]
+[.compact-table]
+|===
+|*A1* |GND |*B1* |GND
+|*A2* |5 V |*B2* |5 V
+|*A3* |PWM |*B3* |PWM
+|===
+
+Serial Wire Debug (SWD):
+
+
+[cols="1,100,1,100"]
+[.compact-table]
+|===
+|*1* |3.3 V |*2* |SWDIO
+|*3* |GND |*4* |SWCLK
+|*5* |GND |*6* |Not connected
+|*7* |Not connected |*8* |Not connected
+|*9* |GND |*10* |nRESET
+|===
+
 ==== Top
 
 image::picr23-mainboard_connectors_top.svg[]

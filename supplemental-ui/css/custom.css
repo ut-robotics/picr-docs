@@ -1,3 +1,7 @@
 .doc {
     hyphens: none;
 }
+
+table.compact-table {
+    width: max-content !important;
+}
