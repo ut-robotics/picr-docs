@@ -158,7 +158,13 @@ https://hobbyking.com/en_us/dys-aria-35a-blheli-32bit-esc-3-6s-opto.html
 
 *Recommended for new designs.*
 
-https://hobbyking.com/en_us/corona-939mg-metal-gear-servo-2-5kg-0-14sec-12-5g.html
+Shop links:
+
+* https://hobbyking.com/en_us/corona-939mg-metal-gear-servo-2-5kg-0-14sec-12-5g.html
+
+3D model:
+
+* https://grabcad.com/library/digital-servo-corona-ds-939mg-with-accessories-1
 
 === Turnigy TGY-180D 180 degree Digital Servo 2.2kg / 0.10sec / 12g
 
