@@ -136,25 +136,35 @@ https://hobbyking.com/en_us/propdrive-v2-series-2826-1200kv-brushless-outrunner-
 
 === Thrower motor ESC
 
-==== Chaos BLHeli_S Dshot ESC 30A 2-6S
+==== Chaos BLHeli_S Dshot 30A
+
+Chaos BLHeli_S Dshot ESC 30A 2-6S
 
 https://www.unmannedtechshop.co.uk/products/chaos-blheli_s-dshot-esc-20a-25a-30a-2-6s?variant=56613034295677
 
-=== Turnigy Multistar BLheli_32 ARM 33A 3g Race Spec ESC 2-5S (OPTO)
+=== Turnigy Multistar BLheli_32 33A
+
+Turnigy Multistar BLheli_32 ARM 33A 3g Race Spec ESC 2-5S (OPTO)
 
 https://hobbyking.com/en_us/turnigy-multistar-blheli-32-arm-33a-3g-race-spec-esc-2-5s-opto.html
 
-=== Turnigy MultiStar 30A BLHeli-S Rev16 V3 ESC 2-4S (Opto)
+=== Turnigy MultiStar 30A BLHeli-S
+
+Turnigy MultiStar 30A BLHeli-S Rev16 V3 ESC 2-4S (Opto)
 
 https://hobbyking.com/en_us/blheli-s-30a.html
 
-=== DYS Aria 35A Blheli_32 ESC (3-6S) (Opto)
+=== DYS Aria 35A Blheli_32
+
+DYS Aria 35A Blheli_32 ESC (3-6S) (Opto)
 
 https://hobbyking.com/en_us/dys-aria-35a-blheli-32bit-esc-3-6s-opto.html
 
 == Thrower servo
 
-=== Corona 939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
+=== Corona CS-939MG
+
+Corona CS-939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
 
 *Recommended for new designs.*
 
@@ -166,11 +176,15 @@ Shop links:
 
 * https://grabcad.com/library/digital-servo-corona-ds-939mg-with-accessories-1
 
-=== Turnigy TGY-180D 180 degree Digital Servo 2.2kg / 0.10sec / 12g
+=== Turnigy TGY-180D
+
+Turnigy TGY-180D 180 degree Digital Servo 2.2kg / 0.10sec / 12g
 
 *Do not use in new designs.*
 
-https://hobbyking.com/en_us/turnigytm-tgy-180d-180-degree-digital-servo-2-2kg-0-10sec-12g.html
+Shop links:
+
+* https://hobbyking.com/en_us/turnigytm-tgy-180d-180-degree-digital-servo-2-2kg-0-10sec-12g.html
 
 == Thrower boost regulator
 
@@ -196,11 +210,11 @@ Shop links:
 
 https://gensace.de/products/tattu-funfly-series-1300mah-14-8v-100c-4s1p-lipo-battery-pack-with-xt60-plug
 
-=== Turnigy Graphene 1300mAh 4S 45C Lipo Pack w/ XT60
+=== Turnigy Graphene 1300mAh 4S 45C
 
 https://hobbyking.com/en_us/graphene-1300mah-4s-45c-w-xt60.html
 
-=== ZIPPY Flightmax 3000mAh 4S1P 20C LiPo Pack w/XT60
+=== ZIPPY Flightmax 3000mAh 4S1P 20C
 
 https://hobbyking.com/en_us/zippy-flightmax-3000mah-4s1p-20c-lipo-pack-w-xt60.html
 
