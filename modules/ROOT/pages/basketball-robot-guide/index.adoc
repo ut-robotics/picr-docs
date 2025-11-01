@@ -16,6 +16,8 @@ xref:basketball-robot-guide/electronics/components.adoc[Components]
 
 xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
 
+xref:basketball-robot-guide/electronics/kicad.adoc[Kicad]
+
 xref:basketball-robot-guide/electronics/schematic.adoc[Schematic]
 
 xref:basketball-robot-guide/electronics/pcb-layout.adoc[PCB layout]
@@ -50,7 +52,11 @@ xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other re
 
 == Changelog
 
-== 2025-09-25
+=== 2025-11-01
+
+. Created the KiCad page with information about routing differential pairs.
+
+=== 2025-09-25
 
 . Create parts page.
 

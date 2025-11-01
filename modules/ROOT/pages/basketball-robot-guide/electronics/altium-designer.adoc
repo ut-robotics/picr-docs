@@ -248,6 +248,7 @@ Press *OK* to apply changes and close the rules.
 +
 image::altium_differential_pair_routing_rule_parameters.png[]
 
+[#using_manufacturers_impedance_calculator]
 ==== Using manufacturer's impedance calculator
 
 Another option, if a PCB manufacturer has an impedance calculation tool available,

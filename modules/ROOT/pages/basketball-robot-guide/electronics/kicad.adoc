@@ -1,0 +1,55 @@
+:toc:
+:toclevels: 2
+:toc-title: Table of contents
+
+= KiCad
+
+== PCB design
+
+=== Controlled impedance
+
+==== Using manufacturer's impedance calculator
+
+See xref:basketball-robot-guide/electronics/altium-designer.adoc#using_manufacturers_impedance_calculator[information about JLCPCB impedance calculator].
+
+=== Routing differential pairs
+
+. Make sure that differential pair net names end with `+` and `-` or `P` and `N`.
++
+image::kicad_differential_pair_net_names.png[]
++
+. In PCB Editor open File -> Board Setup and create a net class for differential pair nets.
+Specify differential pair (DP) width and gap from PCB manufacturer's calculator or from some other calculator.
++
+image::kicad_differential_pair_net_class.png[]
++
+. Position components so that the differential pair traces can be as straight as possible.
+If there are other components or traces close to the differential pair traces,
+try to move them further away.
++
+image::kicad_differential_pair_routing_component_positioning.png[]
++
+. Start routing by clicking _Route Differential Pairs_ button or by pressing `6` on keyboard. +
+KiCad documentation: https://docs.kicad.org/9.0/en/pcbnew/pcbnew.html#routing-differential-pairs
++
+image::kicad_differential_pair_routing_button.png[]
++
+To reduce impedance discontinuities and intra-pair skew:
+try to avoid bends,
+avoid using vias if possible or reduce the amount of vias
+and keep traces as symmetrical as possible.
++
+Some manual adjustments might be needed, which can be done by simply moving the tracks
+or rerouting segments of the tracks with _Route Single Track_ ( hotkey `X`) tool.
++
+image::kicad_differential_pair_routed_tracks.png[]
++
+When connecting tracks to ESD protection component, the tracks should go straight to the ESD protection component
+(like on the image above) to avoid ESD propagating between narrow gaps between tracks.
++
+image::kicad_differential_pair_esd_protection_incorrect_connection.png[]
++
+Stubs should be avoided in tracks as these will reduce ESD protection effectiveness
+and also cause signal reflections in general.
++
+image::kicad_differential_pair_stubs.png[]
