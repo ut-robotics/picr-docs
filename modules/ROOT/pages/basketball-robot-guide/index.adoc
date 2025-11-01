@@ -16,7 +16,7 @@ xref:basketball-robot-guide/electronics/components.adoc[Components]
 
 xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
 
-xref:basketball-robot-guide/electronics/kicad.adoc[Kicad]
+xref:basketball-robot-guide/electronics/kicad.adoc[KiCad]
 
 xref:basketball-robot-guide/electronics/schematic.adoc[Schematic]
 
