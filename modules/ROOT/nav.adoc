@@ -10,7 +10,7 @@
 *** xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
 *** xref:basketball-robot-guide/electronics/components.adoc[Components]
 *** xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
-*** xref:basketball-robot-guide/electronics/altium-designer.adoc[KiCad]
+*** xref:basketball-robot-guide/electronics/kicad.adoc[KiCad]
 *** xref:basketball-robot-guide/electronics/schematic.adoc[Schematic]
 *** xref:basketball-robot-guide/electronics/pcb-layout.adoc[PCB layout]
 *** xref:basketball-robot-guide/electronics/firmware.adoc[Firmware]
