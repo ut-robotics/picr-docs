@@ -124,6 +124,8 @@ Store links:
 
 Turnigy D2836/8 1100KV Brushless Outrunner Motor
 
+image::parts/turnigy_D2836-8_1100KV.webp[Turnigy D2836/8 1100KV,400,role=text-left]
+
 Product page:
 
 * https://hobbyking.com/en_us/turnigy-d2836-8-1100kv-brushless-outrunner-motor.html
