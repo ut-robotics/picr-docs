@@ -134,9 +134,9 @@ PROPDRIVE v2 2826 1200KV Brushless Outrunner Motor (Short Shaft Version)
 
 https://hobbyking.com/en_us/propdrive-v2-series-2826-1200kv-brushless-outrunner-motor-short-shaft-version.html
 
-=== Thrower motor ESC
+== Thrower motor ESC
 
-==== Chaos BLHeli_S Dshot 30A
+=== Chaos BLHeli_S Dshot 30A
 
 Chaos BLHeli_S Dshot ESC 30A 2-6S
 
