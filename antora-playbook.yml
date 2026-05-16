@@ -3,7 +3,7 @@ site:
 content:
   sources:
     - url: .
-      branches: [2024, 2025]
+      branches: [2024, 2025, 2026]
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
