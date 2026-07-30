@@ -1,0 +1,10 @@
+:toc:
+
+= Electronics design checklist
+
+== Schematic
+
+
+
+== PCB layout
+

@@ -1,0 +1,31 @@
+:toc:
+
+= Requirements for code and reviews
+
+== Created Merge Requests should be small in scope
+
+To make Merge Requests as smooth as possible let's keep one MR-s scope to one task.
+
+If multiple tasks are combined into one MR it becomes hard to review due to the sheer scope of changes.
+This increases the time a review takes.
+Additionally, it is harder for the codes author to fix issues since systematic mistakes can be repeated more, creating more places needing fixing.
+
+== Follow PEP 8 coding conventions
+
+Let's follow PEP 8 coding conventions when writing code.
+They can be found here: *https://peps.python.org/pep-0008/*.
+This allows us to unify coding conventions and write better-to-read that can be understood faster by more people.
+
+== Use python logging instead of "print(...)" in final code
+
+While printing stuff to console is a simple approach to get fast results it is hard to fine tune and configure later on without changes in code.
+This becomes a real issue when the project grows, and it is needed to enable or disable printing for debugging purposes or gaining the few percentage points of performance you need by disabling all logging during a competition.
+
+[source,python]
+----
+print("Something happened!") # BAD
+
+logger.info("Something happened!") # GOOD
+----
+
+*TL;DR:* Logging seems like a lot of effort but it simple to set up and allows for better configurability that improves code debugging and performance when utilizing the tools correctly.
