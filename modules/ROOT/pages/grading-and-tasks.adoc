@@ -72,32 +72,32 @@ Points you have earned will determine your grade. Refer to the list below.
 |Firmware documented |200 |2027-01-10 20:00 |2027-01-13 20:00
 |*Competitions* | | |
 |1st test competition |200 | |2026-11-19 20:00
-|1st test competition with new mechanics |100 | |2026-11-19 20:00
-|1st test competition with new electronics |100 | |2026-11-19 20:00
+|1st test competition with new mechanics |200 | |2026-11-19 20:00
+|1st test competition with new electronics |200 | |2026-11-19 20:00
 |1st test competition winner |800 | |2026-11-19 20:00
 |1st test competition 2nd place |400 | |2026-11-19 20:00
 |1st test competition 3rd place |200 | |2026-11-19 20:00
 |2nd test competition |200 | |2026-12-03 20:00
-|2nd test competition with new mechanics |100 | |2026-12-03 20:00
-|2nd test competition with new electronics |100 | |2026-12-03 20:00
+|2nd test competition with new mechanics |200 | |2026-12-03 20:00
+|2nd test competition with new electronics |200 | |2026-12-03 20:00
 |2nd test competition winner |800 | |2026-12-03 20:00
 |2nd test competition 2nd place |400 | |2026-12-03 20:00
 |2nd test competition 3rd place |200 | |2026-12-03 20:00
 |3rd test competition |200 | |2026-12-17 20:00
-|3rd test competition with new mechanics |100 | |2026-12-17 20:00
-|3rd test competition with new electronics |100 | |2026-12-17 20:00
+|3rd test competition with new mechanics |200 | |2026-12-17 20:00
+|3rd test competition with new electronics |200 | |2026-12-17 20:00
 |3rd test competition winner |800 | |2026-12-17 20:00
 |3rd test competition 2nd place |400 | |2026-12-17 20:00
 |3rd test competition 3rd place |200 | |2026-12-17 20:00
 |4th test competition |200 | |2027-01-07 20:00
-|4th test competition with new mechanics |100 | |2027-01-07 20:00
-|4th test competition with new electronics |100 | |2027-01-07 20:00
+|4th test competition with new mechanics |200 | |2027-01-07 20:00
+|4th test competition with new electronics |200 | |2027-01-07 20:00
 |4th test competition winner |800 | |2027-01-07 20:00
 |4th test competition 2nd place |400 | |2027-01-07 20:00
 |4th test competition 3rd place |200 | |2027-01-07 20:00
 |5th test competition |200 | |2027-01-14 20:00
-|5th test competition with new mechanics |100 | |2027-01-14 20:00
-|5th test competition with new electronics |100 | |2027-01-14 20:00
+|5th test competition with new mechanics |200 | |2027-01-14 20:00
+|5th test competition with new electronics |200 | |2027-01-14 20:00
 |5th test competition winner |800 | |2027-01-14 20:00
 |5th test competition 2nd place |400 | |2027-01-14 20:00
 |5th test competition 3rd place |200 | |2027-01-14 20:00
