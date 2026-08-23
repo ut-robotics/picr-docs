@@ -3,16 +3,6 @@
 
 = Grading and tasks
 
-== Changes
-
-=== 2025-10-05
-
-[cols=",,",options="header",]
-|===
-|Task |Old full points deadline |New full points deadline
-|Camera mount design completed |2025-11-03 20:000 |2025-11-24 20:00
-|===
-
 == Grading
 
 Points you have earned will determine your grade. Refer to the list below.
