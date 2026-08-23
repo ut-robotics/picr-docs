@@ -180,7 +180,6 @@ and request full design review several weeks before deadline.
 *** Test robot thrower electronics attached and working
 *** Mechanics assembled
 *** Electronics attached to the robot and working
-*** Thrower voltage regulator attached and working
 
 == Tasks
 
@@ -197,6 +196,7 @@ and request full design review several weeks before deadline.
 ** Camera
 ** Mainboard
 ** Motors for each wheel.
+*** Motor speeds can be controlled with mainboard.
 ** Power path control board with PC adapter and battery inputs and PC power output.
 *** Refer to link:https://github.com/ReikoR/power_path_control_2016[power path control board] GitHub repository
 on how to use the board.
@@ -224,6 +224,9 @@ on how to use the board.
 ==== Test robot thrower electronics attached and working
 
 * Motor and ESC attached and working.
+* ESC voltage regulator attached and working.
+** Voltage regulator is connected and working between battery and thrower motor controller
+to ensure that changing battery voltage doesn't affect thrower motor speed.
 * Motor speed can be controlled through mainboard.
 
 === Programming
@@ -538,23 +541,10 @@ Other colours are more expensive.
 
 * Commands can be sent to the mainboard to grab, hold and release or/and throw a ball with a physical thrower or mechanism.
 
-==== Thrower voltage regulator attached and working
-
-* Attached either to the old robot or to the new robot.
-* Voltage regulator is connected and working between battery and thrower motor controller
-to ensure that changing battery voltage doesn't affect thrower motor speed.
-
 ==== Electronics attached to the robot and working
 
-* Attached either to the old robot or to the new robot.
-** Same requirements as for "Test robot assembled".
-* Command(s) can be sent through mainboard:
-** To move wheel motors.
-** Change thrower motor speed.
-* Motor battery power switch works.
-* Power path control board works.
-** Refer to link:https://github.com/ReikoR/power_path_control_2016[power path control board] GitHub repository
-on how to use the board.
+* Attached to the new robot.
+* Same requirements as for "Test robot assembled" and "Test robot thrower electronics attached and working".
 
 ==== Mainboard documented
 
