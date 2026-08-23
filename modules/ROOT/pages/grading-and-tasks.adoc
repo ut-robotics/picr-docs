@@ -309,11 +309,11 @@ to ensure that changing battery voltage doesn't affect thrower motor speed.
 * At least 3 points must be scored.
 * 60 seconds per attempt.
 
-==== 5 of 11 balls in 60 seconds
+==== 6 of 11 balls in 60 seconds
 
 * Robot starts from its corner of the court.
 * Balls are placed according to basketball rules.
-* At least 5 points must be scored.
+* At least 6 points must be scored.
 * 60 seconds per attempt.
 
 ==== 2 of 5 balls with 6 balls outside
