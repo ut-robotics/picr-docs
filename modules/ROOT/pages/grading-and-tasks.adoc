@@ -597,6 +597,14 @@ Other colours are more expensive.
 
 * Bonus points for the best team among course participants.
 
+===== Test competition 2nd place
+
+* Bonus points for the 2nd best team among course participants.
+
+===== Test competition 3rd place
+
+* Bonus points for the 3rd best team among course participants.
+
 ==== Delta X
 
 * New robot or test robot qualifies according to basketball rules.
