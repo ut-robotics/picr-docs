@@ -184,20 +184,6 @@ and request full design review several weeks before deadline.
 
 == Tasks
 
-=== Progress presentation
-
-Task is completed when the team has presented their progress.
-
-* In Delta room 2024.
-* Mondays 18:15 - 18:45, once every two weeks.
-* Each team has 1 minute to present and 1 minute for questions.
-* At least 1 team member presents the progress of all team members.
-** Talk about main achievements and problems that you need help with.
-* Each team must prepare 1 slide that illustrates their progress.
-** Slides can, for example, contain pictures of the current designs, videos about how the robot is working,
-pictures and videos of some components and simple diagrams or drawings.
-** Avoid using text.
-
 === Test robot
 
 ==== Test robot assembled
