@@ -204,6 +204,7 @@ on how to use the board.
 ** Power switch between motor battery's positive power connection.
 ** Wires connecting electronics.
 *** Wires that connect to power sources should not be exposed.
+** Screws attached to the electronics should not be too long or too short to avoid damaging the parts.
 
 ==== Test robot thrower design completed
 
