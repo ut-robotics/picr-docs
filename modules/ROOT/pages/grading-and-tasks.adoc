@@ -320,11 +320,10 @@ to ensure that changing battery voltage doesn't affect thrower motor speed.
 
 * 5 balls inside the playing court.
 * 6 balls outside the playing court.
-** Outside black lines but on the playing area or outside the playing court.
 * Balls are placed by instructors.
 * Robot's starting position will be selected by the instructors.
 ** For example robot can be placed outside the playing court (outside black lines)
-looking at the balls that are outside the playing area (not on the orange carpet).
+looking at the balls that are also outside the playing court.
 ** Robot can also be placed behind basket's backboard.
 * At least 2 points must be scored.
 * 60 seconds per attempt.
