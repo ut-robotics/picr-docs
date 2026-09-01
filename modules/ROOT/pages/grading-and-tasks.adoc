@@ -451,9 +451,6 @@ image:ball_not_stuck_extended_bottom.png[width=160]
 ==== Robot design completed
 
 * Complete design approved.
-* *Robots's maximum diameter must be 30 cm and maximum height 30 cm.*
-** Robot basketball rules allow for a diameter of up to 35 cm and height of up to 35 cm,
-but smaller robot uses less material and fits more easily into boxes.
 
 ==== Whole new robot fabricated
 
