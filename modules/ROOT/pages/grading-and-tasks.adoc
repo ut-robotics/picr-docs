@@ -675,4 +675,4 @@ or did something different, describe it.
 * Return parts, but keep robots assembled.
 * No grades if parts are not returned.
 * Refer to
-https://docs.google.com/spreadsheets/d/13Yh1V3-C78R8dmtW2qVZxRvorkwktFD3FIHXrzvpMEc[handed out equipment table].
+https://docs.google.com/spreadsheets/d/1JLpwOsmGE90kmGwXmHXkQTPFl7EMzyNU4RHDH0BlCMA[handed out equipment table].
