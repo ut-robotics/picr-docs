@@ -2,37 +2,35 @@
 
 == General
 
-xref:basketball-robot-guide/general/parts.adoc[Parts]
-
-xref:basketball-robot-guide/general/batteries.adoc[Using batteries]
-
+xref:basketball-robot-guide/general/parts.adoc[Parts] +
+xref:basketball-robot-guide/general/batteries.adoc[Using batteries] +
 xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
 
 == Electronics
 
-xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
-xref:basketball-robot-guide/electronics/components.adoc[Components]
-xref:basketball-robot-guide/electronics/electronics-design-checklist.adoc[Electronics design checklist]
-xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
-xref:basketball-robot-guide/electronics/kicad.adoc[KiCad]
-xref:basketball-robot-guide/electronics/schematic.adoc[Schematic]
-xref:basketball-robot-guide/electronics/pcb-layout.adoc[PCB layout]
+xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot] +
+xref:basketball-robot-guide/electronics/components.adoc[Components] +
+xref:basketball-robot-guide/electronics/electronics-design-checklist.adoc[Electronics design checklist] +
+xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer] +
+xref:basketball-robot-guide/electronics/kicad.adoc[KiCad] +
+xref:basketball-robot-guide/electronics/schematic.adoc[Schematic] +
+xref:basketball-robot-guide/electronics/pcb-layout.adoc[PCB layout] +
 xref:basketball-robot-guide/electronics/firmware.adoc[Firmware]
 
 == Mechanics
 
-xref:basketball-robot-guide/mechanics/checklist.adoc[Checklist]
-xref:basketball-robot-guide/mechanics/design.adoc[Design]
-xref:basketball-robot-guide/mechanics/cam.adoc[Autodesk Fusion CAM]
-xref:basketball-robot-guide/mechanics/milling.adoc[Digilab milling]
+xref:basketball-robot-guide/mechanics/checklist.adoc[Checklist] +
+xref:basketball-robot-guide/mechanics/design.adoc[Design] +
+xref:basketball-robot-guide/mechanics/cam.adoc[Autodesk Fusion CAM] +
+xref:basketball-robot-guide/mechanics/milling.adoc[Digilab milling] +
 
 == Software
 
-xref:basketball-robot-guide/software/code-review-checklist.adoc[Code review checklist]
-xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion]
-xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup]
-xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins]
-xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources]
+xref:basketball-robot-guide/software/code-review-checklist.adoc[Code review checklist] +
+xref:basketball-robot-guide/software/omni-motion.adoc[Omni-motion] +
+xref:basketball-robot-guide/software/remote-desktop.adoc[Remote desktop setup] +
+xref:basketball-robot-guide/software/using-ide-plugins.adoc[Using IDE plugins] +
+xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other resources] +
 
 == Changelog
 
