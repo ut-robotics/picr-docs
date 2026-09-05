@@ -166,6 +166,7 @@ and request full design review several weeks before deadline.
 
 * Code must be reviewed and approved by instructors to complete the tasks.
 ** See: xref:gitlab-guide.adoc[GitLab Guide]
+** See: xref:basketball-robot-guide/software/code-review-checklist.adoc[Code Review Checklist]
 * *Each task must be successfully completed 2 times in a row.*
 * Multiple attempts allowed.
 

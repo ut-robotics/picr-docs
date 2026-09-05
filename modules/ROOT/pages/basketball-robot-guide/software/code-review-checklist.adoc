@@ -2,6 +2,49 @@
 
 = Requirements for code and reviews
 
+== AI in coding
+It is OK to use AI tools to help you write code, but it is not OK to blindly copy and paste code from AI tools without understanding it. 
+All code that was written using AI tools must be marked in a way it is clear to the reviewer that it was written with the assistance of AI. 
+This is to make the review process clearer and to guide your usage of AI tools.
+*Remember, that posing others work (this includes undocumented usage of AI) as your own is plagiarism and is not acceptable.*
+
+As stated earlier goal is to learn and understand the code we write, not just to get something committed. 
+AI tools have the power to create a huge ammount of code. In the hands of a inexperienced developer this can lead to an excessive ammount of code.
+Our reviewers are humans who want to make the review process as smooth and quick for you as possible so lets work towards this together.
+
+If a instructor is in doubt weather unmarked AI code was submitted for review, be prepared to explain the intricasies of the code and how it works.
+If you are unable to explain and rectify formating issues in the code, the review will not pass, you will *not get points for the tasks and any tasks utilizing this code can not be completed.*
+Additionally, repeated bad-faith usage of AI tools can be escalated to the academic fraud committee.
+
+We put a lot of faith you as students to act responsinly and do your due diligence when using AI tools.
+If you are unsure about how to mark code that was written with AI assistance, please a instructor for guidance.
+
+Example of marking code that was written with AI assistance.
+The examples are using Python but how exactly and in what language you do it is up to you, as long as it is clear to the reviewer that the code was written with AI assistance.:
+
+[source,python]
+----
+# AI generated function
+# It is a important function that takes in two arguments and returns a boolean value.
+def ai_generated_function(arg1: int, arg2: str) -> bool:
+    return True
+
+# AI generated code START
+A: int = 1
+B: str = "Hello World"
+
+# My custom stuff not written by AI
+def mu_custom_function() -> None:
+    print("This function does something useful.")
+
+def useless_function() -> None:
+    print("This function does nothing useful.")
+
+useless_function()
+# AI generated code END
+
+----
+
 == Created Merge Requests should be small in scope
 
 To make Merge Requests as smooth as possible let's keep one MR-s scope to one task.
