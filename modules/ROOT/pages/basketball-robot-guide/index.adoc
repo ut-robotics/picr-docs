@@ -9,6 +9,7 @@ xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documenta
 == Electronics
 
 xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot] +
+xref:basketball-robot-guide/electronics/electronics-overview.adoc[Electronics overview] +
 xref:basketball-robot-guide/electronics/components.adoc[Components] +
 xref:basketball-robot-guide/electronics/electronics-design-checklist.adoc[Electronics design checklist] +
 xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer] +
@@ -37,6 +38,7 @@ xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other re
 === 2026-09-14
 
 . Added common mistakes and guidelines to electronics design checklist page.
+. Created electronics overview page.
 
 === 2026-07-30
 

@@ -8,6 +8,7 @@
 *** xref:basketball-robot-guide/general/writing-documentation.adoc[Writing documentation]
 ** Electronics
 *** xref:basketball-robot-guide/electronics/test-robot.adoc[Test robot]
+*** xref:basketball-robot-guide/electronics/electronics-overview.adoc[Electronics overview]
 *** xref:basketball-robot-guide/electronics/components.adoc[Components]
 *** xref:basketball-robot-guide/electronics/electronics-design-checklist.adoc[Electronics design checklist]
 *** xref:basketball-robot-guide/electronics/altium-designer.adoc[Altium Designer]
