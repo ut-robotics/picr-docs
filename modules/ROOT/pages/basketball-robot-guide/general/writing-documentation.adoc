@@ -15,13 +15,13 @@ See: xref:gitlab-guide.adoc[GitLab Guide]
 
 [source,bash]
 ----
-git clone --single-branch --branch documentation git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-documentation
+git clone --single-branch --branch documentation git@gitlab.ut.ee:/loti/loti.05.023/picr2026/picr26-team-<team-name>.git picr26-team-<team-name>-documentation
 
-git clone --single-branch --branch software git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-software
+git clone --single-branch --branch software git@gitlab.ut.ee:/loti/loti.05.023/picr2026/picr26-team-<team-name>.git picr26-team-<team-name>-software
 
-git clone --single-branch --branch electronics git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-electronics
+git clone --single-branch --branch electronics git@gitlab.ut.ee:/loti/loti.05.023/picr2026/picr26-team-<team-name>.git picr26-team-<team-name>-electronics
 
-git clone --single-branch --branch firmware git@gitlab.ut.ee:/loti/loti.05.023/picr2025/picr25-team-<team-name>.git picr25-team-<team-name>-firmware
+git clone --single-branch --branch firmware git@gitlab.ut.ee:/loti/loti.05.023/picr2026/picr26-team-<team-name>.git picr26-team-<team-name>-firmware
 ----
 
 == Editors
