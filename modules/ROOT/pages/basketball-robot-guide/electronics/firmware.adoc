@@ -253,7 +253,7 @@ All PWM outputs of a timer share the same frequency.
 === PWM for wheel motor drivers
 
 Each motor driver needs 2 PWM inputs or 1 PWM and 1 direction input.
-Recommended way for pre-production DRV8243 motor drivers is to use 1 PWM and 1 direction input.
+Recommended way for DRV8243 motor drivers is to use 1 PWM and 1 direction input.
 
 If PSC = 0, ARR = 65535, _f~clock~_ = 160 MHz, then _f~PWM~_ &asymp; 2448 Hz,
 which is suitable frequency for motor drivers.

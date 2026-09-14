@@ -34,6 +34,10 @@ xref:basketball-robot-guide/software/useful-links.adoc[Useful links and other re
 
 == Changelog
 
+=== 2026-09-14
+
+. Added common mistakes and guidelines to electronics design checklist page.
+
 === 2026-07-30
 
 . Created checklist pages to replace review summary pages.
