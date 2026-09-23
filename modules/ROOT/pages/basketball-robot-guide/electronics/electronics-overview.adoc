@@ -60,6 +60,7 @@ Downloaded libraries should be checked against datasheets or drawing and fixed b
 ** Manufacturer Part Search panel in Altium Designer.
 ** https://www.snapeda.com/
 ** https://componentsearchengine.com/
+** https://www.ultralibrarian.com/
 
 ==== Creating from scratch
 
