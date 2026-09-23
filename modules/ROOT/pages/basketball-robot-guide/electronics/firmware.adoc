@@ -8,7 +8,9 @@
 
 == Software and documentation
 
-This guide assumes that STM32CubeIDE and HAL libraries are used.
+This guide assumes that STM32CubeMX, STM32CubeIDE and HAL libraries are used.
+
+link:https://www.st.com/en/development-tools/stm32cubemx.html[STM32CubeMX]
 
 link:https://www.st.com/en/development-tools/stm32cubeide.html[STM32CubeIDE]
 
@@ -180,7 +182,7 @@ The easiest way to read encoder signals is using timer's encoder mode.
 When timer's encoder mode is used, then PWM outputs can't be used on the same timer for controlling motor drivers,
 because timer's counter value will be changed by encoder signals instead of clock signal.
 
-=== STM32CubeIDE timer configuration
+=== STM32CubeMX timer configuration
 
 * Mode:
 ** *Combined Channels: Encoder Mode*
@@ -241,7 +243,7 @@ and counter period/autoreload register value (ARR) with a following formula:
 
 asciimath:[f = f_(clock) / ((PSC + 1) (AR\R + 1)]
 
-_f~clock~_ is the timer clock, that can be found and configured from *Clock configuration* page in STM32CubeIDE,
+_f~clock~_ is the timer clock, that can be found and configured from *Clock configuration* page in STM32CubeMX,
 where it is referred to as _APB1 timer clocks_ or _APB2 timer clocks_.
 
 To see if timer is connected to APB1 or APB2, refer to _Figure 1. STM32G441xB block diagram_ in the datasheet or
