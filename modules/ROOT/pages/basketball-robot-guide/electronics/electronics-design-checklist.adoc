@@ -27,7 +27,7 @@ Main files are included below.
 ** `*.kicad_pro` - project file
 ** `*.kicad_sch` - schematic sheet
 ** `*.kicad_sym` - component symbols
-** `*.pretty/*.kicad_mod` - component footprints
+** `\*.pretty/*.kicad_mod` - component footprints
 ** `*.kicad_pcb` - PCB layout
 
 === Do not add unnecessary files
