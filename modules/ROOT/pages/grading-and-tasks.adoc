@@ -3,6 +3,18 @@
 
 = Grading and tasks
 
+== Changes
+
+=== 2026-10-04
+
+[cols=",,",options="header",]
+|===
+|Task |Old full points deadline |New full points deadline
+|Robot finds a ball |2026-10-08 21:00 |2026-10-12 21:00
+|Robot follows a ball |2026-10-22 21:00 |2026-10-26 21:00
+|Robot finds basket with a ball |2026-11-05 21:00 |2026-11-09 21:00
+|===
+
 == Grading
 
 Points you have earned will determine your grade. Refer to the list below.
@@ -31,9 +43,9 @@ Points you have earned will determine your grade. Refer to the list below.
 |Test robot thrower electronics attached and working |200 |2026-10-08 21:00 |2026-11-16 21:00
 |*Programming* | | |
 |Mainboard communication |400 |2026-09-24 21:00 |2027-01-11 21:00
-|Robot finds a ball |1200 |2026-10-08 21:00 |2027-01-11 21:00
-|Robot follows a ball |800 |2026-10-22 21:00 |2027-01-11 21:00
-|Robot finds basket with a ball |800 |2026-11-05 21:00 |2027-01-11 21:00
+|Robot finds a ball |1200 |2026-10-12 21:00 |2027-01-11 21:00
+|Robot follows a ball |800 |2026-10-26 21:00 |2027-01-11 21:00
+|Robot finds basket with a ball |800 |2026-11-09 21:00 |2027-01-11 21:00
 |Robot throws a ball |300 |2026-11-09 21:00 |2027-01-11 21:00
 |Robot can properly react to referee commands |800 |2026-11-16 21:00 |2027-01-11 21:00
 |Code works with new mechanics |400 |2026-12-17 21:00 |2027-01-16 21:00
