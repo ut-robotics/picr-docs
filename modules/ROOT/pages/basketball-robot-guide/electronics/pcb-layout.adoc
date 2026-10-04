@@ -60,6 +60,17 @@ Place ESD protection components as close to the connector as possible.
 
 == Routing
 
+* Route tracks as short and straight as possible.
+* Avoid layer changes as much as reasonable.
+** Vias can create impedance discontinuities that cause more noise and degrade signal integrity.
+** Prioritise higher speed signals or more sensitive signals.
+For example USB differential pair signals.
+* Reduce crosstalk by having more space between tracks.
+** Typical rule of thumb is to have at least three times the distance between tracks
+as the distance between signal and reference (usually GND) layers.
+** If there isn't enough space on the PCB for keeping clearance between tracks,
+minimise the length of closely routed tracks by increasing clearance as soon as possible.
+
 === Track widths
 
 * Current carrying capability should be considered when choosing the width for a track.
@@ -80,7 +91,7 @@ Place ESD protection components as close to the connector as possible.
 === Current return paths
 
 * Current return paths should be considered when placing components and routing tracks.
-* Current tends to flow through the path of least impedance.
+* Current flows through the path of least impedance.
 ** Electrical impedance is a combination of resistance, capacitive reactance and inductive reactance.
 * At low frequencies current flows through the shortest (least resistance) path.
 * With higher frequencies, more return current will flow underneath the track on the path of least impedance.
@@ -88,8 +99,9 @@ Place ESD protection components as close to the connector as possible.
 then at higher frequencies the return current tends to flow through the ground area below the track on the first layer.
 * Area enclosed with forward and return current is called current loop.
 ** Larger current loops create more noise.
-** Loop area should be minimized by placing components close to each other, using short tracks
+** Loop area should be minimised by placing components close to each other, using short tracks
 and making sure the return current can flow through the path of least impedance.
+** Return (usually ground) vias should be placed close to the signal and power vias to keep the loop area small.
 
 More information:
 
