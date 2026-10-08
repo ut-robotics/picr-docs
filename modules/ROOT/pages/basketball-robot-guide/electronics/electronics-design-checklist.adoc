@@ -205,7 +205,7 @@ image::electronics-checklist/altium-model-map-mosfet.png[]
 
 * When connecting or changing the signals on one side the other side should be connected to match that.
 
-=== Connect  output signal to 5V tolerant pin
+=== Connect IS471FE output signal to 5V tolerant pin
 
 * Check microcontroller datasheet for 5V tolerant pins.
 
