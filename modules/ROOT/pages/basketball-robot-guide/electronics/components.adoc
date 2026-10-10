@@ -255,7 +255,7 @@ The simplest way to limit current is to use resistor in series with the LED.
 === Recommended
 
 * 0603 SMD package.
-* Current below 1 mA.
+* Current around 0.1 mA - 0.2 mA.
 Higher currents usually make the LED too bright and waste energy.
 Exact current is not that important if LED is used for visual indication
 and can be changed later by replacing the resistor.
