@@ -491,8 +491,8 @@ image:ball_not_stuck_extended_bottom.png[width=160]
 ** Closed loop control of at least 3 motors.
 ** Thrower motor control.
 ** Communication with robot's computer.
-* When using STM32 microcontroller and STM32CubeIDE or STM32CubeMX to do the pin assignments,
-add STM32CubeIDE project or *.ioc file to `firmware` branch in the team's repository.
+* When using STM32 microcontroller and STM32CubeMX to do the pin assignments,
+add STM32CubeMX project (*.ioc) file to `firmware` branch in the team's repository.
 ** See: xref:gitlab-guide.adoc[GitLab Guide]
 ** This simplifies checking the pin assignments on the schematic.
 
