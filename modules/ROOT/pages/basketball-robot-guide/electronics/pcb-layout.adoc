@@ -60,6 +60,46 @@ Place ESD protection components as close to the connector as possible.
 
 == Routing
 
+=== Signal speed
+
+Signal speed is determined by the rise time (usually from 10% to 90 % of the signal level) of the signal.
+Typically, it's specified as the 3 dB bandwidth, with the following formula.
+
+asciimath:[f_(3dB) cong 0.35 / t_r]
+
+For example if the rise time is 2.5 ns, then the bandwidth is 140 MHz.
+
+Most of the component outputs have fixed signal rise and fall times.
+Some of the components support adjustable output rise and fall times through drive strength or slew rate settings.
+Final rise and fall times depend on the external tracks and components connected to that output.
+
+Slower rise times help to reduce noise.
+Faster rise times are needed when higher switching frequency or higher efficiency is required.
+
+More information:
+
+. https://www.signalintegrityjournal.com/blogs/12-fundamentals/post/853-back-to-basics-bandwidth-and-rise-time
+. https://www.thorlabs.com/relationship-between-rise-time-and-bandwidth-for-a-low-pass-system
+. https://www.allaboutcircuits.com/technical-articles/relationship-between-rise-time-bandwidth-digital-signal/
+
+=== Electromagnetic fields
+
+Electric and magnetic fields are formed around the tracks on the PCB,
+when it is powered and the charges move around the conductors.
+It is important to avoid the fields from spreading out too much
+as this can cause adjacent conductors to (capacitively and magnetically) couple more strongly.
+Stronger coupling can cause more unwanted currents and voltages in nearby conductors.
+Fields that spread out more also cause more radiated noise.
+
+More information:
+
+. https://resources.altium.com/p/how-signals-propagate-in-a-pcb
+. Robert Feranec | Don’t design PCB without watching this! | Simulations and visualisations
+** https://www.youtube.com/watch?v=9lEtkysFGGg
+. https://www.signalintegrityjournal.com/blogs/4-eric-bogatin-signal-integrity-journal-technical-editor/post/402-pop-quiz-use-tight-or-loosely-coupled-differential-pairs-to-reduce-cross-talk
+
+=== General
+
 * Route tracks as short and straight as possible.
 * Avoid layer changes as much as reasonable.
 ** Vias can create impedance discontinuities that cause more noise and degrade signal integrity.
@@ -70,6 +110,11 @@ For example USB differential pair signals.
 as the distance between signal and reference (usually GND) layers.
 ** If there isn't enough space on the PCB for keeping clearance between tracks,
 minimise the length of closely routed tracks by increasing clearance as soon as possible.
+
+More information:
+
+. Robert Feranec | What Every PCB Designer Should Know - Crosstalk Explained (with Eric Bogatin)
+** https://www.youtube.com/watch?v=EF7SxgcDfCo
 
 === Track widths
 
@@ -105,8 +150,12 @@ and making sure the return current can flow through the path of least impedance.
 
 More information:
 
-* link:https://resources.altium.com/p/what-return-current-path-pcb[]
-* link:https://www.analog.com/en/resources/technical-articles/successful-pcb-grounding-with-mixedsignal-chips--follow-the-path-of-least-impedance.html[]
+. https://www.allaboutcircuits.com/technical-articles/better-pcb-design-return-paths-impedance/
+. https://resources.altium.com/p/what-return-current-path-pcb
+. https://www.analog.com/en/resources/technical-articles/successful-pcb-grounding-with-mixedsignal-chips--follow-the-path-of-least-impedance.html
+. https://www.signalintegrityjournal.com/articles/1771-a-simple-demonstration-of-where-return-current-flows
+. Robert Feranec | What Every PCB Designer Should Know - Return Current Path (with Eric Bogatin)
+** https://www.youtube.com/watch?v=icRzEZF3eZo
 
 === Copper areas
 

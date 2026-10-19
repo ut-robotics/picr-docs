@@ -309,7 +309,7 @@ when placed closer to the component's power pins.
 +
 image::electronics-checklist/usb_connector_flanges.png[]
 
-=== Keep track short and straight
+=== Keep tracks short and straight
 
 * Avoid large loops.
 * Reduce layer changes.
@@ -387,7 +387,7 @@ Shorts might be also created if the fasteners scrape off the solder mask and con
 
 * Design guidelines are in the TPS62933 datasheet.
 
-=== Avoid putting silkscreen test below components
+=== Avoid putting silkscreen text below components
 
 * Component designators and other useful text should be visible after the components have been soldered onto the PCB.
 
