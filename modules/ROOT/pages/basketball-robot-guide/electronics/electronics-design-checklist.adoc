@@ -326,6 +326,12 @@ image::electronics-checklist/usb_connector_flanges.png[]
 * Crosstalk also increases with distance.
 Crosstalk does not increase as much if only short segments of the tracks are close to each other.
 
+=== Add return vias near signal and power vias
+
+* When changing layers the return current path should be kept close to relevant signal and power connections
+to reduce the noise.
+See: xref:basketball-robot-guide/electronics/pcb-layout.adoc#current_return_paths[PCB Layout - Current return paths]
+
 === Keep enough clearance between same net copper
 
 * Altium Designer and KiCad by default only check clearances between different nets.

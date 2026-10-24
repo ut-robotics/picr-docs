@@ -133,6 +133,7 @@ More information:
 *** https://saturnpcb.com/saturn-pcb-toolkit/
 *** https://circuitcalculator.com/wordpress/2006/03/12/pcb-via-calculator/
 
+[#current_return_paths]
 === Current return paths
 
 * Current return paths should be considered when placing components and routing tracks.
@@ -156,6 +157,10 @@ More information:
 . https://www.signalintegrityjournal.com/articles/1771-a-simple-demonstration-of-where-return-current-flows
 . Robert Feranec | What Every PCB Designer Should Know - Return Current Path (with Eric Bogatin)
 ** https://www.youtube.com/watch?v=icRzEZF3eZo
+. Robert Feranec | How GND VIAs Improve Your PCB Layout
+** https://www.youtube.com/watch?v=nPx2iqmVAHY
++
+image:robert_ferenec_youtube_nPx2iqmVAHY_stitching_vias.png[]
 
 === Copper areas
 
