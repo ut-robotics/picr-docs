@@ -23,6 +23,10 @@ Specify differential pair (DP) width and gap from PCB manufacturer's calculator 
 +
 image::kicad_differential_pair_net_class.png[]
 +
+Also make sure that minimum track width constraint is smaller than differential pair track width.
++
+image::kicad_differential_pair_minimum_track_width_constraint.png[]
++
 . Position components so that the differential pair traces can be as straight as possible.
 If there are other components or traces close to the differential pair traces,
 try to move them further away.
@@ -30,7 +34,7 @@ try to move them further away.
 image::kicad_differential_pair_routing_component_positioning.png[]
 +
 . Start routing by clicking _Route Differential Pairs_ button or by pressing `6` on keyboard. +
-KiCad documentation: https://docs.kicad.org/9.0/en/pcbnew/pcbnew.html#routing-differential-pairs
+KiCad documentation: https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html#routing-differential-pairs
 +
 image::kicad_differential_pair_routing_button.png[]
 +
