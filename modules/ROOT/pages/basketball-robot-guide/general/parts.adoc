@@ -164,11 +164,30 @@ https://hobbyking.com/en_us/dys-aria-35a-blheli-32bit-esc-3-6s-opto.html
 
 == Thrower servo
 
+=== Adafruit 1143 Towerpro MG90D
+
+Micro Servo - MG90D High Torque Metal Gear
+
+*Recommended for new designs.*
+
+Shop links:
+
+* https://www.adafruit.com/product/1143
+* https://www.digikey.ee/en/products/detail/adafruit-industries-llc/1143/5154659
+
+View and download:
+
+* https://a360.co/3Um71AA
+
+Direct download:
+
+* xref:attachment$Adafruit_1143_Towerpro_MG90D_servo.f3d[Adafruit_1143_Towerpro_MG90D_servo.f3d]
+
 === Corona CS-939MG
 
 Corona CS-939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
 
-*Recommended for new designs.*
+*Do not use in new designs.*
 
 Shop links:
 
