@@ -1,0 +1,60 @@
+= Tools
+
+== Battery chargers
+
+=== Turnigy TQ4
+
+4x 50W (6S)
+
+https://hobbyking.com/turnigy-4x6s-lithium-polymer-battery-pack-charger.html
+
+image::tools/Turnigy_TG4.webp[Turnigy TG4,400,role=text-left]
+
+=== ToolkitRC Q4AC
+
+4x 25/50W (4S)
+
+https://www.toolkitrc.com/q4ac/
+
+image::tools/ToolkitRC_Q4AC.jpg[ToolkitRC Q4AC,400,role=text-left]
+
+=== Tattu TA300
+
+8x 30W (4S)
+
+image::tools/Tattu_TA300.jpg[Tattu TA300,400,role=text-left]
+
+== Soldering station
+
+=== Ersa i-CON NANO
+
+Manufacturer part number: 0IC1200A
+
+https://kurtzersa.com/products/electronics-production/discontinued-products/soldering-desoldering-stations/i-con-nano-discontinued
+
+image::tools/Ersa_i-CON_NANO.png[Ersa i-CON NANO,400,role=text-left]
+
+== Hot plate
+
+=== Miniware MHP50-B5
+
+https://e-design.com.cn/en/Mini-Hot-Plate-Preheater-MHP50-PG9555615
+
+image::tools/Miniware_MHP50-B5.jpg[Miniware MHP50-B5,400,role=text-left]
+
+== USB power supply
+
+=== Anker Prime Charger 200W 6 Ports GaN
+
+Model number: A2683
+
+https://www.anker.com/eu-en/products/a2683-anker-prime-charger-200w-6-ports-gan?variant=44413582704830
+
+Service page: +
+https://service.anker.com/product-description/a08J1000000Xkc2IAC
+
+Output Power Distribution: +
+xref:attachment$A2683_Output_Power_Distribution.pdf[A2683_Output_Power_Distribution.pdf]
+
+image::tools/Anker_Prime_Charger_200W_6-Ports_GaN_A2683141_TD01_V1.webp[Anker Prime Charger 200W 6 Ports GaN,400,role=text-left]
+

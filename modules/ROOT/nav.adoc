@@ -1,5 +1,6 @@
 * xref:grading-and-tasks.adoc[Grading and tasks]
 * xref:gitlab-guide.adoc[GitLab (team repository) guide]
+* xref:tools.adoc[Tools]
 
 .xref:basketball-robot-guide/index.adoc[Basketball robot guide]
 ** General
