@@ -18,6 +18,13 @@ link:https://www.st.com/resource/en/datasheet/stm32g441kb.pdf[STM32G441KB datash
 
 link:https://www.st.com/resource/en/reference_manual/dm00355726-stm32g4-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf[STM32G4 series reference manual]
 
+== STM32CubeMX project settings
+
+Change `Toolcahain / IDE` to STM32CubeIDE, unless you have other preferences.
+Rest of the settings can be left to default values.
+
+image::firmware_stm32cubemx_project_settings.png[STM32CubeMX project settings]
+
 == Programmer interface
 
 Programmer interface can be enabled from _SYS -> Debug: Serial Wire_.
@@ -32,7 +39,7 @@ image::firmware_gpio_output.png[GPIO output]
 
 Label can be added by right clicking on the pin and selecting _Enter User Label_.
 
-image::firmware_gpio_output_label.png[GPIO output]
+image::firmware_gpio_output_label.png[GPIO output albel]
 
 Pin output state can be changed with HAL_GPIO functions.
 
@@ -349,6 +356,113 @@ Just a PI controller, where derivative part is not implemented/used, is usually 
 Encoder changes can be used as a speed feedback.
 Setpoints can be received through the USB communication.
 Output of the controller should be PWM for a motor driver.
+
+== Generating short pulse
+
+`HAL_Delay` function has millisecond resolution, which is not enough to create shorter pulses.
+
+=== For loop
+
+Simple option to create a short delay is to use a for loop and no operation (`nop`) instruction.
+Suitable for loop iteration count can be found by measuring the pulse length with an oscilloscope
+and adjusting the count accordingly.
+Problem with this approach is that the compiler optimisation level changes how many clock cycles is used.
+With no optimisations the loop is slower and loop iteration count needs to be smaller.
+
+[source,c,tabsize=2]
+----
+HAL_GPIO_WritePin(DRV_nSLEEP_GPIO_Port, DRV_nSLEEP_Pin, GPIO_PIN_RESET);
+for (int i = 0; i < 123; i++) {
+  __asm("nop");
+}
+HAL_GPIO_WritePin(DRV_nSLEEP_GPIO_Port, DRV_nSLEEP_Pin, GPIO_PIN_SET);
+----
+
+=== Timer
+
+A timer can be used to create a microsecond resolution delay.
+Example uses Timer 7 with a source clock frequency at 160 MHz.
+
+Delay duration can be affected by interrupts and compiler optimisation level,
+so it might not be suitable for generating accurate pulse lengths.
+
+Change timer prescaler to 159 (160 - 1) to make the timer run at 1 MHz.
+
+image::firmware_delay_timer_configuration.png[Delay timer configuration]
+
+Create delay function.
+
+[source,c,tabsize=2]
+----
+void delay_us (uint16_t us)
+{
+  __HAL_TIM_SET_COUNTER(&htim7, 0);
+  while (__HAL_TIM_GET_COUNTER(&htim7) < us);
+}
+----
+
+Start the timer.
+
+[source,c,tabsize=2]
+----
+HAL_TIM_Base_Start_IT(&htim7);
+----
+
+Use delay function to generate pulse.
+
+[source,c,tabsize=2]
+----
+HAL_GPIO_WritePin(DRV_nSLEEP_GPIO_Port, DRV_nSLEEP_Pin, GPIO_PIN_RESET);
+delay_us(30);
+HAL_GPIO_WritePin(DRV_nSLEEP_GPIO_Port, DRV_nSLEEP_Pin, GPIO_PIN_SET);
+----
+
+More detailed documentation: +
+https://controllerstech.com/create-microsecond-delay-stm32/
+
+=== Data Watchpoint Trigger
+
+DWT can be used to create a microsecond resolution delay if suitable timer is not available, but
+DWT is not available on all STM32 microcontrollers.
+
+More information: +
+https://deepbluembedded.com/stm32-delay-microsecond-millisecond-utility-dwt-delay-timer-delay/
+
+=== PWM generation with DMA
+
+A timer can be used to create a pulse without needing software delay.
+Example uses Timer 15 channel 1 with a source clock frequency at 160 MHz.
+
+Change timer prescaler to 159 (160 - 1) to make the timer run at 1 MHz.
+Counter period can be set to lower value than the default to allow the pulse be generated more often, if needed.
+Counter period value should be higher than the pulse duration.
+
+image::firmware_short_pulse_dma_timer_configuration.png[Short pulse timer configuration]
+
+If the pulse needs to have active low polarity, change the `CH Polarity` and `CH Idle State` parameters.
+
+image::firmware_short_pulse_dma_timer_configuration_active_low.png[Short pulse timer configuration, active low]
+
+Add DMA and change the `Direction` to `Memory To Peripheral`.
+
+image::firmware_short_pulse_dma_timer_configuration_add_dma.png[Short pulse timer configuration, add DMA]
+
+Create array of PWM pulse length values.
+First value is the duration of the pulse.
+Second value sets the PWM to 0, so that the same pulse will not be repeated.
+
+[source,c,tabsize=2]
+----
+uint16_t nSleepPulseLengths[2] = {30, 0};
+----
+
+Start the timer to generate the pulse.
+This needs to be called every time the pulse needs to be generated.
+
+[source,c,tabsize=2]
+----
+HAL_TIM_PWM_Start_DMA(&htim15, TIM_CHANNEL_1, (uint32_t*)nSleepPulseLengths, 2);
+----
 
 == Boot configuration
 
