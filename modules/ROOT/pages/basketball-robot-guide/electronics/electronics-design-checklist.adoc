@@ -405,7 +405,7 @@ for the microcontroller firmware to be able to properly control the motor.
 
 === Altium Designer specific
 
-. Use`Pour Over All Same Net Objects` in polygon properties.
+. Use `Pour Over All Same Net Objects` in polygon properties.
 . Create mounting holes with pads, not vias.
 
 === Generate Gerber X2 files when the design is completed
