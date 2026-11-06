@@ -44,7 +44,7 @@ avoid using vias if possible or reduce the amount of vias
 and keep traces as symmetrical as possible.
 +
 Some manual adjustments might be needed, which can be done by simply moving the tracks
-or rerouting segments of the tracks with _Route Single Track_ ( hotkey `X`) tool.
+or rerouting segments of the tracks with _Route Single Track_ (hotkey `X`) tool.
 +
 image::kicad_differential_pair_routed_tracks.png[]
 +
@@ -57,3 +57,51 @@ Stubs should be avoided in tracks as these will reduce ESD protection effectiven
 and also cause signal reflections in general.
 +
 image::kicad_differential_pair_stubs.png[]
+
+=== Jobset
+
+. Create Jobset with *File -> New Jobset File*.
++
+image::kicad_jobset_create.png[]
++
+. Add Job with the `+` button.
++
+image::kicad_add_job.png[]
+
+=== Gerbers and Drill Jobs
+
+. Select `PCB: Export Gerbers` when adding a new Job.
++
+image::kicad_add_gerbers_job.png[]
++
+. Use the following Gerber Job Settings.
++
+image::kicad_gerber_job_settings.png[]
++
+. Add another Job and select `PCB: Export Drill Data`.
++
+image::kicad_add_drill_data_job.png[]
++
+Use the following Drill Data Job Settings.
++
+image::kicad_drill_data_job_settings.png[]
++
+. Open destination folder settings.
++
+image::kicad_jobset_destination_folder_settings_open.png[]
++
+. Change `Destination path` to `${KIPRJMOD}`.
++
+image::kicad_jobset_destination_folder_settings_destination_path.png[]
++
+. Press `Save Jobset`.
++
+image::kicad_jobset_save.png[]
++
+. Press `Generate`.
++
+image::kicad_jobset_folder_generate.png[]
++
+. Commit Jobset (`\*.kicad_jobset`) and Gerber (`GerberX2/*.gbr`) files to the repository.
++
+. If the Gerber files need to be updated open the Jobset and press Generate.
