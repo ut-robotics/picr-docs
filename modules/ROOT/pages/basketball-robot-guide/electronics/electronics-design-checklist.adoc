@@ -411,7 +411,7 @@ for the microcontroller firmware to be able to properly control the motor.
 === Generate Gerber X2 files when the design is completed
 
 * Altium Designer
-** xref:basketball-robot-guide/electronics/altium-designer.adoc#_generate_gerber_x2_files[Altium Designer - Generate Gerber X2 Files]
+** xref:basketball-robot-guide/electronics/altium-designer.adoc#_generating_gerber_x2_files[Altium Designer - Generating Gerber X2 Files]
 * KiCad
 ** xref:basketball-robot-guide/electronics/kicad.adoc#_jobset[KiCad - Jobset]
 * Generated Gerber X2 files should be added to the repository in a separate directory (`electronics/GerberX2/`).

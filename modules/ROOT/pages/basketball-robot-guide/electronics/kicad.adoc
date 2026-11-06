@@ -82,7 +82,7 @@ image::kicad_gerber_job_settings.png[]
 +
 image::kicad_add_drill_data_job.png[]
 +
-Use the following Drill Data Job Settings.
+. Use the following Drill Data Job Settings.
 +
 image::kicad_drill_data_job_settings.png[]
 +
