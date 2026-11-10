@@ -179,10 +179,6 @@ View and download:
 
 * https://a360.co/3Um71AA
 
-Direct download:
-
-* xref:attachment$Adafruit_1143_Towerpro_MG90D_servo.f3d[Adafruit_1143_Towerpro_MG90D_servo.f3d]
-
 === Corona CS-939MG
 
 Corona CS-939MG Metal Gear Servo 2.5kg / 0.14sec / 12.5g
